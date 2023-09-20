@@ -1,70 +1,71 @@
-# 加载必要的库
-library(tidyverse)
+library(dplyr)
 
-# 读取数据文件
+# 加载数据
 data_2017_2021 <- read.csv("data/data_2017_2021.csv")
 data_2022_2023 <- read.csv("data/data_2022_2023.csv")
 
-# 清洗数据，去除所有的NA和空值
-unique_men_countries <- na.omit(unique(data_2022_2023$Country[data_2022_2023$Gender == "m"]))
-unique_women_countries <- na.omit(unique(data_2017_2021$Country[data_2022_2023$Gender == "w"]))
+# 预先确定的国家名单
+preselected_countries_men <- c("CHN", "JPN", "GBR")
+preselected_countries_women <- c("USA", "GBR", "CAN")
 
-# 随机选择12个国家
-set.seed(123) # 设置随机数种子以确保结果的可重复性
-# 查看男子和女子的独特参赛国家数量
-num_men_countries <- length(unique_men_countries)
-num_women_countries <- length(unique_women_countries)
+# 统计每个性别每个国家的唯一运动员数量
+athlete_count_2017_2021 <- data_2017_2021 %>%
+  group_by(Gender, Country) %>%
+  summarise(Unique_Athletes = n_distinct(paste(FirstName, LastName))) %>%
+  filter((Gender == "m" & !(Country %in% preselected_countries_men)) | 
+           (Gender == "w" & !(Country %in% preselected_countries_women)))
 
-# 基于可用的国家数量随机选择国家
-random_countries_men <- sample(unique_men_countries, min(12, num_men_countries))
-random_countries_women <- sample(unique_women_countries, min(12, num_women_countries))
+athlete_count_2022_2023 <- data_2022_2023 %>%
+  group_by(Gender, Country) %>%
+  summarise(Unique_Athletes = n_distinct(paste(FirstName, LastName))) %>%
+  filter((Gender == "m" & !(Country %in% preselected_countries_men)) | 
+           (Gender == "w" & !(Country %in% preselected_countries_women)))
 
-# 打印选定的国家
-print("Randomly Selected Men's Teams:")
-print(random_countries_men)
+# 筛选至少有五个唯一运动员的国家
+eligible_countries_2017_2021 <- athlete_count_2017_2021 %>%
+  filter(Unique_Athletes >= 5)
 
-print("Randomly Selected Women's Teams:")
-print(random_countries_women)
+eligible_countries_2022_2023 <- athlete_count_2022_2023 %>%
+  filter(Unique_Athletes >= 5)
 
+# 合并预先确定的国家和筛选出的国家
+final_countries_2017_2021 <- bind_rows(eligible_countries_2017_2021, 
+                                       data.frame(Gender = c("m", "m", "m", "w", "w", "w"),
+                                                  Country = c(preselected_countries_men, preselected_countries_women),
+                                                  Unique_Athletes = c(rep(NA, 6))))
 
+final_countries_2022_2023 <- bind_rows(eligible_countries_2022_2023, 
+                                       data.frame(Gender = c("m", "m", "m", "w", "w", "w"),
+                                                  Country = c(preselected_countries_men, preselected_countries_women),
+                                                  Unique_Athletes = c(rep(NA, 6))))
 
-# 为每个国家选择前5名体操运动员
-select_top_5_gymnasts <- function(data, country, gender){
-  data %>%
-    filter(Country == country, Gender == tolower(gender)) %>%
-    arrange(desc(Score)) %>%
-    %
-  head(5)
-}
+# 输出数据摘要
+summary_2017_2021 <- final_countries_2017_2021 %>%
+  group_by(Gender) %>%
+  summarise(Total_Countries = n(), 
+            Countries_with_5_or_more_athletes = sum(!is.na(Unique_Athletes)))
 
-teams_men <- lapply(random_countries_men, select_top_5_gymnasts, data = data_2022_2023, gender = "M")
-teams_women <- lapply(random_countries_women, select_top_5_gymnasts, data = data_2022_2023, gender = "F")
+summary_2022_2023 <- final_countries_2022_2023 %>%
+  group_by(Gender) %>%
+  summarise(Total_Countries = n(), 
+            Countries_with_5_or_more_athletes = sum(!is.na(Unique_Athletes)))
 
-# 从不具备团队资格的国家中选择前3名体操运动员
-remaining_countries_men <- setdiff(unique(data_2022_2023$Country[data_2022_2023$Gender == "m"]), random_countries_men)
-remaining_countries_women <- setdiff(unique(data_2022_2023$Country[data_2022_2023$Gender == "f"]), random_countries_women)
+# 输出2017-2021年数据摘要
+cat("Summary for 2017-2021:\n")
+cat("--------------------------------------------------\n")
+print(summary_2017_2021)
 
-select_top_3_gymnasts <- function(data, country, gender){
-  data %>%
-    filter(Country == country, Gender == tolower(gender)) %>%
-    arrange(desc(Score)) %>%
-    head(3)
-}
+# 输出2017-2021年合格国家列表
+cat("\nEligible countries for 2017-2021:\n")
+cat("--------------------------------------------------\n")
+print(final_countries_2017_2021)
 
-individuals_men <- lapply(remaining_countries_men, select_top_3_gymnasts, data = data_2022_2023, gender = "M")
-individuals_women <- lapply(remaining_countries_women, select_top_3_gymnasts, data = data_2022_2023, gender = "F")
+# 输出2022-2023年数据摘要
+cat("\nSummary for 2022-2023:\n")
+cat("--------------------------------------------------\n")
+print(summary_2022_2023)
 
-# 打印结果
-print("Randomly Selected Men's Teams:")
-print(random_countries_men)
-lapply(teams_men, print)
-
-print("Randomly Selected Women's Teams:")
-print(random_countries_women)
-lapply(teams_women, print)
-
-print("Individual Men's Gymnasts Selection:")
-lapply(individuals_men, print)
-
-print("Individual Women's Gymnasts Selection:")
-lapply(individuals_women, print)
+# 输出2022-2023年合格国家列表
+cat("\nEligible countries for 2022-2023:\n")
+cat("--------------------------------------------------\n")
+print(final_countries_2022_2023)
