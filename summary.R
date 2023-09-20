@@ -127,3 +127,38 @@ for (country in women_countries) {
 
 # The two dictionaries: men_country_athlete_dict and women_country_athlete_dict, 
 # should now contain the names of five athletes from each selected country.
+
+# Filter out athletes from countries that already have team qualifications
+additional_men_athletes <- data_2022_2023 %>%
+  filter(!(Country %in% c(men_countries, "RUS", "BLR")), Gender == "m") %>%
+  filter(!is.na(FirstName) & !is.na(LastName) & FirstName != "" & LastName != "")
+
+additional_women_athletes <- data_2022_2023 %>%
+  filter(!(Country %in% c(women_countries, "RUS", "BLR")), Gender == "w") %>%
+  filter(!is.na(FirstName) & !is.na(LastName) & FirstName != "" & LastName != "")
+
+# Randomly select 36 athletes for each gender
+set.seed(123)  # for reproducibility
+
+selected_additional_men <- additional_men_athletes %>%
+  group_by(Country) %>%
+  sample_n(min(3, n())) %>%
+  ungroup() %>%
+  slice_sample(n = 36) %>%
+  mutate(FullName = paste(FirstName, LastName)) %>%
+  .$FullName
+
+selected_additional_women <- additional_women_athletes %>%
+  group_by(Country) %>%
+  sample_n(min(3, n())) %>%
+  ungroup() %>%
+  slice_sample(n = 36) %>%
+  mutate(FullName = paste(FirstName, LastName)) %>%
+  .$FullName
+
+# The two arrays: selected_additional_men and selected_additional_women, 
+# should now contain the names of the 36 additional athletes for each gender.
+# Add the selected additional athletes to the existing dictionaries
+men_country_athlete_dict[["additional"]] <- selected_additional_men
+women_country_athlete_dict[["additional"]] <- selected_additional_women
+
