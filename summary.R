@@ -142,23 +142,76 @@ set.seed(123)  # for reproducibility
 
 selected_additional_men <- additional_men_athletes %>%
   group_by(Country) %>%
-  sample_n(min(3, n())) %>%
+  sample_frac(1) %>% # Shuffle athletes within each country
   ungroup() %>%
+  distinct(FirstName, LastName) %>% # Ensure unique athletes
   slice_sample(n = 36) %>%
   mutate(FullName = paste(FirstName, LastName)) %>%
   .$FullName
 
 selected_additional_women <- additional_women_athletes %>%
   group_by(Country) %>%
-  sample_n(min(3, n())) %>%
+  sample_frac(1) %>% # Shuffle athletes within each country
   ungroup() %>%
+  distinct(FirstName, LastName) %>% # Ensure unique athletes
   slice_sample(n = 36) %>%
   mutate(FullName = paste(FirstName, LastName)) %>%
   .$FullName
 
 # The two arrays: selected_additional_men and selected_additional_women, 
-# should now contain the names of the 36 additional athletes for each gender.
+# should now contain the names of the 36 additional unique athletes for each gender.
 # Add the selected additional athletes to the existing dictionaries
 men_country_athlete_dict[["additional"]] <- selected_additional_men
 women_country_athlete_dict[["additional"]] <- selected_additional_women
 
+library(stringdist)
+
+# Function to retrieve athlete data from the data frame using approximate matching
+get_athlete_data <- function(df, full_name) {
+  
+  # Using amatch to get the best match index
+  best_match_index <- amatch(full_name, paste(df$FirstName, df$LastName), maxDist = 2)
+  
+  if (!is.na(best_match_index)) {
+    athlete_data <- df[best_match_index, ] %>%
+      select(-FirstName, -LastName) # Exclude FirstName and LastName columns for the nested dictionary
+    return(as.list(athlete_data))
+  } else {
+    return(NULL)
+  }
+}
+
+# Convert the athlete list to a dictionary for men_country_athlete_dict
+men_dict_updated <- list()
+for (country in names(men_country_athlete_dict)) {
+  athletes <- men_country_athlete_dict[[country]]
+  athlete_data_dict <- list()
+  
+  for (athlete in athletes) {
+    athlete_data <- get_athlete_data(data_2022_2023, athlete)
+    if (!is.null(athlete_data)) {
+      athlete_data_dict[[athlete]] <- athlete_data
+    }
+  }
+  
+  men_dict_updated[[country]] <- athlete_data_dict
+}
+
+# Convert the athlete list to a dictionary for women_country_athlete_dict
+women_dict_updated <- list()
+for (country in names(women_country_athlete_dict)) {
+  athletes <- women_country_athlete_dict[[country]]
+  athlete_data_dict <- list()
+  
+  for (athlete in athletes) {
+    athlete_data <- get_athlete_data(data_2022_2023, athlete)
+    if (!is.null(athlete_data)) {
+      athlete_data_dict[[athlete]] <- athlete_data
+    }
+  }
+  
+  women_dict_updated[[country]] <- athlete_data_dict
+}
+
+men_country_athlete_dict <- men_dict_updated
+women_country_athlete_dict <- women_dict_updated
