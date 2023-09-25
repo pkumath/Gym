@@ -28,13 +28,21 @@ print(random_countries_women)
 
 
 
-# 为每个国家选择前5名体操运动员
+# # 为每个国家选择前5名体操运动员
+# select_top_5_gymnasts <- function(data, country, gender){
+#   data %>%
+#     filter(Country == country, Gender == tolower(gender)) %>%
+#     arrange(desc(Score)) %>%
+#     %
+#   head(5)
+# }
+# Select the top 5 gymnasts for each country
 select_top_5_gymnasts <- function(data, country, gender){
   data %>%
     filter(Country == country, Gender == tolower(gender)) %>%
-    arrange(desc(Score)) %>%
-    %
-  head(5)
+    group_by(FirstName) %>%
+    sample_n(min(5, n()), replace = FALSE) %>%
+    ungroup()
 }
 
 teams_men <- lapply(random_countries_men, select_top_5_gymnasts, data = data_2022_2023, gender = "M")
@@ -44,11 +52,13 @@ teams_women <- lapply(random_countries_women, select_top_5_gymnasts, data = data
 remaining_countries_men <- setdiff(unique(data_2022_2023$Country[data_2022_2023$Gender == "m"]), random_countries_men)
 remaining_countries_women <- setdiff(unique(data_2022_2023$Country[data_2022_2023$Gender == "f"]), random_countries_women)
 
+# Select the top 3 gymnasts from the remaining countries that did not qualify for the team event
 select_top_3_gymnasts <- function(data, country, gender){
   data %>%
     filter(Country == country, Gender == tolower(gender)) %>%
-    arrange(desc(Score)) %>%
-    head(3)
+    group_by(FirstName) %>%
+    sample_n(min(3, n()), replace = FALSE) %>%
+    ungroup()
 }
 
 individuals_men <- lapply(remaining_countries_men, select_top_3_gymnasts, data = data_2022_2023, gender = "M")
