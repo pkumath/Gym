@@ -168,18 +168,27 @@ library(stringdist)
 
 # Function to retrieve athlete data from the data frame using approximate matching
 get_athlete_data <- function(df, full_name) {
+  # Calculate the string distance matrix
+  distances <- stringdist::stringdistmatrix(full_name, paste(df$FirstName, df$LastName))
   
-  # Using amatch to get the best match index
-  best_match_index <- amatch(full_name, paste(df$FirstName, df$LastName), maxDist = 2)
+  # Get indices of names that have a distance less than or equal to 2 (or any suitable threshold you prefer)
+  matching_indices <- which(distances <= 2, arr.ind = TRUE)[, 2]
   
-  if (!is.na(best_match_index)) {
-    athlete_data <- df[best_match_index, ] %>%
-      select(-FirstName, -LastName) # Exclude FirstName and LastName columns for the nested dictionary
-    return(as.list(athlete_data))
+  # Retrieve all matching rows
+  athlete_data <- df[matching_indices, ]
+  
+  if (nrow(athlete_data) > 0) {
+    # Convert each row to a dictionary and store them in a list
+    athlete_list <- lapply(1:nrow(athlete_data), function(i) {
+      as.list(athlete_data[i, ])
+    })
+    return(athlete_list)
   } else {
     return(NULL)
   }
 }
+
+
 
 # Convert the athlete list to a dictionary for men_country_athlete_dict
 men_dict_updated <- list()
