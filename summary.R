@@ -101,41 +101,52 @@ women_athletes_data <- data_2022_2023 %>%
 # Step 2: Randomly select five athletes from each country
 set.seed(123)  # for reproducibility
 
-# men_country_athlete_dict <- list()
-# for (country in men_countries) {
-#   selected_athletes <- men_athletes_data %>%
-#     filter(Country == country) %>%
-#     distinct(FirstName, LastName) %>%
-#     sample_n(min(5, n())) %>%
-#     mutate(FullName = paste(FirstName, LastName)) %>%
-#     .$FullName  # Extract full names
-  
-#   men_country_athlete_dict[[country]] <- selected_athletes
-# }
-
-# Select the top 5 gymnasts for each country
-select_top_gymnasts <- function(data, country, k){
-  data %>%
-    filter(Country == country) %>%
-    group_by(FirstName, LastName) %>%
-    summarize(n = n()) %>%
-    arrange(desc(n)) %>%
-    head(k) %>%
-    inner_join(data, by = c("FirstName", "LastName")) %>%
-    group_by(FirstName, LastName)
-}
-
 men_country_athlete_dict <- list()
 for (country in men_countries) {
-  selected_athletes <- select_top_gymnasts(men_athletes_data, country, 5)
+  selected_athletes <- men_athletes_data %>%
+    filter(Country == country) %>%
+    distinct(FirstName, LastName) %>%
+    sample_n(min(5, n())) %>%
+    mutate(FullName = paste(FirstName, LastName)) %>%
+    .$FullName  # Extract full names
+  
   men_country_athlete_dict[[country]] <- selected_athletes
 }
 
 women_country_athlete_dict <- list()
 for (country in women_countries) {
-  selected_athletes <- select_top_gymnasts(women_athletes_data, country, 5)
+  selected_athletes <- women_athletes_data %>%
+    filter(Country == country) %>%
+    distinct(FirstName, LastName) %>%
+    sample_n(min(5, n())) %>%
+    mutate(FullName = paste(FirstName, LastName)) %>%
+    .$FullName  # Extract full names
+  
   women_country_athlete_dict[[country]] <- selected_athletes
 }
+# # Select the top 5 gymnasts for each country
+# select_top_gymnasts <- function(data, country, k){
+#   data %>%
+#     filter(Country == country) %>%
+#     group_by(FirstName, LastName) %>%
+#     summarize(n = n()) %>%
+#     arrange(desc(n)) %>%
+#     head(k) %>%
+#     inner_join(data, by = c("FirstName", "LastName")) %>%
+#     group_by(FirstName, LastName)
+# }
+
+# men_country_athlete_dict <- list()
+# for (country in men_countries) {
+#   selected_athletes <- select_top_gymnasts(men_athletes_data, country, 5)
+#   men_country_athlete_dict[[country]] <- selected_athletes
+# }
+
+# women_country_athlete_dict <- list()
+# for (country in women_countries) {
+#   selected_athletes <- select_top_gymnasts(women_athletes_data, country, 5)
+#   women_country_athlete_dict[[country]] <- selected_athletes
+# }
 
 # The two dictionaries: men_country_athlete_dict and women_country_athlete_dict, 
 # should now contain the names of five athletes from each selected country.
