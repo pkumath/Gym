@@ -2,6 +2,7 @@
 import pandas as pd
 import numpy as np
 import os
+from fuzzywuzzy import fuzz
 
 class Data:
     # Constructor
@@ -71,7 +72,7 @@ class Data:
             raise ValueError("Directory does not exist")
         # Save the data
         self.data[data_name].to_csv(data_dir, index=False)
-            
+
         
     def _data_copier_fetcher(self,
                         data_or_data_name: pd.DataFrame or str,
@@ -341,6 +342,16 @@ class Gymnastic_Data_Analyst(Data):
         # Drop the data with NaN in column "Score"
         if clean_NaN_in_Score and "Score" in data.columns:
             data = data.dropna(subset=["Score"])
+        
+        # Replace NaN in column "FirstName" and "LastName" with empty string ""
+        data["FirstName"].fillna("", inplace=True)
+        data["LastName"].fillna("", inplace=True)
+        # If the LastName or First Name contains ' ', then only keep the first part
+        data["FirstName"] = data["FirstName"].apply(lambda x: x.split(' ')[0])
+        data["LastName"] = data["LastName"].apply(lambda x: x.split(' ')[0])
+        # Make all the characters in the FirstName and LastName lower case
+        data["FirstName"] = data["FirstName"].apply(lambda x: x.lower())
+        data["LastName"] = data["LastName"].apply(lambda x: x.lower())
 
         # Update the data in the class
         self.data[data_name] = data
@@ -413,22 +424,131 @@ class Gymnastic_Data_Analyst(Data):
         else:
             return summary_data
 
+    def cluster_by_name(self, 
+                            data_name: str = "default_data", 
+                            store_into: str = None,):
+        '''
+        Cluster the data by gymnasts' FirstName and LastName.
+        
+        Input:
+            data_name: string, the name of the data to cluster. Default is None, which means the data is the default data in the class.
+            store_into: string, the name of the data to store the clustered data. Default is None, which means the data is not stored in the class.
+
+        Output:
+            None
+        '''
+
+        # Check if the data_name exists
+        self._check_data_name(data_name)
+        # Get the data to cluster, this should be a pointer to the data in the class
+        df = self.data[data_name].copy(deep=True)
+
+        # # fetch the FirstName and LastName columns from the data
+        # FirstName = df["FirstName"]
+        # LastName = df["LastName"]
+        # # concatenate the FirstName and LastName pointwise
+        # Name = FirstName + LastName
+
+        # Calculate the ratio between each pair of names
+        potential_matches = {}
+
+
+        # loop over each row and compare it to all other rows
+        for i, row1 in df.iterrows():
+            for j, row2 in df.iterrows():
+                if i != j:  # skip self-comparisons
+                    ratio = fuzz.ratio(row1['FirstName'] + row1['LastName'], row2['FirstName'] + row2['LastName'])
+                    if ratio > 80 and row1['Country'] == row2['Country'] and row1['Gender'] == row2['Gender']:  # set a threshold for potential matches
+                        if i not in potential_matches:
+                            potential_matches[i] = []
+                        potential_matches[i].append(j)
+
+        # create a dictionary to store the clusters
+        clusters = {}
+
+        # loop over each row and assign it to a cluster
+        for i, row in df.iterrows():
+            if i not in clusters:
+                clusters[i] = []
+            clusters[i].append(i)
+            if i in potential_matches:
+                for j in potential_matches[i]:
+                    if j not in clusters[i]:
+                        clusters[i].append(j)
+                        clusters[j] = clusters[i]
+
+        # For each cluster, find the most common name and country, and replace the other names and countries with the most common name and country
+        for cluster in set(map(tuple, clusters.values())):
+            # Create a new DataFrame to store the cluster data
+            cluster_data = pd.DataFrame(columns=df.columns)
+            # Store the cluster data
+            for i in cluster:
+                cluster_data = cluster_data.append(df.iloc[i])
+            # Find the most common name and country
+            most_common_firstname = cluster_data["FirstName"].mode()[0]
+            most_common_lastname = cluster_data["LastName"].mode()[0]
+            # for the most common country, first filter out nan, then find the most common country
+            cluster_data_without_nan = cluster_data.dropna(subset=["Country"])
+            most_common_country = cluster_data_without_nan["Country"].mode()[0]
+            # Replace the other names and countries with the most common name and country in the original data
+            for i in cluster:
+                df.loc[i, "FirstName"] = most_common_firstname
+                df.loc[i, "LastName"] = most_common_lastname
+                df.loc[i, "Country"] = most_common_country
+
+        # Store the clustered data
+        if store_into is not None:
+            self._add_or_replace_data(df, store_into)
+        else:
+            return df
+
+    def summary_for_each_country(self, 
+                              data_name: str,
+                              country_name: str):
+        '''
+        Summary each country's performance on each apparatus.
+
+        Input:
+            data_name: string, the name of the data to summary. Default is None, which means the data is the default data in the class.
+            country_name: string, the name of the country to summary. Default is None, which means the data is the default data in the class.
+
+        Output:
+            summary_data: dict, the summary of each country's performance on each apparatus
+        '''
+        # Check if the data_name exists
+        self._check_data_name(data_name)
+        # Get the data to summary, this should be a pointer to the data in the class
+        data = self.data[data_name]
+        # Check if the data still has Apparatus column
+        if "Apparatus" in data.columns:
+            raise ValueError("It seems that the data still has 'Apparatus' column. Please call the method summary_for_each_athlete() first.")
+        
+        # Check if the country_name exists
+        if country_name not in data["Country"].unique():
+            raise ValueError("Country name does not exist")
+        # Filter the data by country_name
+        data = self._filter(data_name, lambda x: x["Country"] == country_name)
+
+        # check the gender
+        gender = data["Gender"].unique()[0]
+        
+        self.
+        
+
+
 
 
 
 if __name__ == "__main__":
     data = Gymnastic_Data_Analyst(data_dir="data/data_2022_2023.csv", data_name="gymnasts")
-    data._cleaner(data_name="gymnasts")
-    ls = data.split_by_attribute(data_name="gymnasts", attribute="Country")
-    i = 0
-    for key, Value in ls:
-        print(key)
-        print(Value)
-        print("\n")
-        if i == 5:
-            break
-        i += 1
+    ls = data.split_by_attribute(data_name="gymnasts", attribute="Gender")
+    for key, value in ls:
+        if key == 'm':
+            data._add_or_replace_data(value, key + "men_gymnasts")
+        else:
+            data._add_or_replace_data(value, key + "women_gymnasts")
+    data.summary_for_each_athlete(data_name="men_gymnasts", store_into="men_summary_data")
+    data.summary_for_each_athlete(data_name="women_gymnasts", store_into="women_summary_data")
+    # data._data_saver(data_name="summary_data", data_dir="data/summary_data.csv")
 
-    data.summary_for_each_athlete(data_name="gymnasts", store_into="summary_data")
-    print(data._data_copier_fetcher(data_or_data_name="summary_data"))
-    data._data_saver(data_name="summary_data", data_dir="data/summary_data.csv")
+    # Pick 
