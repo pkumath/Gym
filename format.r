@@ -1,5 +1,6 @@
 library(dplyr)
 library(readr)
+library(R6)
 
 Data <- R6::R6Class("Data",
                     public = list(
@@ -133,48 +134,113 @@ Data <- R6::R6Class("Data",
                     )
 )
 
-Gymnastic_Data_Analyst <- R6::R6Class("Gymnastic_Data_Analyst", inherit = Data,
-                                      public = list(
-                                        initialize = function(data_dir = NULL, data_name = "default_data") {
-                                          super$initialize(data_dir, data_name)
-                                          self$cleaner(data_name)
-                                        },
-                                        
-                                        cleaner = function(data_name = "default_data", merge_VT = TRUE, clean_NaN_in_Score = TRUE) {
-                                          super$cleaner(data_name, merge_VT, clean_NaN_in_Score)
-                                          
-                                          self$check_data_name(data_name)
-                                          data <- self$data[[data_name]]
-                                          
-                                          if ("Apparatus" %in% colnames(data)) {
-                                            data$Apparatus <- gsub("VT_1", "VT1", data$Apparatus)
-                                            data$Apparatus <- gsub("VT_2", "VT2", data$Apparatus)
-                                            data$Apparatus <- gsub("hb", "HB", data$Apparatus)
-                                            if (merge_VT) {
-                                              data$Apparatus <- gsub("VT1", "VT", data$Apparatus)
-                                              data$Apparatus <- gsub("VT2", "VT", data$Apparatus)
-                                            }
-                                          }
-                                          
-                                          if (clean_NaN_in_Score && "Score" %in% colnames(data)) {
-                                            data <- data %>% filter(!is.na(Score))
-                                          }
-                                          
-                                          self$data[[data_name]] <- data
+Gymnastic_Data_Analyst <- R6Class("Gymnastic_Data_Analyst",
+                                  inherit = Data,
+                                  
+                                  public = list(
+                                    initialize = function(data_dir = NULL, data_name = "default_data") {
+                                      super$initialize(data_dir, data_name)
+                                      private$cleaner(data_name)
+                                    },
+                                    
+                                    summary_for_each_athlete = function(data_name = "default_data", store_into = NULL) {
+                                      self$data[[data_name]]$FullName <- paste(self$data[[data_name]]$FirstName, self$data[[data_name]]$LastName, sep="_")
+                                      grouped_data <- split(self$data[[data_name]], self$data[[data_name]]$FullName)
+                                      apparatus_ls <- unique(self$data[[data_name]]$Apparatus)
+                                      
+                                      # 初始化summary_data为一个空的数据框
+                                      summary_data <- data.frame(matrix(ncol = length(colnames(self$data[[data_name]])) + length(apparatus_ls) - 1))
+                                      colnames(summary_data) <- c(colnames(self$data[[data_name]])[-which(colnames(self$data[[data_name]]) == "Apparatus")], apparatus_ls)
+                                      
+                                      # 使用一个列表来存储每个运动员的individual_summary_data
+                                      summary_list <- list()
+                                      
+                                      for(name in names(grouped_data)) {
+                                        group <- grouped_data[[name]]
+                                        individual_grouped_data <- split(group, group$Apparatus)
+                                        individual_summary_data <- group[1, ]
+                                        individual_summary_data$Apparatus <- NULL
+                                        for(apparatus in apparatus_ls) {
+                                          individual_summary_data[[apparatus]] <- NA
                                         }
-                                      )
+                  
+                                        for(apparatus in names(individual_grouped_data)) {
+                                          sub_group <- individual_grouped_data[[apparatus]]
+                                          average_score <- mean(sub_group$Score, na.rm = TRUE)
+                                          individual_summary_data[[apparatus]] <- average_score
+                                        }
+                                        
+                                        # 将individual_summary_data添加到summary_list中
+                                        summary_list[[name]] <- individual_summary_data
+                                      }
+                                      
+                                      # 使用do.call(rbind, summary_list)来合并所有数据
+                                      summary_data <- do.call(rbind, summary_list)
+                                      
+                                      if(!is.null(store_into)) {
+                                        self$data[[store_into]] <- summary_data
+                                      } else {
+                                        return(summary_data)
+                                      }
+                                    }
+                                  ),
+                                  
+                                  private = list(
+                                    cleaner = function(data_name = "default_data", merge_VT = TRUE, clean_NaN_in_Score = TRUE) {
+                                      super$cleaner(data_name, merge_VT, clean_NaN_in_Score)
+                                      
+                                      data <- self$data[[data_name]]
+                                      
+                                      if("Apparatus" %in% colnames(data)) {
+                                        levels(data$Apparatus) <- c("VT1", "VT2", "HB", "VT_1", "VT_2")
+                                        if(merge_VT) {
+                                          data$Apparatus[data$Apparatus == "VT1" | data$Apparatus == "VT2"| data$Apparatus == "VT_2"| data$Apparatus == "VT_1"] <- "VT"
+                                          data$Apparatus[data$Apparatus == "hb"] <- "HB"
+                                        }
+                                      }
+                                      
+                                      if(clean_NaN_in_Score && "Score" %in% colnames(data)) {
+                                        data <- data[!is.na(data$Score), ]
+                                      }
+                                      
+                                      self$data[[data_name]] <- data
+                                    },
+                                    
+                                    group = function(col_name, data_or_data_name) {
+                                      if(is.character(data_or_data_name)) {
+                                        data <- self$data[[data_or_data_name]]
+                                      } else {
+                                        data <- data_or_data_name
+                                      }
+                                      
+                                      grouped_data <- split(data, data[col_name])
+                                      return(grouped_data)
+                                    }
+                                  )
 )
 
-# 主函数
+
 main <- function() {
   data <- Gymnastic_Data_Analyst$new(data_dir = "data/data_2022_2023.csv", data_name = "gymnasts")
   data$cleaner(data_name = "gymnasts")
+  print(names(data$data_copier_fetcher(data_or_data_name="gymnasts")$Apparatus))
+  print("good")
   ls <- data$split_by_attribute(data_name = "gymnasts", attribute = "Country")
   for (i in 1:6) {
     cat(names(ls)[i], "\n")
     print(ls[[i]])
     cat("\n")
   }
+  
+  # 生成 summary_data
+  data$summary_for_each_athlete(data_name="gymnasts", store_into="summary_data")
+  
+  # 将数据写入CSV文件
+  summary_data <- data$data_copier_fetcher(data_or_data_name="summary_data")
+  write.csv(summary_data, file = "summary_data_r.csv", row.names = FALSE)
+  
+  # 输出已写入文件的消息
+  cat("Summary data has been written to summary_data.csv\n")
 }
 
 main()
