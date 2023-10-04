@@ -50,6 +50,29 @@ class Data:
         
         return data
     
+    def _data_saver(self,
+                        data_name: str,
+                        data_dir: str,
+                        ):
+        '''
+        Save the data to the directory.
+
+        Input:
+            data_name: str, the name of the data to save.
+            data_dir: str, the directory of the data to save.
+
+        Output:
+            None
+        '''
+        # Check if the data_name exists
+        self._check_data_name(data_name)
+        # Check if the data directory (without the file name) exists
+        if not os.path.exists(os.path.dirname(data_dir)):
+            raise ValueError("Directory does not exist")
+        # Save the data
+        self.data[data_name].to_csv(data_dir, index=False)
+            
+        
     def _data_copier_fetcher(self,
                         data_or_data_name: pd.DataFrame or str,
                         deep_copy: bool = False,
@@ -341,6 +364,15 @@ class Gymnastic_Data_Analyst(Data):
 
     # summary each athlete's performance on each apparatus
     def summary_for_each_athlete(self, data_name: str = "default_data", store_into: str = None):
+        '''
+        Summary each athlete's performance on each apparatus.
+
+        Input:
+            data_name: string, the name of the data to summary. Default is None, which means the data is the default data in the class.
+
+        Output:
+            summary_data: pd.DataFrame, the summary data
+        '''
         # first group the data by gymnast's FirstName and LastName
         grouped_data = self._group(col_name=["FirstName", "LastName"], data_or_data_name=data_name, store_into=None)
         # Get all the apparatus
@@ -397,6 +429,6 @@ if __name__ == "__main__":
             break
         i += 1
 
-
     data.summary_for_each_athlete(data_name="gymnasts", store_into="summary_data")
     print(data._data_copier_fetcher(data_or_data_name="summary_data"))
+    data._data_saver(data_name="summary_data", data_dir="data/summary_data.csv")
