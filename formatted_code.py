@@ -272,6 +272,7 @@ class Data:
         ls = []
         for key, value in splitted_data:
             ls.append((key, value))
+        return ls
 
 class Gymnastic_Data_Analyst(Data):
     # Constructor
@@ -281,7 +282,7 @@ class Gymnastic_Data_Analyst(Data):
                  ):
         super().__init__(data_dir, data_name)
         # Clean the data
-        self._cleaner()
+        self._cleaner(data_name)
 
     # Method: data cleaning
     def _cleaner(self, 
@@ -336,27 +337,19 @@ class Gymnastic_Data_Analyst(Data):
     #     for key in keys:
     #         self._add_or_replace_data(grouped_data.get_group(key), key + "_" + data_name)
 
+    def _
+
 
 
 if __name__ == "__main__":
-    data = Gymnastic_Data_Analyst(data_dir="data/data_2022_2023.csv")
-    data._cleaner()
-    # data._add_or_replace_data(pd.DataFrame({"a":[1,2,3]}), "test")
-    pd = data._group(col_name=["Country", "Apparatus"], store_into="grouped_data")
-    
-    round = 0
-    for i, (group_name, group_data) in enumerate(pd):
-        print(f"Level {i}: {group_name}")
-        print(group_data)
-        if round > 10:
+    data = Gymnastic_Data_Analyst(data_dir="data/data_2022_2023.csv", data_name="gymnasts")
+    data._cleaner(data_name="gymnasts")
+    ls = data.split_by_attribute(data_name="gymnasts", attribute="Country")
+    i = 0
+    for key, Value in ls:
+        print(key)
+        print(Value)
+        print("\n")
+        if i == 5:
             break
-        round += 1
-
-    # iterate over each keyword and print the corresponding subset of the DataFrame
-    round = 0
-    for keyword in pd.groups.keys():
-        print(f"Keyword: {keyword}")
-        print(pd.get_group(keyword))
-        if round > 10:
-            break
-        round += 1
+        i += 1
