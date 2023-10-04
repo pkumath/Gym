@@ -127,6 +127,8 @@ class Data:
         # Fetch the data
         data = self._data_copier_fetcher(data_or_data_name, deep_copy=True)
 
+        if isinstance(col_name, str):
+            col_name = [col_name]
         for col in col_name:
             if col not in data.columns:
                 raise ValueError(f"Column name:{col} does not exist")
@@ -337,7 +339,48 @@ class Gymnastic_Data_Analyst(Data):
     #     for key in keys:
     #         self._add_or_replace_data(grouped_data.get_group(key), key + "_" + data_name)
 
-    def _
+    # summary each athlete's performance on each apparatus
+    def summary_for_each_athlete(self, data_name: str = "default_data", store_into: str = None):
+        # first group the data by gymnast's FirstName and LastName
+        grouped_data = self._group(col_name=["FirstName", "LastName"], data_or_data_name=data_name, store_into=None)
+        # Get all the apparatus
+        apparatus_ls = self.data[data_name]["Apparatus"].unique()
+        # Create an empty DataFrame with the same columns as the original data
+        summary_data = pd.DataFrame(columns=self.data[data_name].columns)
+        # Delete the "Apparatus" column
+        del summary_data["Apparatus"]
+        # Add columns to the individual_summary_data given by the apparatus_ls
+        for apparatus in apparatus_ls:
+            summary_data[apparatus] = np.nan
+        # Iterate over each group, and calculate the average score for each apparatus
+        idx = 0
+        for key, group in grouped_data:
+            individual_grouped_data = self._group(col_name="Apparatus", data_or_data_name=group, store_into=None)
+            # Create a new DataFrame to store the summary data for this individual
+            individual_summary_data = pd.DataFrame(columns=group.columns)
+            # Copy the first row of the group to the individual_summary_data
+            individual_summary_data.loc[idx] = group.iloc[0]
+            # Delete the "Apparatus" column
+            del individual_summary_data["Apparatus"]
+            # Add columns to the individual_summary_data given by the apparatus_ls
+            for apparatus in apparatus_ls:
+                individual_summary_data[apparatus] = np.nan
+            # Iterate over each apparatus within this individual group, and calculate the average score for each apparatus
+            for apparatus, sub_group in individual_grouped_data:
+                # Calculate the average score
+                average_score = sub_group["Score"].mean()
+                # Add the average score to corresponding apparatus in the individual_summary_data
+                individual_summary_data.loc[idx, apparatus] = average_score
+            # Append the individual_summary_data to the summary_data
+            summary_data = summary_data.append(individual_summary_data)
+            idx += 1
+        
+        # Store the summary_data
+        if store_into is not None:
+            self._add_or_replace_data(summary_data, store_into)
+        else:
+            return summary_data
+
 
 
 
@@ -353,3 +396,7 @@ if __name__ == "__main__":
         if i == 5:
             break
         i += 1
+
+
+    data.summary_for_each_athlete(data_name="gymnasts", store_into="summary_data")
+    print(data._data_copier_fetcher(data_or_data_name="summary_data"))
