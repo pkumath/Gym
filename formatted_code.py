@@ -8,18 +8,28 @@ class Data:
     def __init__(self, 
                  data_dir: str = None,
                  data_name: str = "default_data", 
+                 data: pd.DataFrame = None,
                  ):
-        # Check if the data directory exists
-        if os.path.exists(data_dir):
-            self.data_dir = data_dir
-        else:
-            raise ValueError("Directory does not exist")
-        
-        # Read the data
-        data = pd.read_csv(self.data_dir)
+        if data_dir is not None:
+            # Load the data
+            data = self._data_loader(data_dir)
         # Construct a new dictionary to store the data, where the key is the data_name, and the value is the data
-        self.data = {data_name: data}
+        self.data = {}
+        self._add_or_replace_data(data, data_name)
 
+    def _check_data_name(self, data_name: str):
+        '''
+        Check if the data_name exists in the class.
+
+        Input:
+            data_name: str, the name of the data to check.
+
+        Output:
+            None
+        '''
+        if data_name not in self.data.keys():
+            raise ValueError("Data name does not exist")
+        
     def _data_loader(self,
                         data_dir: str,
                         ):
@@ -40,7 +50,7 @@ class Data:
         
         return data
     
-    def _data_fetcher(self,
+    def _data_copier_fetcher(self,
                         data_or_data_name: pd.DataFrame or str,
                         deep_copy: bool = False,
                         ):
@@ -49,6 +59,7 @@ class Data:
 
         Input:
             data_or_data_name: pd.DataFrame or str, the data to fetch. If it is a string, then it is the name of the data to fetch. If it is a pd.DataFrame, then it is the data to fetch.
+            
             deep_copy: bool, whether to deep copy the data. Default is False.
 
         Output:
@@ -105,33 +116,126 @@ class Data:
         
         Input:
             data_name: pd.DataFrame or string, the data to split. Default is None, which means the data is the data in the class. If data is a string, then it is the name to the data.
+            
             col_name: string, the column name to split the data
+            
             stored_into: str, whether to store the splitted data in the class. Default is None.
 
         Output:
             data_grouped: pd.DataFrameGroupBy, the grouped data
         '''
         # Fetch the data
-        if isinstance(data_or_data_name, str):
-            if data_or_data_name not in self.data.keys():
-                raise ValueError("Data name does not exist")
-            else:
-                data = self.data[data_or_data_name]
-        else:
-            data = data_or_data_name
+        data = self._data_copier_fetcher(data_or_data_name, deep_copy=True)
 
         for col in col_name:
             if col not in data.columns:
                 raise ValueError(f"Column name:{col} does not exist")
+            
+        data.reset_index(inplace=True)
         data_grouped = data.groupby(col_name)
 
         # Store the data
         if store_into is not None:
             # deep copy the data
-            self.data[store_into] = data_grouped.copy(deep=True)
+            self.data[store_into] = data_grouped
         
         return data_grouped
 
+    def _append_items(self, 
+                data_name: str, 
+                data_to_append: pd.DataFrame,):
+        '''
+        Append the data to the existing data.
+        
+        Input:
+            data_name: string, the name of the data to append. Default is None, which means the data is the default data in the class.
+            data_to_append: pd.DataFrame, the data to append.
+
+        Output:
+            None
+        '''
+        # Check if the data_name exists
+        if data_name not in self.data.keys():
+            raise ValueError("Data name does not exist")
+        # Append the data
+        self.data[data_name] = self.data[data_name].append(data_to_append)
+
+    def _drop_items(self,
+              data_name: str,
+              items_to_drop: pd.DataFrame or list or np.array,
+                ):
+        '''
+        Drop the data from the existing data.
+
+        Input:
+            data_name: string, the name of the data to drop. Default is None, which means the data is the default data in the class.
+            items_to_drop: pd.DataFrame or list or np.array, the data to drop. Note that if items_to_drop is a pd.DataFrame, then this dataframe should be a subset of the data in the class.
+
+        Output:
+            None
+        '''
+        # Check if the data_name exists
+        if data_name not in self.data.keys():
+            raise ValueError("Data name does not exist")
+        # Check the type of items_to_drop
+        if isinstance(items_to_drop, pd.DataFrame):
+            drop_idx = self.data[data_name].isin(items_to_drop.to_dict('list')).all(axis=1)
+            self.data[data_name] = self.data[data_name].drop(drop_idx)
+        elif isinstance(items_to_drop, list) or isinstance(items_to_drop, np.array):
+            self.data[data_name] = self.data[data_name].drop(items_to_drop)
+        else:
+            raise ValueError("items_to_drop's type is not supported")
+        
+    def _replace_items(self,
+                    data_name: str,
+                    items_to_replace: pd.DataFrame or np.array or list,
+                    items_to_replace_with: pd.DataFrame,
+                    ):
+            '''
+            Replace the data in the existing data.
+    
+            Input:
+                data_name: string, the name of the data to replace. Default is None, which means the data is the default data in the class.
+                items_to_replace: pd.DataFrame, the data to replace.
+                items_to_replace_with: pd.DataFrame, the data to replace with.
+    
+            Output:
+                None
+            '''
+            # Check if the data_name exists
+            if data_name not in self.data.keys():
+                raise ValueError("Data name does not exist")
+            # Check the type of items_to_replace
+            if isinstance(items_to_replace, pd.DataFrame):
+                replace_idx = self.data[data_name].isin(items_to_replace.to_dict('list')).all(axis=1)
+                self.data[data_name].loc[replace_idx] = items_to_replace_with
+            elif isinstance(items_to_replace, list) or isinstance(items_to_replace, np.array):
+                self.data[data_name].loc[items_to_replace] = items_to_replace_with
+            else:
+                raise ValueError("items_to_replace's type is not supported")
+        
+    def _filter(self,
+                data_name: str,
+                filter_func: callable,
+                *args,
+                **kwargs,
+                ):
+        '''
+        Filter the data in the existing data. Output the filtered data.
+        
+        Input:
+            data_name: string, the name of the data to filter. Default is None, which means the data is the default data in the class.
+            filter_func: callable, the function to filter the data. The input of the function is a pd.DataFrame, and the output of the function is a pd.DataFrame.
+
+        Output:
+            filtered_data: pd.DataFrame, the filtered data
+        '''
+        # Check if the data_name exists
+        self._check_data_name(data_name)
+
+        # Filter the data
+        return self.data[data_name].loc[filter_func(self.data[data_name], *args, **kwargs)]
+    
 
     # Method: data cleaning
     def _cleaner(self, 
@@ -139,6 +243,51 @@ class Data:
                  merge_VT: bool = True, 
                  clean_NaN_in_Score: bool = True,
                  ):
+        '''
+        Clean the data.
+        '''
+        pass
+
+    def split_by_attribute(self, 
+                        data_name: str,
+                        attribute: str,
+                        ):
+        '''
+        Split the data by the column name. The splitted data is stored as a list, where each element is tuple of (group_name, group_data).
+
+        Input:
+            data_name: string, the name of the data to split. Default is None, which means the data is the default data in the class.
+            attribute: string, the column name to split the data
+
+        Output:
+            splitted_data: list, the splitted data
+        '''
+        # Check if the data_name exists
+        self._check_data_name(data_name)
+        # Check if the attribute exists
+        if attribute not in self.data[data_name].columns:
+            raise ValueError("Attribute does not exist")
+        # Split the data
+        splitted_data = self.data[data_name].groupby(attribute)
+        ls = []
+        for key, value in splitted_data:
+            ls.append((key, value))
+
+class Gymnastic_Data_Analyst(Data):
+    # Constructor
+    def __init__(self, 
+                 data_dir: str = None,
+                 data_name: str = "default_data", 
+                 ):
+        super().__init__(data_dir, data_name)
+        # Clean the data
+        self._cleaner()
+
+    # Method: data cleaning
+    def _cleaner(self, 
+                 data_name: str = "default_data", 
+                 merge_VT: bool = True, 
+                 clean_NaN_in_Score: bool = True):
         '''
         Clean the data, drop the data with NaN in column "Score", and merge the VT1 and VT2 into VT.
         
@@ -150,17 +299,18 @@ class Data:
         Output:
             None
         '''
+        super()._cleaner(data_name, merge_VT, clean_NaN_in_Score)
+        
         # Check if the data_name exists
-        if data_name not in self.data.keys():
-            raise ValueError("Data name does not exist")
+        self._check_data_name(data_name)
         # Get the data to clean, this should be a pointer to the data in the class
         data = self.data[data_name]
         
         # Replace some wrong items in the column "Apparatus"
         if "Apparatus" in data.columns:
-            data["Apparatus"].replace({"VT_1": "VT1", "VT_2": "VT2", "hb":"HB"})
+            data["Apparatus"].replace({"VT_1": "VT1", "VT_2": "VT2", "hb":"HB"}, inplace=True)
             if merge_VT:
-                data["Apparatus"].replace({"VT1": "VT", "VT2": "VT"})
+                data["Apparatus"].replace({"VT1": "VT", "VT2": "VT"}, inplace=True)
         
         # Drop the data with NaN in column "Score"
         if clean_NaN_in_Score and "Score" in data.columns:
@@ -169,8 +319,44 @@ class Data:
         # Update the data in the class
         self.data[data_name] = data
 
+    # def split_by_args(self, 
+    #                     data_name: str,):
+    #     '''
+    #     Split the data by gymnasts' gender and store the splitted data in the class with a prefix name data_name and "women" + data_name.
+
+    #     Input:
+    #         data_name: string, the name of the data to split. Default is None, which means the data is the default data in the class.
+
+    #     Output:
+    #         None
+    #     '''
+    #     grouped_data = self._group(col_name="Gender", data_or_data_name=data_name, store_into=None)
+    #     # create a dictionary of DataFrames, with each DataFrame corresponding to a group
+    #     keys = grouped_data.groups.keys()
+    #     for key in keys:
+    #         self._add_or_replace_data(grouped_data.get_group(key), key + "_" + data_name)
+
+
+
 if __name__ == "__main__":
-    data = Data(data_dir="data/data_2022_2023.csv")
+    data = Gymnastic_Data_Analyst(data_dir="data/data_2022_2023.csv")
     data._cleaner()
-    print(data.data_with_NaN)
-    print(data.data)
+    # data._add_or_replace_data(pd.DataFrame({"a":[1,2,3]}), "test")
+    pd = data._group(col_name=["Country", "Apparatus"], store_into="grouped_data")
+    
+    round = 0
+    for i, (group_name, group_data) in enumerate(pd):
+        print(f"Level {i}: {group_name}")
+        print(group_data)
+        if round > 10:
+            break
+        round += 1
+
+    # iterate over each keyword and print the corresponding subset of the DataFrame
+    round = 0
+    for keyword in pd.groups.keys():
+        print(f"Keyword: {keyword}")
+        print(pd.get_group(keyword))
+        if round > 10:
+            break
+        round += 1
