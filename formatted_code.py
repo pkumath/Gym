@@ -589,7 +589,8 @@ class Gymnastic_Data_Analyst(Data):
         # check the gender
         gender = data["Gender"].unique()[0]
         # Get all the apparatus for this gender
-        apparatus = self.
+        if gender == "w":
+            apparatus 
         
 
 
