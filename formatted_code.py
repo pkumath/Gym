@@ -307,8 +307,65 @@ class Gymnastic_Data_Analyst(Data):
                  data_name: str = "default_data", 
                  ):
         super().__init__(data_dir, data_name)
+
         # Clean the data
         self._cleaner(data_name)
+        # Summary each athlete's performance on each apparatus
+        self._prepare_data(data_name)
+
+
+    def _prepare_data(self,
+                        data_name: str = "default_data",
+                        ):
+        '''
+        Prepare the data for the analysis.
+
+        Input:
+            data_name: string, the name of the data to prepare. Default is None, which means the data is the default data in the class.
+
+        Output:
+            None
+        '''
+        # Check if the data_name exists
+        self._check_data_name(data_name)
+        
+        # Split the data into two genders
+        ls = self.split_by_attribute(data_name=data_name, attribute="Gender")
+        for key, value in ls:
+            if key == 'm':
+                self._add_or_replace_data(value, "men_"+data_name)
+            else:
+                self._add_or_replace_data(value, "women_"+data_name)
+        
+        # Get the apparatus list
+        self.men_apparatus_ls = self._get_apparatus_ls(data_name="men_"+data_name)
+        self.women_apparatus_ls = self._get_apparatus_ls(data_name="women_"+data_name)
+
+        # Summary each athlete's performance on each apparatus
+        self.summary_for_each_athlete("men_"+data_name, store_into="summary_men_"+data_name)
+        self.summary_for_each_athlete("women_"+data_name, store_into="summary_women_"+data_name)
+
+
+    def _get_apparatus_ls(self, 
+                          data_name: str = "default_data",
+                          ):
+        '''
+        Get all the apparatus in the data.
+
+        Input:
+            data_name: string, the name of the data to get the apparatus. Default is None, which means the data is the default data in the class.
+
+        Output:
+            apparatus_ls: list, the list of all the apparatus
+        '''
+        # Check if the data_name exists
+        self._check_data_name(data_name)
+        # Get the data to get the apparatus, this should be a pointer to the data in the class
+        data = self.data[data_name]
+        # Get all the apparatus
+        apparatus_ls = data["Apparatus"].unique()
+        return apparatus_ls
+    
 
     # Method: data cleaning
     def _cleaner(self, 
@@ -531,8 +588,8 @@ class Gymnastic_Data_Analyst(Data):
 
         # check the gender
         gender = data["Gender"].unique()[0]
-        
-        self.
+        # Get all the apparatus for this gender
+        apparatus = self.
         
 
 
