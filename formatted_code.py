@@ -442,17 +442,23 @@ class Gymnastic_Data_Analyst(Data):
         Output:
             summary_data: pd.DataFrame, the summary data
         '''
+        # Check if the data_name exists
+        self._check_data_name(data_name)
+        # Get the data to summary, this should be a pointer to the data in the class
+        data = self.data[data_name].copy(deep=True)
+
         # first group the data by gymnast's FirstName and LastName
         grouped_data = self._group(col_name=["FirstName", "LastName"], data_or_data_name=data_name, store_into=None)
         # Get all the apparatus
         apparatus_ls = self.data[data_name]["Apparatus"].unique()
-        # Create an empty DataFrame with the same columns as the original data
-        summary_data = pd.DataFrame(columns=self.data[data_name].columns)
+        # Create an empty DataFrame with the same columns as the original data, and the same number of rows as the number of groups in the grouped_data(pd.DataFrameGroupBy)
+        summary_data = pd.DataFrame(columns=self.data[data_name].columns, index=range(len(grouped_data)))
         # Delete the "Apparatus" column
         del summary_data["Apparatus"]
         # Add columns to the individual_summary_data given by the apparatus_ls
         for apparatus in apparatus_ls:
-            summary_data[apparatus] = np.nan
+            summary_data[apparatus+"_score"] = np.nan
+            summary_data[apparatus+"_num_of_samples"] = 0
         # Iterate over each group, and calculate the average score for each apparatus
         idx = 0
         for key, group in grouped_data:
@@ -462,11 +468,11 @@ class Gymnastic_Data_Analyst(Data):
             # Copy the first row of the group to the individual_summary_data
             individual_summary_data.loc[idx] = group.iloc[0]
             # Delete the "Apparatus" column
-            del individual_summary_data["Apparatus"]
+            del individual_summary_data["Apparatus"], individual_summary_data["index"]
             # Add columns to the individual_summary_data given by the apparatus_ls
             for apparatus in apparatus_ls:
                 individual_summary_data[apparatus+"_score"] = np.nan
-                individual_summary_data[apparatus+"_num_of_samples"] = np.nan
+                individual_summary_data[apparatus+"_num_of_samples"] = 0
             # Iterate over each apparatus within this individual group, and calculate the average score for each apparatus
             for apparatus, sub_group in individual_grouped_data:
                 # Calculate the average score
@@ -477,10 +483,15 @@ class Gymnastic_Data_Analyst(Data):
                 individual_summary_data.loc[idx, apparatus+"_num_of_samples"] = num_of_samples
             # update the "Score" column in the individual_summary_data
             individual_summary_data["Score"] = group["Score"].mean()
-            # Append the individual_summary_data to the summary_data
-            summary_data = summary_data.append(individual_summary_data)
+            # Append the individual_summary_data to the summary_data at the idx-th row
+            summary_data.iloc[idx] = individual_summary_data.iloc[0]
+            # summary_data = summary_data.append(individual_summary_data)
             idx += 1
         
+        for apparatus in apparatus_ls:
+            summary_data[apparatus+"_score"] = pd.to_numeric(summary_data[apparatus+"_score"])
+            summary_data[apparatus+"_num_of_samples"] = pd.to_numeric(summary_data[apparatus+"_num_of_samples"])
+        summary_data["Score"]
         # Store the summary_data
         if store_into is not None:
             self._add_or_replace_data(summary_data, store_into)
@@ -623,4 +634,5 @@ class Gymnastic_Data_Analyst(Data):
 
 if __name__ == "__main__":
     data = Gymnastic_Data_Analyst(data_dir="data/data_2022_2023.csv", data_name="gymnasts")
-    data.summary_for_each_country_by_gender(data_name="summary_men_gymnasts", country_name="COL", k_top_for_apparatus=4, k_top_for_score=2)
+    summary_data = data.summary_for_each_country_by_gender(data_name="summary_men_gymnasts", country_name="COL", k_top_for_apparatus=4, k_top_for_score=2)
+    print(summary_data)

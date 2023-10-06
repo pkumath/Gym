@@ -1,15 +1,12 @@
 import pandas as pd
-from fuzzywuzzy import fuzz
-
+import numpy as np
 # create a sample DataFrame
 df = pd.DataFrame({
-    'name': ['John', 'Jane', 'Bob', 'Sara', 'Mike', 'John'],
-    'age': [25, 30, 35, 28, 32, 25],
-    'gender': ['M', 'F', 'M', 'F', 'M', 'M']
+    'name': ['Alice', 'Bob', 'Charlie', 'David', 'Eve'],
+    'score': np.array([90, np.nan, 95, 85, 92])
 })
 
-# get the mode of each column
-mode_df = df["name"].mode()[0]
+# select the top 3 rows based on the 'score' column
+top_k = df.nlargest(2, 'score')
 
-# print the mode DataFrame
-print(mode_df)
+print(top_k)
