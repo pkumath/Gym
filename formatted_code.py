@@ -619,8 +619,10 @@ class Gymnastic_Data_Analyst(Data):
         # Find the gymnasts in this country with the highest score on each apparatus
         for apparatus_name in apparatus:
             # Find the gymnast with the top k-highest score on this apparatus
-            summary_for_country[country_name][apparatus_name] = data.nlargest(k_top_for_apparatus, "Score")
+            data["apparatus_name"+"_score"] = pd.to_numeric(data[apparatus_name+"_score"])
+            summary_for_country[country_name][apparatus_name] = data.nlargest(k_top_for_apparatus, "apparatus_name"+"_score")
         # Find the gymnast with the top k-highest score
+        data["Score"] = pd.to_numeric(data["Score"])
         summary_for_country[country_name]["Score"] = data.nlargest(k_top_for_score, "Score")
         return summary_for_country
 
@@ -635,4 +637,6 @@ class Gymnastic_Data_Analyst(Data):
 if __name__ == "__main__":
     data = Gymnastic_Data_Analyst(data_dir="data/data_2022_2023.csv", data_name="gymnasts")
     summary_data = data.summary_for_each_country_by_gender(data_name="summary_men_gymnasts", country_name="COL", k_top_for_apparatus=4, k_top_for_score=2)
-    print(summary_data)
+    # Store the summary_data into a text file
+    with open("data//summary_data.txt", "w") as f:
+        f.write(str(summary_data))
