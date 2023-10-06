@@ -712,3 +712,46 @@ if __name__ == "__main__":
     # Store the summary_data into a text file
     with open("data/summary_data.txt", "w") as f:
         f.write(str(summary_data))
+
+    # Let's select 12 countries from "summary_men_gymnasts"
+    men_countries = ["CHN", "JPN", "RUS", "USA", "GBR", "GER", "UKR", "FRA", "BRA", "CAN", "KOR", "COL"]
+    # Let's select 12 countries from "summary_women_gymnasts",
+    women_countries = ["CHN", "JPN", "RUS", "USA", "GBR", "GER", "UKR", "FRA", "BRA", "CAN", "KOR", "COL"]
+
+    # Use data.summary_for_each_country_by_gender method to get the summary data for each country, and append the summary data to the summary_data
+    qual_men_12_team = {}
+    for men_country in men_countries:
+        # Get the summary data for each country by data.summary_for_each_country_by_gender method
+        summary_data_for_country = data.summary_for_each_country_by_gender(data_name="summary_men_gymnasts", country_name=men_country, k_top_for_apparatus=4, k_top_for_score=2)
+        # Append the summary data to the summary_data
+        qual_men_12_team.update(summary_data_for_country)
+    
+    # For women gymnasts, do the same
+    qual_women_12_team = {}
+    for women_country in women_countries:
+        # Get the summary data for each country by data.summary_for_each_country_by_gender method
+        summary_data_for_country = data.summary_for_each_country_by_gender(data_name="summary_women_gymnasts", country_name=women_country, k_top_for_apparatus=4, k_top_for_score=2)
+        # Append the summary data to the summary_data
+        qual_men_12_team.update(summary_data_for_country)
+
+    # For each country, first select the top
+
+    # Let's select 12 countries that are different from the previous 12 countries
+    men_countries_12 = ["ITA", "NED", "SUI", "BLR", "AUS", "ESP", "POR", "SWE", "MEX", "ARG", "CUB", "PUR"]
+    women_countries_12 = ["ITA", "NED", "SUI", "BLR", "AUS", "ESP", "POR", "SWE", "MEX", "ARG", "CUB", "PUR"]
+    qual_men_36_team = {}
+    for men_country in men_countries:
+        # Get the summary data for each country by data.summary_for_each_country_by_gender method
+        summary_data_for_country = data.summary_for_each_country_by_gender(data_name="summary_men_gymnasts", country_name=men_country, k_top_for_apparatus=4, k_top_for_score=3)
+        # Append the summary data to the summary_data
+        qual_men_12_team.update(summary_data_for_country)
+    
+    # For women gymnasts, do the same
+    qual_women_12_team = {}
+    for women_country in women_countries:
+        # Get the summary data for each country by data.summary_for_each_country_by_gender method
+        summary_data_for_country = data.summary_for_each_country_by_gender(data_name="summary_women_gymnasts", country_name=women_country, k_top_for_apparatus=4, k_top_for_score=3)
+        # Append the summary data to the summary_data
+        qual_men_12_team.update(summary_data_for_country)
+
+    
