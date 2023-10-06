@@ -314,6 +314,7 @@ class Gymnastic_Data_Analyst(Data):
         self._prepare_data(data_name)
 
 
+
     def _prepare_data(self,
                         data_name: str = "default_data",
                         ):
@@ -342,8 +343,8 @@ class Gymnastic_Data_Analyst(Data):
         self.women_apparatus_ls = self._get_apparatus_ls(data_name="women_"+data_name)
 
         # Summary each athlete's performance on each apparatus
-        self.summary_for_each_athlete("men_"+data_name, store_into="summary_men_"+data_name)
-        self.summary_for_each_athlete("women_"+data_name, store_into="summary_women_"+data_name)
+        self.summary_for_each_athlete_by_gender("men_"+data_name, store_into="summary_men_"+data_name)
+        self.summary_for_each_athlete_by_gender("women_"+data_name, store_into="summary_women_"+data_name)
 
 
     def _get_apparatus_ls(self, 
@@ -431,9 +432,9 @@ class Gymnastic_Data_Analyst(Data):
     #         self._add_or_replace_data(grouped_data.get_group(key), key + "_" + data_name)
 
     # summary each athlete's performance on each apparatus
-    def summary_for_each_athlete(self, data_name: str = "default_data", store_into: str = None):
+    def summary_for_each_athlete_by_gender(self, data_name: str = "default_data", store_into: str = None):
         '''
-        Summary each athlete's performance on each apparatus.
+        Summary each athlete's performance on each apparatus. And the Score column is the average score of all the available apparatus.
 
         Input:
             data_name: string, the name of the data to summary. Default is None, which means the data is the default data in the class.
@@ -464,13 +465,18 @@ class Gymnastic_Data_Analyst(Data):
             del individual_summary_data["Apparatus"]
             # Add columns to the individual_summary_data given by the apparatus_ls
             for apparatus in apparatus_ls:
-                individual_summary_data[apparatus] = np.nan
+                individual_summary_data[apparatus+"_score"] = np.nan
+                individual_summary_data[apparatus+"_num_of_samples"] = np.nan
             # Iterate over each apparatus within this individual group, and calculate the average score for each apparatus
             for apparatus, sub_group in individual_grouped_data:
                 # Calculate the average score
                 average_score = sub_group["Score"].mean()
+                num_of_samples = sub_group["Score"].count()
                 # Add the average score to corresponding apparatus in the individual_summary_data
-                individual_summary_data.loc[idx, apparatus] = average_score
+                individual_summary_data.loc[idx, apparatus+"_score"] = average_score
+                individual_summary_data.loc[idx, apparatus+"_num_of_samples"] = num_of_samples
+            # update the "Score" column in the individual_summary_data
+            individual_summary_data["Score"] = group["Score"].mean()
             # Append the individual_summary_data to the summary_data
             summary_data = summary_data.append(individual_summary_data)
             idx += 1
@@ -559,9 +565,12 @@ class Gymnastic_Data_Analyst(Data):
         else:
             return df
 
-    def summary_for_each_country(self, 
+    def summary_for_each_country_by_gender(self, 
                               data_name: str,
-                              country_name: str):
+                              country_name: str, 
+                              k_top_for_apparatus: int = 3,
+                              k_top_for_score: int = 1,
+                              ):
         '''
         Summary each country's performance on each apparatus.
 
@@ -590,7 +599,22 @@ class Gymnastic_Data_Analyst(Data):
         gender = data["Gender"].unique()[0]
         # Get all the apparatus for this gender
         if gender == "w":
-            apparatus 
+            apparatus = self.women_apparatus_ls
+        else:
+            apparatus = self.men_apparatus_ls
+        
+        # Create a dictionary to store the summary data
+        summary_for_country = {country_name: {"data": data}}
+        # Find the gymnasts in this country with the highest score on each apparatus
+        for apparatus_name in apparatus:
+            # Find the gymnast with the top k-highest score on this apparatus
+            summary_for_country[country_name][apparatus_name] = data.nlargest(k_top_for_apparatus, "Score")
+        # Find the gymnast with the top k-highest score
+        summary_for_country[country_name]["Score"] = data.nlargest(k_top_for_score, "Score")
+        return summary_for_country
+
+
+
         
 
 
@@ -599,14 +623,4 @@ class Gymnastic_Data_Analyst(Data):
 
 if __name__ == "__main__":
     data = Gymnastic_Data_Analyst(data_dir="data/data_2022_2023.csv", data_name="gymnasts")
-    ls = data.split_by_attribute(data_name="gymnasts", attribute="Gender")
-    for key, value in ls:
-        if key == 'm':
-            data._add_or_replace_data(value, key + "men_gymnasts")
-        else:
-            data._add_or_replace_data(value, key + "women_gymnasts")
-    data.summary_for_each_athlete(data_name="men_gymnasts", store_into="men_summary_data")
-    data.summary_for_each_athlete(data_name="women_gymnasts", store_into="women_summary_data")
-    # data._data_saver(data_name="summary_data", data_dir="data/summary_data.csv")
-
-    # Pick 
+    data.summary_for_each_country_by_gender(data_name="men_gymnasts", country_name="China")
