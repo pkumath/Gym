@@ -623,4 +623,4 @@ class Gymnastic_Data_Analyst(Data):
 
 if __name__ == "__main__":
     data = Gymnastic_Data_Analyst(data_dir="data/data_2022_2023.csv", data_name="gymnasts")
-    data.summary_for_each_country_by_gender(data_name="men_gymnasts", country_name="China")
+    data.summary_for_each_country_by_gender(data_name="men_gymnasts", country_name="China", k_top_for_apparatus=4, k_top_for_score=2)
