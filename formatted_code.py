@@ -648,6 +648,7 @@ class Gymnastic_Data_Analyst(Data):
                               country_name: str, 
                               k_top_for_apparatus: int = 3,
                               k_top_for_score: int = 1,
+                              max_num_of_gymnasts: int = None,
                               ):
         '''
         Summary each country's performance on each apparatus.
@@ -672,6 +673,9 @@ class Gymnastic_Data_Analyst(Data):
             raise ValueError(f"Country name {country_name} does not exist")
         # Filter the data by country_name
         data = self._filter(data_name, lambda x: x["Country"] == country_name)
+        if max_num_of_gymnasts is not None:
+            data = data.nlargest(max_num_of_gymnasts, "Score")
+        
 
         # check the gender
         gender = data["Gender"].unique()[0]
@@ -702,56 +706,119 @@ class Gymnastic_Data_Analyst(Data):
 
 
 if __name__ == "__main__":
-    Load_data =  True
+    Load_data = True
     if Load_data:
         data = Gymnastic_Data_Analyst(load_dir="data/formatted_data/")
     else:
-        data = Gymnastic_Data_Analyst(data_dir="data/data_2022_2023.csv", data_name="gymnasts")
+        data = Gymnastic_Data_Analyst(
+            data_dir="data/data_2022_2023.csv", data_name="gymnasts")
         data.save_all_data("data/formatted_data/")
-    summary_data = data.summary_for_each_country_by_gender(data_name="summary_men_gymnasts", country_name="COL", k_top_for_apparatus=4, k_top_for_score=2)
+    summary_data = data.summary_for_each_country_by_gender(
+        data_name="summary_men_gymnasts", country_name="COL", k_top_for_apparatus=4, k_top_for_score=2)
     # Store the summary_data into a text file
     with open("data/summary_data.txt", "w") as f:
         f.write(str(summary_data))
 
+    # Get a list of countries with the most number of gymnasts
+    num_of_gymnasts = {}
+    for country in data.data["gymnasts"]["Country"].unique():
+        num_of_gymnasts[country] = data.data["gymnasts"].loc[data.data["gymnasts"]
+            ["Country"] == country].shape[0]
+    sorted_num_of_gymnasts = sorted(
+        num_of_gymnasts.items(), key=lambda x: x[1], reverse=True)
+    # Select the top 12 countries
+    top_24_countries = [country for country,
+        num in sorted_num_of_gymnasts[:24]]
     # Let's select 12 countries from "summary_men_gymnasts"
-    men_countries = ["CHN", "JPN", "RSA", "USA", "GBR", "GER", "UKR", "FRA", "BRA", "CAN", "KOR", "COL"]
+    men_countries = top_24_countries[:12]
     # Let's select 12 countries from "summary_women_gymnasts",
-    women_countries = ["CHN", "JPN", "RSA", "USA", "GBR", "GER", "UKR", "FRA", "BRA", "CAN", "KOR", "COL"]
+    women_countries = top_24_countries[:12]
 
     # Use data.summary_for_each_country_by_gender method to get the summary data for each country, and append the summary data to the summary_data
     qual_men_12_team = {}
+    max_num_of_gymnasts = 5
     for men_country in men_countries:
         # Get the summary data for each country by data.summary_for_each_country_by_gender method
-        summary_data_for_country = data.summary_for_each_country_by_gender(data_name="summary_men_gymnasts", country_name=men_country, k_top_for_apparatus=4, k_top_for_score=2)
-        # Append the summary data to the summary_data
-        qual_men_12_team.update(summary_data_for_country)
-    
-    # For women gymnasts, do the same
-    qual_women_12_team = {}
-    for women_country in women_countries:
-        # Get the summary data for each country by data.summary_for_each_country_by_gender method
-        summary_data_for_country = data.summary_for_each_country_by_gender(data_name="summary_women_gymnasts", country_name=women_country, k_top_for_apparatus=4, k_top_for_score=2)
+        summary_data_for_country = data.summary_for_each_country_by_gender(
+            data_name="summary_men_gymnasts", country_name=men_country, k_top_for_apparatus=4, k_top_for_score=2, max_num_of_gymnasts=max_num_of_gymnasts)
+        # Create a random matrix of size (max_num_of_gymnasts, len(data.men_apparatus_ls)), where each column has four 1's and the rest are 0's
+        matrix = np.zeros((max_num_of_gymnasts, len(data.men_apparatus_ls)))
+        for i in range(len(data.men_apparatus_ls)):
+            ones_indices = np.random.choice(
+                max_num_of_gymnasts, size=4, replace=False)
+            matrix[ones_indices, i] = 1
+        # Add the matrix to the summary_data_for_country['data'] DataFrame and add columns according to the apparatus list
+        for j, apparatus in enumerate(data.men_apparatus_ls):
+            summary_data_for_country[men_country]['data'][apparatus+ \
+                "_qual_participation"] = matrix[:, j]
+        # append the matrix as an item in the dictionary
+        summary_data_for_country[men_country]['qual_participation'] = matrix
         # Append the summary data to the summary_data
         qual_men_12_team.update(summary_data_for_country)
 
-    # For each country, first select the top
+
+
+    # For women gymnasts, do the same
+    qual_women_12_team = {}
+    max_num_of_gymnasts = 5
+    for women_country in women_countries:
+        # Get the summary data for each country by data.summary_for_each_country_by_gender method
+        summary_data_for_country = data.summary_for_each_country_by_gender(
+            data_name="summary_women_gymnasts", country_name=women_country, k_top_for_apparatus=4, k_top_for_score=2, max_num_of_gymnasts=max_num_of_gymnasts)
+        # Create a random matrix of size (num_gymnasts, len(data.women_apparatus_ls)), where each row has four 1's and the rest are 0's
+        matrix = np.zeros((max_num_of_gymnasts, len(data.women_apparatus_ls)))
+        for i in range(len(data.women_apparatus_ls)):
+            ones_indices = np.random.choice(
+                len(data.women_apparatus_ls), size=4, replace=False)
+            matrix[ones_indices, i] = 1
+        # Add the matrix to the summary_data_for_country['data'] DataFrame and add columns according to the apparatus list
+        for j, apparatus in enumerate(data.women_apparatus_ls):
+            summary_data_for_country[women_country]['data'][apparatus+ \
+                "_qual_participation"] = matrix[:, j]
+        # append the matrix as an item in the dictionary
+        summary_data_for_country[women_country]['qual_participation'] = matrix
+        # Append the summary data to the summary_data
+        qual_women_12_team.update(summary_data_for_country)
+
+
 
     # Let's select 12 countries that are different from the previous 12 countries
-    men_countries_12 = ["ITA", "NED", "SUI", "BLR", "AUS", "ESP", "POR", "SWE", "MEX", "ARG", "CUB", "PUR"]
-    women_countries_12 = ["ITA", "NED", "SUI", "BLR", "AUS", "ESP", "POR", "SWE", "MEX", "ARG", "CUB", "PUR"]
+    men_countries_12 = top_24_countries[-12:]
+    women_countries_12 = top_24_countries[-12:]
     qual_men_36_team = {}
+    max_num_of_gymnasts = 3
     for men_country in men_countries:
         # Get the summary data for each country by data.summary_for_each_country_by_gender method
-        summary_data_for_country = data.summary_for_each_country_by_gender(data_name="summary_men_gymnasts", country_name=men_country, k_top_for_apparatus=4, k_top_for_score=3)
+        summary_data_for_country = data.summary_for_each_country_by_gender(
+            data_name="summary_men_gymnasts", country_name=men_country, k_top_for_apparatus=4, k_top_for_score=3, max_num_of_gymnasts=max_num_of_gymnasts)
+        # Create a random matrix of size (max_num_of_gymnasts, len(data.men_apparatus_ls))
+        matrix = np.random.randint(0, 2, (max_num_of_gymnasts, len(data.men_apparatus_ls)))
+        # Add the matrix to the summary_data_for_country['data'] DataFrame and add columns according to the apparatus list
+        for j, apparatus in enumerate(data.men_apparatus_ls):
+            summary_data_for_country[men_country]['data'][apparatus+ \
+                "_qual_participation"] = matrix[:, j]
+        summary_data_for_country[men_country]['qual_participation'] = matrix
         # Append the summary data to the summary_data
-        qual_men_12_team.update(summary_data_for_country)
-    
+        qual_men_36_team.update(summary_data_for_country)
+
+
+
     # For women gymnasts, do the same
-    qual_women_12_team = {}
+    qual_women_36_team = {}
+    max_num_of_gymnasts = 3
     for women_country in women_countries:
         # Get the summary data for each country by data.summary_for_each_country_by_gender method
-        summary_data_for_country = data.summary_for_each_country_by_gender(data_name="summary_women_gymnasts", country_name=women_country, k_top_for_apparatus=4, k_top_for_score=3)
+        summary_data_for_country = data.summary_for_each_country_by_gender(
+            data_name="summary_women_gymnasts", country_name=women_country, k_top_for_apparatus=4, k_top_for_score=3, max_num_of_gymnasts=max_num_of_gymnasts)
+        # Create a random matrix of size (max_num_of_gymnasts, len(data.men_apparatus_ls))
+        matrix = np.random.randint(0, 2, (max_num_of_gymnasts, len(data.women_apparatus_ls)))
+        # Add the matrix to the summary_data_for_country['data'] DataFrame and add columns according to the apparatus list
+        for j, apparatus in enumerate(data.women_apparatus_ls):
+            summary_data_for_country[women_country]['data'][apparatus+ \
+                "_qual_participation"] = matrix[:, j]
+        summary_data_for_country[women_country]['qual_participation'] = matrix
         # Append the summary data to the summary_data
-        qual_men_12_team.update(summary_data_for_country)
+        qual_women_36_team.update(summary_data_for_country)
+
 
     
