@@ -1,256 +1,58 @@
-{'COL': {'data':       LastName   FirstName Gender Country                      Date  \
-1        calvo         NaN      m     COL  29 Oct 2022 - 6 Nov 2022   
-43    martinez      andres      m     COL            24-28 Jun 2023   
-132    jimenez       dilan      m     COL            24-28 Jun 2023   
-250   sandoval      javier      m     COL  29 Oct 2022 - 6 Nov 2022   
-277   martinez        jose      m     COL            24-28 Jun 2023   
-286      calvo    jossimar      m     COL  29 Oct 2022 - 6 Nov 2022   
-320  bohorquez  kristopher      m     COL            24-28 Jun 2023   
-361   martinez      manuel      m     COL  29 Oct 2022 - 6 Nov 2022   
-519     vargas      sergio      m     COL            24-28 Jun 2023   
+{'COL': {'data':       LastName   FirstName Gender  ...   VT_score VT_num_of_samples apparatus_name_score
+1        calvo         NaN      m  ...  14.400000                 1            14.400000
+43    martinez      andres      m  ...  13.538667                 3            13.538667
+132    jimenez       dilan      m  ...  13.750000                 2            13.750000
+250   sandoval      javier      m  ...        NaN                 0                  NaN
+277   martinez        jose      m  ...  11.950000                 1            11.950000
+286      calvo    jossimar      m  ...  13.033000                 1            13.033000
+320  bohorquez  kristopher      m  ...        NaN                 0                  NaN
+361   martinez      manuel      m  ...  12.733000                 1            12.733000
+519     vargas      sergio      m  ...  12.550000                 1            12.550000
 
-                                           Competition    Round  \
-1    2022 51st FIG Artistic Gymnastics World Champi...  AAfinal   
-43           2023 Central American and Caribbean Games  AAfinal   
-132          2023 Central American and Caribbean Games  AAfinal   
-250  2022 51st FIG Artistic Gymnastics World Champi...     qual   
-277          2023 Central American and Caribbean Games     qual   
-286  2022 51st FIG Artistic Gymnastics World Champi...     qual   
-320          2023 Central American and Caribbean Games    final   
-361  2022 51st FIG Artistic Gymnastics World Champi...     qual   
-519          2023 Central American and Caribbean Games     qual   
+[9 rows x 26 columns], 'HB':      LastName FirstName Gender  ...   VT_score VT_num_of_samples apparatus_name_score
+1       calvo       NaN      m  ...  14.400000                 1            13.500000
+286     calvo  jossimar      m  ...  13.033000                 1            13.400000
+250  sandoval    javier      m  ...        NaN                 0            13.133000
+43   martinez    andres      m  ...  13.538667                 3            12.761714
+361  martinez    manuel      m  ...  12.733000                 1            12.433000
 
-                      Location  Rank  D_Score  ...  PH_num_of_samples  \
-1           Liverpool, England  19.0      5.6  ...                  1   
-43   San Salvador, El Salvador  13.0      5.2  ...                  7   
-132  San Salvador, El Salvador   1.0      5.6  ...                  2   
-250         Liverpool, England  49.0      5.1  ...                  1   
-277  San Salvador, El Salvador  26.0      4.4  ...                  2   
-286         Liverpool, England  74.0      5.6  ...                  1   
-320  San Salvador, El Salvador   1.0      5.6  ...                  0   
-361         Liverpool, England  78.0      4.5  ...                  1   
-519  San Salvador, El Salvador  28.0      4.5  ...                  1   
+[5 rows x 26 columns], 'PH':      LastName FirstName Gender  ...   VT_score VT_num_of_samples apparatus_name_score
+286     calvo  jossimar      m  ...  13.033000                 1            13.300000
+250  sandoval    javier      m  ...        NaN                 0            13.200000
+277  martinez      jose      m  ...  11.950000                 1            12.650000
+361  martinez    manuel      m  ...  12.733000                 1            12.100000
+43   martinez    andres      m  ...  13.538667                 3            11.795143
 
-      FX_score  FX_num_of_samples   PB_score  PB_num_of_samples  SR_score  \
-1    13.166000                  1  12.366000                  1   11.5660   
-43   12.342714                  7  12.850000                  3   12.1875   
-132  13.783333                  3  13.572625                  8   12.4330   
-250        NaN                  0  12.466000                  1       NaN   
-277  11.300000                  1  12.950000                  1   11.7500   
-286  12.933000                  1  15.066000                  2   12.0660   
-320        NaN                  0        NaN                  0   13.5000   
-361  12.833000                  1  12.966000                  1   11.5660   
-519  11.150000                  1  12.500000                  2       NaN   
+[5 rows x 26 columns], 'FX':      LastName FirstName Gender  ...   VT_score VT_num_of_samples apparatus_name_score
+132   jimenez     dilan      m  ...  13.750000                 2            13.783333
+1       calvo       NaN      m  ...  14.400000                 1            13.166000
+286     calvo  jossimar      m  ...  13.033000                 1            12.933000
+361  martinez    manuel      m  ...  12.733000                 1            12.833000
+43   martinez    andres      m  ...  13.538667                 3            12.342714
 
-     SR_num_of_samples   VT_score  VT_num_of_samples  apparatus_name_score  
-1                    1  14.400000                  1             14.400000  
-43                   4  13.538667                  3             13.538667  
-132                  5  13.750000                  2             13.750000  
-250                  0        NaN                  0                   NaN  
-277                  1  11.950000                  1             11.950000  
-286                  1  13.033000                  1             13.033000  
-320                  2        NaN                  0                   NaN  
-361                  1  12.733000                  1             12.733000  
-519                  0  12.550000                  1             12.550000  
+[5 rows x 26 columns], 'PB':      LastName FirstName Gender  ...   VT_score VT_num_of_samples apparatus_name_score
+286     calvo  jossimar      m  ...  13.033000                 1            15.066000
+132   jimenez     dilan      m  ...  13.750000                 2            13.572625
+361  martinez    manuel      m  ...  12.733000                 1            12.966000
+277  martinez      jose      m  ...  11.950000                 1            12.950000
+43   martinez    andres      m  ...  13.538667                 3            12.850000
 
-[9 rows x 26 columns], 'HB':      LastName FirstName Gender Country                      Date  \
-1       calvo       NaN      m     COL  29 Oct 2022 - 6 Nov 2022   
-286     calvo  jossimar      m     COL  29 Oct 2022 - 6 Nov 2022   
-250  sandoval    javier      m     COL  29 Oct 2022 - 6 Nov 2022   
-43   martinez    andres      m     COL            24-28 Jun 2023   
+[5 rows x 26 columns], 'SR':       LastName   FirstName Gender  ...   VT_score VT_num_of_samples apparatus_name_score
+320  bohorquez  kristopher      m  ...        NaN                 0              13.5000
+132    jimenez       dilan      m  ...  13.750000                 2              12.4330
+43    martinez      andres      m  ...  13.538667                 3              12.1875
+286      calvo    jossimar      m  ...  13.033000                 1              12.0660
+277   martinez        jose      m  ...  11.950000                 1              11.7500
 
-                                           Competition    Round  \
-1    2022 51st FIG Artistic Gymnastics World Champi...  AAfinal   
-286  2022 51st FIG Artistic Gymnastics World Champi...     qual   
-250  2022 51st FIG Artistic Gymnastics World Champi...     qual   
-43           2023 Central American and Caribbean Games  AAfinal   
+[5 rows x 26 columns], 'VT':      LastName FirstName Gender  ...   VT_score VT_num_of_samples apparatus_name_score
+1       calvo       NaN      m  ...  14.400000                 1            14.400000
+132   jimenez     dilan      m  ...  13.750000                 2            13.750000
+43   martinez    andres      m  ...  13.538667                 3            13.538667
+286     calvo  jossimar      m  ...  13.033000                 1            13.033000
+361  martinez    manuel      m  ...  12.733000                 1            12.733000
 
-                      Location  Rank  D_Score  ...  PH_num_of_samples  \
-1           Liverpool, England  19.0      5.6  ...                  1   
-286         Liverpool, England  74.0      5.6  ...                  1   
-250         Liverpool, England  49.0      5.1  ...                  1   
-43   San Salvador, El Salvador  13.0      5.2  ...                  7   
-
-      FX_score  FX_num_of_samples  PB_score  PB_num_of_samples  SR_score  \
-1    13.166000                  1    12.366                  1   11.5660   
-286  12.933000                  1    15.066                  2   12.0660   
-250        NaN                  0    12.466                  1       NaN   
-43   12.342714                  7    12.850                  3   12.1875   
-
-     SR_num_of_samples   VT_score  VT_num_of_samples  apparatus_name_score  
-1                    1  14.400000                  1             13.500000  
-286                  1  13.033000                  1             13.400000  
-250                  0        NaN                  0             13.133000  
-43                   4  13.538667                  3             12.761714  
-
-[4 rows x 26 columns], 'PH':      LastName FirstName Gender Country                      Date  \
-286     calvo  jossimar      m     COL  29 Oct 2022 - 6 Nov 2022   
-250  sandoval    javier      m     COL  29 Oct 2022 - 6 Nov 2022   
-277  martinez      jose      m     COL            24-28 Jun 2023   
-361  martinez    manuel      m     COL  29 Oct 2022 - 6 Nov 2022   
-
-                                           Competition Round  \
-286  2022 51st FIG Artistic Gymnastics World Champi...  qual   
-250  2022 51st FIG Artistic Gymnastics World Champi...  qual   
-277          2023 Central American and Caribbean Games  qual   
-361  2022 51st FIG Artistic Gymnastics World Champi...  qual   
-
-                      Location  Rank  D_Score  ...  PH_num_of_samples  \
-286         Liverpool, England  74.0      5.6  ...                  1   
-250         Liverpool, England  49.0      5.1  ...                  1   
-277  San Salvador, El Salvador  26.0      4.4  ...                  2   
-361         Liverpool, England  78.0      4.5  ...                  1   
-
-     FX_score  FX_num_of_samples  PB_score  PB_num_of_samples  SR_score  \
-286    12.933                  1    15.066                  2    12.066   
-250       NaN                  0    12.466                  1       NaN   
-277    11.300                  1    12.950                  1    11.750   
-361    12.833                  1    12.966                  1    11.566   
-
-     SR_num_of_samples  VT_score  VT_num_of_samples  apparatus_name_score  
-286                  1    13.033                  1                 13.30  
-250                  0       NaN                  0                 13.20  
-277                  1    11.950                  1                 12.65  
-361                  1    12.733                  1                 12.10  
-
-[4 rows x 26 columns], 'FX':      LastName FirstName Gender Country                      Date  \
-132   jimenez     dilan      m     COL            24-28 Jun 2023   
-1       calvo       NaN      m     COL  29 Oct 2022 - 6 Nov 2022   
-286     calvo  jossimar      m     COL  29 Oct 2022 - 6 Nov 2022   
-361  martinez    manuel      m     COL  29 Oct 2022 - 6 Nov 2022   
-
-                                           Competition    Round  \
-132          2023 Central American and Caribbean Games  AAfinal   
-1    2022 51st FIG Artistic Gymnastics World Champi...  AAfinal   
-286  2022 51st FIG Artistic Gymnastics World Champi...     qual   
-361  2022 51st FIG Artistic Gymnastics World Champi...     qual   
-
-                      Location  Rank  D_Score  ...  PH_num_of_samples  \
-132  San Salvador, El Salvador   1.0      5.6  ...                  2   
-1           Liverpool, England  19.0      5.6  ...                  1   
-286         Liverpool, England  74.0      5.6  ...                  1   
-361         Liverpool, England  78.0      4.5  ...                  1   
-
-      FX_score  FX_num_of_samples   PB_score  PB_num_of_samples  SR_score  \
-132  13.783333                  3  13.572625                  8    12.433   
-1    13.166000                  1  12.366000                  1    11.566   
-286  12.933000                  1  15.066000                  2    12.066   
-361  12.833000                  1  12.966000                  1    11.566   
-
-     SR_num_of_samples  VT_score  VT_num_of_samples  apparatus_name_score  
-132                  5    13.750                  2             13.783333  
-1                    1    14.400                  1             13.166000  
-286                  1    13.033                  1             12.933000  
-361                  1    12.733                  1             12.833000  
-
-[4 rows x 26 columns], 'PB':      LastName FirstName Gender Country                      Date  \
-286     calvo  jossimar      m     COL  29 Oct 2022 - 6 Nov 2022   
-132   jimenez     dilan      m     COL            24-28 Jun 2023   
-361  martinez    manuel      m     COL  29 Oct 2022 - 6 Nov 2022   
-277  martinez      jose      m     COL            24-28 Jun 2023   
-
-                                           Competition    Round  \
-286  2022 51st FIG Artistic Gymnastics World Champi...     qual   
-132          2023 Central American and Caribbean Games  AAfinal   
-361  2022 51st FIG Artistic Gymnastics World Champi...     qual   
-277          2023 Central American and Caribbean Games     qual   
-
-                      Location  Rank  D_Score  ...  PH_num_of_samples  \
-286         Liverpool, England  74.0      5.6  ...                  1   
-132  San Salvador, El Salvador   1.0      5.6  ...                  2   
-361         Liverpool, England  78.0      4.5  ...                  1   
-277  San Salvador, El Salvador  26.0      4.4  ...                  2   
-
-      FX_score  FX_num_of_samples   PB_score  PB_num_of_samples  SR_score  \
-286  12.933000                  1  15.066000                  2    12.066   
-132  13.783333                  3  13.572625                  8    12.433   
-361  12.833000                  1  12.966000                  1    11.566   
-277  11.300000                  1  12.950000                  1    11.750   
-
-     SR_num_of_samples  VT_score  VT_num_of_samples  apparatus_name_score  
-286                  1    13.033                  1             15.066000  
-132                  5    13.750                  2             13.572625  
-361                  1    12.733                  1             12.966000  
-277                  1    11.950                  1             12.950000  
-
-[4 rows x 26 columns], 'SR':       LastName   FirstName Gender Country                      Date  \
-320  bohorquez  kristopher      m     COL            24-28 Jun 2023   
-132    jimenez       dilan      m     COL            24-28 Jun 2023   
-43    martinez      andres      m     COL            24-28 Jun 2023   
-286      calvo    jossimar      m     COL  29 Oct 2022 - 6 Nov 2022   
-
-                                           Competition    Round  \
-320          2023 Central American and Caribbean Games    final   
-132          2023 Central American and Caribbean Games  AAfinal   
-43           2023 Central American and Caribbean Games  AAfinal   
-286  2022 51st FIG Artistic Gymnastics World Champi...     qual   
-
-                      Location  Rank  D_Score  ...  PH_num_of_samples  \
-320  San Salvador, El Salvador   1.0      5.6  ...                  0   
-132  San Salvador, El Salvador   1.0      5.6  ...                  2   
-43   San Salvador, El Salvador  13.0      5.2  ...                  7   
-286         Liverpool, England  74.0      5.6  ...                  1   
-
-      FX_score  FX_num_of_samples   PB_score  PB_num_of_samples  SR_score  \
-320        NaN                  0        NaN                  0   13.5000   
-132  13.783333                  3  13.572625                  8   12.4330   
-43   12.342714                  7  12.850000                  3   12.1875   
-286  12.933000                  1  15.066000                  2   12.0660   
-
-     SR_num_of_samples   VT_score  VT_num_of_samples  apparatus_name_score  
-320                  2        NaN                  0               13.5000  
-132                  5  13.750000                  2               12.4330  
-43                   4  13.538667                  3               12.1875  
-286                  1  13.033000                  1               12.0660  
-
-[4 rows x 26 columns], 'VT':      LastName FirstName Gender Country                      Date  \
-1       calvo       NaN      m     COL  29 Oct 2022 - 6 Nov 2022   
-132   jimenez     dilan      m     COL            24-28 Jun 2023   
-43   martinez    andres      m     COL            24-28 Jun 2023   
-286     calvo  jossimar      m     COL  29 Oct 2022 - 6 Nov 2022   
-
-                                           Competition    Round  \
-1    2022 51st FIG Artistic Gymnastics World Champi...  AAfinal   
-132          2023 Central American and Caribbean Games  AAfinal   
-43           2023 Central American and Caribbean Games  AAfinal   
-286  2022 51st FIG Artistic Gymnastics World Champi...     qual   
-
-                      Location  Rank  D_Score  ...  PH_num_of_samples  \
-1           Liverpool, England  19.0      5.6  ...                  1   
-132  San Salvador, El Salvador   1.0      5.6  ...                  2   
-43   San Salvador, El Salvador  13.0      5.2  ...                  7   
-286         Liverpool, England  74.0      5.6  ...                  1   
-
-      FX_score  FX_num_of_samples   PB_score  PB_num_of_samples  SR_score  \
-1    13.166000                  1  12.366000                  1   11.5660   
-132  13.783333                  3  13.572625                  8   12.4330   
-43   12.342714                  7  12.850000                  3   12.1875   
-286  12.933000                  1  15.066000                  2   12.0660   
-
-     SR_num_of_samples   VT_score  VT_num_of_samples  apparatus_name_score  
-1                    1  14.400000                  1             14.400000  
-132                  5  13.750000                  2             13.750000  
-43                   4  13.538667                  3             13.538667  
-286                  1  13.033000                  1             13.033000  
-
-[4 rows x 26 columns], 'Score':       LastName   FirstName Gender Country                      Date  \
-286      calvo    jossimar      m     COL  29 Oct 2022 - 6 Nov 2022   
-320  bohorquez  kristopher      m     COL            24-28 Jun 2023   
-
-                                           Competition  Round  \
-286  2022 51st FIG Artistic Gymnastics World Champi...   qual   
-320          2023 Central American and Caribbean Games  final   
-
-                      Location  Rank  D_Score  ...  PH_num_of_samples  \
-286         Liverpool, England  74.0      5.6  ...                  1   
-320  San Salvador, El Salvador   1.0      5.6  ...                  0   
-
-     FX_score  FX_num_of_samples  PB_score  PB_num_of_samples  SR_score  \
-286    12.933                  1    15.066                  2    12.066   
-320       NaN                  0       NaN                  0    13.500   
-
-     SR_num_of_samples  VT_score  VT_num_of_samples  apparatus_name_score  
-286                  1    13.033                  1                13.033  
-320                  2       NaN                  0                   NaN  
+[5 rows x 26 columns], 'Score':       LastName   FirstName Gender  ... VT_score VT_num_of_samples apparatus_name_score
+286      calvo    jossimar      m  ...   13.033                 1               13.033
+320  bohorquez  kristopher      m  ...      NaN                 0                  NaN
 
 [2 rows x 26 columns]}}
