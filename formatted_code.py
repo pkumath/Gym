@@ -669,7 +669,7 @@ class Gymnastic_Data_Analyst(Data):
         
         # Check if the country_name exists
         if country_name not in data["Country"].unique():
-            raise ValueError("Country name does not exist")
+            raise ValueError(f"Country name {country_name} does not exist")
         # Filter the data by country_name
         data = self._filter(data_name, lambda x: x["Country"] == country_name)
 
