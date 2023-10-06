@@ -1,5 +1,6 @@
 from formatted_code import Gymnastic_Data_Analyst
 import numpy as np
+import pandas as pd
 from collections import defaultdict
 
 
@@ -71,7 +72,7 @@ def data_prep(Load_data=True):
     for women_country in women_countries:
         # Get the summary data for each country by data.summary_for_each_country_by_gender method
         summary_data_for_country = data.summary_for_each_country_by_gender(
-            data_name="summary_women_gymnasts", country_name=women_country, k_top_for_apparatus=4, k_top_for_score=2, max_num_of_gymnasts=max_num_of_gymnasts)
+            data_name="summary_women_gymnasts", country_name=women_country, k_top_for_apparatus=5, k_top_for_score=2, max_num_of_gymnasts=max_num_of_gymnasts)
         # Create a random matrix of size (num_gymnasts, len(data.women_apparatus_ls)), where each row has four 1's and the rest are 0's
         matrix = np.zeros((max_num_of_gymnasts, len(data.women_apparatus_ls)))
 
@@ -96,8 +97,6 @@ def data_prep(Load_data=True):
         summary_data_for_country[women_country]['qual_participation'] = matrix
         # Append the summary data to the summary_data
         qual_women_12_team.update(summary_data_for_country)
-
-
 
 
     # Let's select 12 countries that are different from the previous 12 countries
@@ -223,7 +222,6 @@ def qual_result_12_country_all_around(qual_participation_matrix, qual_apparatus_
   
     # Get the indices of rows with all 1's
     indices = np.where(rows_with_ones)[0]
-    print(indices)
     # an individual_all_around_qual_score dict {gymnast_name: total_score}
     individual_all_around_qual_score = {idx:total_score[i] for i, idx in enumerate(indices)}
     
@@ -265,8 +263,6 @@ def all_around_result(teams, apparatus_ls):
 
         for idx, score in individual_all_around_qual_score.items():
             individual_all_around_result[(country_name, idx)] = score
-            if country_name == "JPN":
-                print(country_name, idx, score)
         
             
     ######## individual_all_around qual result  
@@ -298,7 +294,6 @@ def all_around_result(teams, apparatus_ls):
     return  team_all_around_sorted_countries,top_8_countries, individual_all_around_top_24_athletes, top_24_athletes
 
     
-
 
 def predict(apparatus, dict_of_qual_result):   
     sorted_athletes = sorted(dict_of_qual_result.items(), key=lambda x: x[1], reverse=True)
@@ -344,9 +339,6 @@ def each_apparatus_result(teams, apparatus_ls):
         qual_participation_matrix = team_12[country_name]['qual_participation']
         qual_apparatus_score_matrix = list()
         for j, apparatus in enumerate(apparatus_ls):
-            #print(apparatus)
-            #qual_apparatus_score = team_12[country_name][apparatus].keys() #[apparatus+ "_qual_participation"]
-            
             ###scores don't match!!!!!!!!!!!
             qual_apparatus_score = team_12[country_name][apparatus]["apparatus_name_score"] # top k score in this apparatus
             qual_apparatus_score_matrix.append(qual_apparatus_score)
@@ -373,14 +365,13 @@ def each_apparatus_result(teams, apparatus_ls):
     final_result_all_apparatus_dict = dict()                
     for apparatus in apparatus_ls:
         top_8_athletes, sorted_athletes, top_3_athletes, sorted_athletes_final = predict(apparatus, apparatus_ls_dict[apparatus]) #dict_of_qual_result = {(country, name): score} 
-        #print(apparatus, top_8_athletes, sorted_athletes
         final_result_all_apparatus_dict[apparatus] = [top_8_athletes, sorted_athletes, top_3_athletes, sorted_athletes_final]
     
     return final_result_all_apparatus_dict
 
 
 
-def team_all_around_result(team, apparatus_ls):
+def team_all_around_result(team, apparatus_ls, top_8_countries):
     team_12_all_around_final_result = dict()
     ######### predict final round result for team all around
     team12 = team
@@ -403,7 +394,6 @@ def indiv_all_around_result(teams, apparatus_ls, individual_all_around_top_24_at
     for (country, name), score in individual_all_around_top_24_athletes:
         team = team12 if country in team12 else team36
         indiv_qual_score = score #team[country]["individual_all_around_qual_score"][name]
-        #noise = np.random.normal(0, 1, indiv_qual_score.shape)
         noise = np.random.normal(0, 1)
         result = np.sum(indiv_qual_score)+noise
         individual_all_around_final_result[(country, name)] = result
@@ -417,9 +407,10 @@ def indiv_all_around_result(teams, apparatus_ls, individual_all_around_top_24_at
 
 def qual_and_final_result_display(teams, indiv_all_around_top3,individual_all_around_final_sorted,\
     final_result_all_apparatus_dict, team_all_around_top3, team_all_around_sorted_countries):
-    print("Team all around final round result:")
+    #print("Team all around final round result:")
     for rank, (country,score) in enumerate(team_all_around_sorted_countries):
         print(rank+1, country, score)
+
     team12 = teams[0]
     team36 = teams[1]
     
@@ -442,10 +433,11 @@ def qual_and_final_result_display(teams, indiv_all_around_top3,individual_all_ar
             app = list(team12[country].keys())[0]
             gymnast_real_index = list(team12[country][app].index)
             print(rank+1, country, gymnast_real_index[name], score)
+            
+    
         
         
-def medal_summarize_and_display(teams, indiv_all_around_top3,\
-    final_result_all_apparatus_dict, team_all_around_top3):
+def medal_summarize_and_display(teams, indiv_all_around_top3,final_result_all_apparatus_dict, team_all_around_top3, display=False):
     # 1:gold, 2:silver, 3: bronze
     medal_dict = {1:"Gold", 2:"Silver", 3: "Bronze"}
     medal_result_by_country = defaultdict(lambda: defaultdict(int))
@@ -459,47 +451,66 @@ def medal_summarize_and_display(teams, indiv_all_around_top3,\
         _,_, top_3_athletes, _ = result
         for rank, (country, name) in enumerate(top_3_athletes):
             medal_result_by_country[country][rank+1]+=1
-    for country in medal_result_by_country:
-        print('\n',country)
-        for i,num_medal in medal_result_by_country[country].items():      
-            print(medal_dict[i] + ": ", num_medal)
+    if display:
+        # print the metal results for each country who wins at least one metal
+        for country in medal_result_by_country:
+            print('\n',country)
+            for i,num_medal in medal_result_by_country[country].items():      
+                print(medal_dict[i] + ": ", num_medal)
+                
+    return medal_result_by_country
 
             
-        
-        
+
     
 
-if __name__ == "__main__":
+def run_simulations(times=1000, display=False, gender="women"):
+    """
+    apparatus_ls = data.men_apparatus_ls # simulate men 
+    apparatus_ls = data.men_apparatus_ls # simulate women 
+    """
+    all_simiulations = []
+   
     data, qual_men_12_team, qual_men_36_team, qual_women_12_team, qual_women_36_team = data_prep()
-    apparatus_ls = data.men_apparatus_ls
-    # team_36 = qual_men_36_team
-    # qual_result_36_country_all_around(team_36, apparatus_ls)
-    teams_12 = [qual_men_12_team, qual_women_12_team]
-    teams_36 = [qual_men_36_team, qual_women_36_team]
-    # each apparatus ranking
-    team_all_around_sorted_countries_score,top_8_countries, individual_all_around_top_24_athletes, top_24_athletes = all_around_result([qual_men_12_team, qual_men_36_team], data.men_apparatus_ls)
-    # print(len(top_8_countries))
-    # print(len(top_24_athletes))
-    # print(top_8_countries)
-    # print(top_24_athletes)
+    medal_total = {'Country Names': list(qual_men_12_team.keys()) + list(qual_men_36_team.keys())}
+    if gender == 'men':
+        apparatus_ls = data.men_apparatus_ls
+        teams = [qual_men_12_team, qual_men_36_team]    
+    else:
+        apparatus_ls = data.women_apparatus_ls
+        teams = [qual_women_12_team, qual_women_36_team]    
 
-    # individual all around ranking: Get the top 24 countries
-    teams = [qual_men_12_team, qual_men_36_team]    
-    final_result_all_apparatus_dict = each_apparatus_result(teams, apparatus_ls)
-    team_all_around_top3, team_all_around_sorted_countries = team_all_around_result(teams_12[0], apparatus_ls)
-    print(team_all_around_top3, team_all_around_sorted_countries)
-    indiv_all_around_top3,individual_all_around_final_sorted = indiv_all_around_result(teams, apparatus_ls, individual_all_around_top_24_athletes)
+    
+    for i in range(times):    
+        # each apparatus ranking
+        team_all_around_sorted_countries_score,top_8_countries, individual_all_around_top_24_athletes, top_24_athletes = all_around_result(teams, apparatus_ls)
+        # individual all around ranking: Get the top 24 countries
+        final_result_all_apparatus_dict = each_apparatus_result(teams, apparatus_ls)
+        team_all_around_top3, team_all_around_sorted_countries = team_all_around_result(teams[0], apparatus_ls, top_8_countries)
+        #print(team_all_around_top3, team_all_around_sorted_countries)
+        indiv_all_around_top3,individual_all_around_final_sorted = indiv_all_around_result(teams, apparatus_ls, individual_all_around_top_24_athletes)
+        if display:    
+            qual_and_final_result_display(teams, indiv_all_around_top3,individual_all_around_final_sorted,final_result_all_apparatus_dict, team_all_around_top3, team_all_around_sorted_countries)  
+        medal_counts_by_country = medal_summarize_and_display(teams, indiv_all_around_top3, final_result_all_apparatus_dict, team_all_around_top3)
+        medal_total_in_current_simulation = []
+        for country in medal_total['Country Names']:
+            # calculate total medal numbers for each country
+            medal_total_in_current_simulation.append(int(np.sum(list(medal_counts_by_country[country].values()))))
+        medal_total["simulation"+str(i+1)] = medal_total_in_current_simulation
+        # regular_dict = {country: dict(medals) for country, medals in medal_counts_by_country.items()}
+        # all_simiulations.append(regular_dict)
+
+    # Create a pandas DataFrame
+    df = pd.DataFrame(medal_total)
+    # Write the DataFrame to a CSV file
+    df.to_csv(gender+'_total_number_of_medals_results.csv', index=False)
         
-    qual_and_final_result_display(teams, indiv_all_around_top3,individual_all_around_final_sorted,\
-        final_result_all_apparatus_dict, team_all_around_top3, team_all_around_sorted_countries)
-    
-      
-    medal_summarize_and_display(teams, indiv_all_around_top3, final_result_all_apparatus_dict, team_all_around_top3)
-    
-    
-    
+if __name__ == "__main__":
+    run_simulations(1000, gender="men")  
+    run_simulations(1000, gender="women")      
+        
 
 
 
-    
+        
 
