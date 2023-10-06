@@ -714,9 +714,9 @@ if __name__ == "__main__":
         f.write(str(summary_data))
 
     # Let's select 12 countries from "summary_men_gymnasts"
-    men_countries = ["CHN", "JPN", "RUS", "USA", "GBR", "GER", "UKR", "FRA", "BRA", "CAN", "KOR", "COL"]
+    men_countries = ["CHN", "JPN", "RSA", "USA", "GBR", "GER", "UKR", "FRA", "BRA", "CAN", "KOR", "COL"]
     # Let's select 12 countries from "summary_women_gymnasts",
-    women_countries = ["CHN", "JPN", "RUS", "USA", "GBR", "GER", "UKR", "FRA", "BRA", "CAN", "KOR", "COL"]
+    women_countries = ["CHN", "JPN", "RSA", "USA", "GBR", "GER", "UKR", "FRA", "BRA", "CAN", "KOR", "COL"]
 
     # Use data.summary_for_each_country_by_gender method to get the summary data for each country, and append the summary data to the summary_data
     qual_men_12_team = {}
