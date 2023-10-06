@@ -1,16 +1,16 @@
-{'COL': {'data':       LastName   FirstName Gender Country  ... SR_num_of_samples   VT_score VT_num_of_samples apparatus_name_score
-1        calvo                  m     COL  ...                 1  14.400000                 1            14.400000
-43    martinez      andres      m     COL  ...                 4  13.538667                 3            13.538667
-132    jimenez       dilan      m     COL  ...                 5  13.750000                 2            13.750000
-250   sandoval      javier      m     COL  ...                 0        NaN                 0                  NaN
-277   martinez        jose      m     COL  ...                 1  11.950000                 1            11.950000
-286      calvo    jossimar      m     COL  ...                 1  13.033000                 1            13.033000
-320  bohorquez  kristopher      m     COL  ...                 2        NaN                 0                  NaN
-361   martinez      manuel      m     COL  ...                 1  12.733000                 1            12.733000
-519     vargas      sergio      m     COL  ...                 0  12.550000                 1            12.550000
+{'COL': {'data':       LastName   FirstName Gender  ...   VT_score VT_num_of_samples apparatus_name_score
+1        calvo         NaN      m  ...  14.400000                 1            14.400000
+43    martinez      andres      m  ...  13.538667                 3            13.538667
+132    jimenez       dilan      m  ...  13.750000                 2            13.750000
+250   sandoval      javier      m  ...        NaN                 0                  NaN
+277   martinez        jose      m  ...  11.950000                 1            11.950000
+286      calvo    jossimar      m  ...  13.033000                 1            13.033000
+320  bohorquez  kristopher      m  ...        NaN                 0                  NaN
+361   martinez      manuel      m  ...  12.733000                 1            12.733000
+519     vargas      sergio      m  ...  12.550000                 1            12.550000
 
 [9 rows x 26 columns], 'HB':      LastName FirstName Gender Country  ... SR_num_of_samples   VT_score VT_num_of_samples apparatus_name_score
-1       calvo                m     COL  ...                 1  14.400000                 1            13.500000
+1       calvo       NaN      m     COL  ...                 1  14.400000                 1            13.500000
 286     calvo  jossimar      m     COL  ...                 1  13.033000                 1            13.400000
 250  sandoval    javier      m     COL  ...                 0        NaN                 0            13.133000
 43   martinez    andres      m     COL  ...                 4  13.538667                 3            12.761714
@@ -23,7 +23,7 @@
 
 [4 rows x 26 columns], 'FX':      LastName FirstName Gender Country  ... SR_num_of_samples VT_score VT_num_of_samples apparatus_name_score
 132   jimenez     dilan      m     COL  ...                 5   13.750                 2            13.783333
-1       calvo                m     COL  ...                 1   14.400                 1            13.166000
+1       calvo       NaN      m     COL  ...                 1   14.400                 1            13.166000
 286     calvo  jossimar      m     COL  ...                 1   13.033                 1            12.933000
 361  martinez    manuel      m     COL  ...                 1   12.733                 1            12.833000
 
@@ -33,20 +33,20 @@
 361  martinez    manuel      m     COL  ...                 1   12.733                 1            12.966000
 277  martinez      jose      m     COL  ...                 1   11.950                 1            12.950000
 
-[4 rows x 26 columns], 'SR':       LastName   FirstName Gender Country  ... SR_num_of_samples   VT_score VT_num_of_samples apparatus_name_score
-320  bohorquez  kristopher      m     COL  ...                 2        NaN                 0              13.5000
-132    jimenez       dilan      m     COL  ...                 5  13.750000                 2              12.4330
-43    martinez      andres      m     COL  ...                 4  13.538667                 3              12.1875
-286      calvo    jossimar      m     COL  ...                 1  13.033000                 1              12.0660
+[4 rows x 26 columns], 'SR':       LastName   FirstName Gender  ...   VT_score VT_num_of_samples apparatus_name_score
+320  bohorquez  kristopher      m  ...        NaN                 0              13.5000
+132    jimenez       dilan      m  ...  13.750000                 2              12.4330
+43    martinez      andres      m  ...  13.538667                 3              12.1875
+286      calvo    jossimar      m  ...  13.033000                 1              12.0660
 
 [4 rows x 26 columns], 'VT':      LastName FirstName Gender Country  ... SR_num_of_samples   VT_score VT_num_of_samples apparatus_name_score
-1       calvo                m     COL  ...                 1  14.400000                 1            14.400000
+1       calvo       NaN      m     COL  ...                 1  14.400000                 1            14.400000
 132   jimenez     dilan      m     COL  ...                 5  13.750000                 2            13.750000
 43   martinez    andres      m     COL  ...                 4  13.538667                 3            13.538667
 286     calvo  jossimar      m     COL  ...                 1  13.033000                 1            13.033000
 
-[4 rows x 26 columns], 'Score':       LastName   FirstName Gender Country  ... SR_num_of_samples VT_score VT_num_of_samples apparatus_name_score
-286      calvo    jossimar      m     COL  ...                 1   13.033                 1               13.033
-320  bohorquez  kristopher      m     COL  ...                 2      NaN                 0                  NaN
+[4 rows x 26 columns], 'Score':       LastName   FirstName Gender  ... VT_score VT_num_of_samples apparatus_name_score
+286      calvo    jossimar      m  ...   13.033                 1               13.033
+320  bohorquez  kristopher      m  ...      NaN                 0                  NaN
 
 [2 rows x 26 columns]}}

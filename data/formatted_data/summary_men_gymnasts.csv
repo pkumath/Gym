@@ -1,0 +1,607 @@
+LastName,FirstName,Gender,Country,Date,Competition,Round,Location,Rank,D_Score,E_Score,Penalty,Score,HB_score,HB_num_of_samples,PH_score,PH_num_of_samples,FX_score,FX_num_of_samples,PB_score,PB_num_of_samples,SR_score,SR_num_of_samples,VT_score,VT_num_of_samples
+abiyurafi,,m,INA,1-4 Mar 2023,World Cup,qual,"Doha, Qatar",26.0,4.9,6.733,,11.277666666666667,11.633,1,11.5,1,,0,10.7,1,,0,,0
+calvo,,m,COL,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,AAfinal,"Liverpool, England",19.0,5.6,7.666,0.1,12.566333333333333,13.5,1,10.4,1,13.166,1,12.366,1,11.566,1,14.4,1
+elpitiya,,m,SRI,"29 Jul-2 Aug, 2023",BIRMINGHAM 2022 Commonwealth Games,AAqual,"Birmingham, England",,4.4,8.5,0.1,12.8,,0,,0,,0,,0,,0,12.8,1
+khosronezhad,,m,IRI,1-4 Mar 2023,World Cup,qual,"Doha, Qatar",25.0,5.5,7.3,,13.333,,0,,0,,0,,0,13.333,2,,0
+kumarasinghege,,m,SRI,"29 Jul-2 Aug, 2023",BIRMINGHAM 2022 Commonwealth Games,AAqual,"Birmingham, England",,2.8,7.4,0.1,10.1,,0,,0,,0,,0,,0,10.1,1
+nourishourakchali,,m,IRI,9-12 Mar 2023,World Cup,qual,"Baku, Azerbaijan",40.0,4.2,7.666,,11.866,,0,11.866,1,,0,,0,,0,,0
+yonekura,,m,JPN,9-12 Mar 2023,World Cup,qual,"Baku, Azerbaijan",12.0,6.0,7.866,0.3,14.016,,0,,0,,0,,0,,0,14.016,2
+abdelhaleem,abdelrahman,m,EGY,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",113.0,5.2,7.2,0.4,12.849666666666666,12.766,1,13.310666666666668,3,12.0,1,12.4,1,,0,,0
+nasser,abderrazak,m,MAR,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",100.0,4.8,7.666,,12.003444444444444,11.5165,2,11.633,2,12.466,1,11.7665,2,12.033,1,13.7,1
+mirvaliev,abdulaziz,m,UZB,23-26 Feb 2023,FIG Apparatus World Cup 2023,qual,"Cottbus, Germany",11.0,5.4,8.233,,13.499583333333334,,0,,0,13.177333333333332,3,,0,13.088333333333333,3,13.866333333333335,6
+azimov,abdulla,m,UZB,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",61.0,4.9,8.266,,13.655333333333333,12.433,1,14.344333333333333,6,12.983,2,13.533,1,11.966,1,13.9,1
+rafi,abu,m,BAN,29 Jul-2 Aug 2022,BIRMINGHAM 2022 Commonwealth Games,qual,"Birmingham, England",37.0,3.7,6.35,,7.6800000000000015,,0,7.0,1,10.05,1,5.9,1,3.0,1,12.45,1
+quistas,achraf,m,MAR,23-26 Feb 2023,FIG Apparatus World Cup 2023,qual,"Cottbus, Germany",44.0,4.9,7.333,0.6,11.4662,,0,9.066,1,11.633,1,9.866,1,,0,13.383,2
+logan,adam,m,GBR,24-27 Mar 2022,2022 British Gymnastics Championships,qual,"Liverpool, England",,5.2,8.03,0.0,12.5165,,0,,0,,0,,0,,0,12.5165,2
+steele,adam,m,IRL,11-16 Apr 2023,2023 Senior European Championships,qual,"Antalya, Turkey",66.0,5.5,7.9,0.4,13.020624999999999,12.4,1,13.555,3,13.0,1,12.4,1,12.0,1,13.7,1
+tobin,adam,m,GBR,24-27 Mar 2022,2022 British Gymnastics Championships,qual,"Liverpool, England",13.0,5.2,7.95,0.0,13.173181818181819,12.72857142857143,7,12.341666666666669,6,12.6625,4,13.838,7,13.497166666666665,6,14.355333333333334,3
+asil,adem,m,TUR,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",17.0,5.8,8.333,,14.023070422535211,13.492333333333333,9,12.661714285714286,7,13.973000000000003,10,13.812666666666665,9,14.8224375,16,14.2186,20
+trejo,adickxon,m,VEN,24-28 Jun 2023,2023 Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",2.0,5.1,8.35,,12.835714285714287,11.7,2,12.525,2,13.549999999999999,3,13.066666666666668,3,12.100000000000001,2,13.6,2
+vera,adria,m,ESP,11-16 Apr 2023,2023 Senior European Championships,qual,"Antalya, Turkey",57.0,5.0,7.666,,11.581923076923077,12.038666666666666,3,12.377666666666668,3,12.45,1,12.8,1,13.105333333333334,3,6.375,2
+gahramanov,aghamurad,m,AZE,18-21 Aug 2022,2022 Senior European Championships,qual,"Munich, Germany",87.0,5.5,6.933,,11.916333333333334,11.566,1,9.3,1,12.433,1,12.6,1,12.066,1,13.533,1
+davidsson,agust,m,ISL,11-16 Apr 2023,2023 Senior European Championships,qual,"Antalya, Turkey",115.0,3.2,7.966,,12.32875,11.166,1,,0,,0,12.866,1,12.6415,2,,0
+abu,ahmad,m,JOR,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,final,"Liverpool, England",2.0,6.3,8.566,,13.683,,0,13.683,6,,0,,0,,0,,0
+abdelrahman,ahmed,m,EGY,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",116.0,5.4,7.433,0.9,11.910666666666666,12.966,1,12.616,2,8.133000000000001,3,13.233,2,,0,13.46625,4
+aliouat,ahmed,m,ALG,27-30 Apr 2023,World Cup,qual,"Cairo, Egypt",18.0,4.6,8.233,,13.083,12.833,1,,0,,0,13.333,1,,0,,0
+elmaraghy,ahmed,m,EGY,23-26 Feb 2023,FIG Apparatus World Cup 2023,qual,"Cottbus, Germany",43.0,5.0,5.9,,13.099571428571428,13.099571428571428,7,,0,,0,,0,,0,,0
+onder,ahmet,m,TUR,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",29.0,5.7,8.1,,13.26528125,13.049500000000002,6,11.8996,5,13.710833333333333,6,13.566199999999998,5,13.09975,4,14.033166666666666,6
+önder,ahmet,m,TUR,8-11 Jun 2023,2023 Osijek Challenge Cup,final,"Osijek, Croatia.",2.0,5.8,8.0,,12.950000000000001,11.7,2,,0,13.2625,4,13.366666666666667,3,,0,,0
+frick,aiden,m,AUS,1-5 Aug 2023,2023 FISU World University Games,qual,"Chengdu, China",57.0,4.7,7.8,,12.5388,12.2,1,12.35,3,12.533333333333333,3,13.188666666666668,3,12.149999999999999,4,13.066,1
+karsikas,akseli,m,FIN,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",130.0,4.8,7.6,0.1,12.213470588235294,12.222,3,,0,11.683,2,10.944333333333333,3,12.116,2,12.933142857142856,7
+rakan,al,m,QAT,23-26 Feb 2023,FIG Apparatus World Cup 2023,qual,"Cottbus, Germany",39.0,4.7,8.1,,12.69975,,0,12.69975,4,,0,,0,,0,,0
+perez,alberto,m,CRC,24-28 Jun 2023,2023 Central American and Caribbean Games,qual,"San Salvador, El Salvador",30.0,3.1,7.05,,10.175,10.15,1,8.4,1,,0,11.6,1,10.55,1,,0
+de,alejandro,m,CUB,24-28 Jun 2023,2023 Central American and Caribbean Games,qual,"San Salvador, El Salvador",29.0,4.9,6.1,0.3,12.483333333333334,11.15,1,11.45,1,10.7,1,12.45,1,13.600000000000001,2,13.133333333333333,3
+benda,alexander,m,AUT,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",55.0,5.5,7.766,,12.589823529411763,12.799666666666667,3,11.866333333333335,3,13.383,2,12.377333333333333,3,12.144,3,13.232999999999999,3
+kunz,alexander,m,GER,1-5 Aug 2023,2023 FISH World University Games,AAfinal,"Chengdu, China",17.0,5.6,7.4,0.2,12.920200000000001,12.3398,5,12.33325,4,13.103200000000001,5,13.029,4,12.9832,5,13.432285714285713,7
+myakinin,alexander,m,ISR,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",16.0,6.0,8.0,,13.312333333333333,13.512066666666664,15,13.07275,8,,0,12.233,1,,0,,0
+haque,ali,m,BAN,29 Jul-2 Aug 2022,BIRMINGHAM 2022 Commonwealth Games,qual,"Birmingham, England",27.0,4.5,7.4,0.1,12.425,,0,,0,11.8,1,,0,,0,13.05,1
+zahran,ali,m,EGY,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",22.0,6.1,7.7,,14.075999999999999,,0,,0,,0,,0,14.075999999999999,7,,0
+kinsella,alice,m,ENG,"29 Jul-2 Aug, 2023",BIRMINGHAM 2022 Commonwealth Games,AAqual,"Birmingham, England",,5.0,8.9,,13.9,,0,,0,,0,,0,,0,13.9,1
+graikos,alkinoos,m,GRE,1-5 Aug 2023,2023 FISU World University Games,qual,"Chengdu, China",65.0,5.5,6.6,,12.265999999999998,11.7495,2,12.333,2,11.9665,2,12.533,1,12.133,1,13.63,1
+abdullah,ally,m,MAS,23-26 Feb 2023,FIG Apparatus World Cup 2023,qual,"Cottbus, Germany",46.0,4.8,5.133,,9.933,,0,,0,,0,,0,9.933,1,,0
+cingolani,andrea,m,ITA,18-21 Aug 2022,2022 Senior European Championships,qual,"Munich, Germany",11.0,6.0,8.066,,13.577333333333334,,0,,0,,0,,0,13.766,2,13.2,1
+toba,andreas,m,GER,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",50.0,5.4,7.733,,12.949629629629632,12.939600000000002,5,13.433000000000002,5,13.616,2,13.255333333333333,3,13.657833333333334,6,11.472,6
+muntean,andrei,m,ROU,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",110.0,5.2,6.9,,13.788058823529413,12.8,1,,0,12.933250000000001,4,14.421999999999997,6,13.688666666666668,3,14.088666666666667,3
+martinez,andres,m,COL,24-28 Jun 2023,2023 Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",13.0,5.2,7.9,0.4,12.458483870967743,12.761714285714287,7,11.795142857142858,7,12.342714285714285,7,12.85,3,12.1875,4,13.538666666666666,3
+perez,andres,m,PUR,24-28 Jun 2023,2023 Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",11.0,5.2,7.65,,12.503571428571428,12.583333333333334,3,11.783333333333333,3,12.85,2,12.85,2,11.899999999999999,2,13.375,2
+villegas,andres,m,CRC,24-28 Jun 2023,2023 Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",15.0,3.8,8.15,,10.33333333333333,9.875,2,6.199999999999999,2,11.8,2,11.475,2,10.475,2,12.175,2
+medvedev,andrey,m,ISR,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",109.0,4.0,8.133,,13.770166666666666,,0,,0,12.133,1,,0,12.744,3,14.107,14
+frey,andrin,m,SUI,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",60.0,6.0,7.533,0.3,13.039,12.0495,2,12.355333333333334,3,13.555333333333332,3,12.600000000000001,2,12.783000000000001,2,13.8132,5
+jaaskelainen,anton,m,FIN,1-5 Aug 2023,2023 FISU World University Games,qual,"Chengdu, China",62.0,4.0,7.866,,11.658,11.866,1,10.8,1,,0,12.5,1,11.466,1,,0
+tantalidis,antonios,m,GRE,11-16 Apr 2023,2023 Senior European Championships,qual,"Antalya, Turkey",112.0,5.6,6.566,0.3,12.158888888888889,10.966,1,11.511000000000001,3,12.1995,2,13.166,1,12.7,1,13.666,1
+varjolaakso,antti,m,FIN,1-5 Aug 2023,2023 FISU World University Games,qual,"Chengdu, China",60.0,4.5,7.766,,12.182833333333333,11.566,1,12.2,1,12.266,1,11.733,1,12.266,1,13.066,1
+hribar,anze,m,SLO,11-16 Apr 2023,2023 Senior European Championships,qual,"Antalya, Turkey",93.0,5.7,6.833,,11.3908,11.9064,5,10.8,1,10.053,5,12.733,1,11.8995,2,13.733,1
+kanellos,apostolos,m,GRE,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",103.0,4.7,7.766,0.1,11.76795,11.7198,5,12.016250000000001,4,12.232666666666667,3,10.621999999999998,3,10.783000000000001,2,12.854999999999999,3
+federici,ares,m,ITA,27-30 Apr 2023,World Cup,qual,"Cairo, Egypt",10.0,6.2,7.433,0.3,13.186399999999997,13.033,1,,0,13.333,1,,0,12.8,1,13.383,2
+jonasson,arnthor,m,,8-11 Jun 2023,2023 Osijek Challenge Cup,qual,"Osijek, Croatia.",23.0,4.9,7.35,,12.25,,0,12.25,1,,0,,0,,0,,0
+jacobsen,aron,m,DEN,18-21 Aug 2022,2022 Senior European Championships,qual,"Munich, Germany",76.0,4.7,7.966,,11.642428571428571,11.166,1,10.883,2,12.666,1,11.5,1,12.033,1,12.366,1
+dolgopyat,artem,m,ISR,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",73.0,5.9,7.1,,13.826500000000001,12.833,2,12.766200000000001,5,14.395375000000001,8,13.583,2,13.166,1,14.312124999999998,8
+mariano,arthur,m,BRA,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",19.0,5.5,8.6,,13.691399999999998,14.237000000000002,4,12.0,1,13.888666666666666,3,12.4,1,,0,13.9,1
+zanetti,arthur,m,,8-11 Jun 2023,2023 Osijek Challenge Cup,final,"Osijek, Croatia.",2.0,6.2,8.333,,14.5665,,0,,0,,0,,0,14.5665,2,,0
+avetisyan,artur,m,ARM,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,final,"Liverpool, England",4.0,6.0,8.6,,14.567055555555555,,0,,0,,0,,0,14.567055555555555,18,,0
+davtyan,artur,m,ARM,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",1.0,5.6,9.4,0.1,14.370186440677967,12.722,3,14.208666666666666,9,13.352,5,13.649833333333333,6,14.016166666666669,6,14.968033333333333,30
+tovmasyan,artur,m,,8-11 Jun 2023,2023 Osijek Challenge Cup,qual,"Osijek, Croatia.",4.0,5.3,8.45,,13.708,,0,,0,,0,,0,13.708,2,,0
+azamov,asadbek,m,UZB,1-5 Aug 2023,2023 FISU World University Games,qual,"Chengdu, China",28.0,5.0,8.266,,12.823545454545455,11.666,1,11.0,1,12.849499999999999,2,11.933,1,12.583,2,13.898750000000001,4
+hong,asher,m,USA,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,AAfinal,"Liverpool, England",6.0,6.0,8.366,0.1,13.838666666666667,11.666666666666666,3,13.845749999999999,4,14.127333333333333,3,14.733333333333334,3,13.91225,4,14.216285714285714,7
+matiev,askhab,m,AUT,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",92.0,5.3,7.3,,12.797888888888888,12.599666666666666,3,12.655333333333333,3,12.677666666666667,3,12.766666666666666,3,12.610666666666667,3,13.477333333333334,3
+salimov,assan,m,KAZ,25-28 May 2023,2023 Varna World Challenge Cup Results,qual,"Varna, Bulgaria",18.0,4.0,6.65,0.0,12.74988888888889,,0,,0,11.05,1,,0,11.125,2,13.574833333333336,6
+valgeirsson,atli,m,ISL,18-21 Aug 2022,2022 Senior European Championships,qual,"Munich, Germany",91.0,4.7,7.633,,11.4165,,0,11.5,1,12.333,1,9.0,1,,0,12.833,1
+nin,audrys,m,DOM,24-28 Jun 2023,2023 Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",9.0,4.4,8.6,,13.067916666666667,13.016666666666666,3,12.333200000000001,5,11.725,2,13.141499999999999,4,12.275,2,14.0435,8
+benovic,aurel,m,CRO,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",11.0,6.1,8.366,0.2,13.65092857142857,,0,,0,13.541416666666668,12,,0,,0,13.733062499999999,16
+kiss,balazs,m,HUN,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",29.0,5.4,7.966,,12.839,12.238666666666667,3,12.62875,4,,0,12.533,1,13.330333333333334,6,,0
+tomcsanyi,benedek,m,HUN,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",45.0,5.4,8.066,,13.111722222222221,12.349499999999999,2,12.9498,5,13.177333333333332,3,13.183,2,13.366333333333332,3,13.522,3
+eyre,benjamin,m,GBR,24-27 Mar 2022,2022 British Gymnastics Championships,qual,"Liverpool, England",16.0,5.3,7.8,0.0,12.308333333333332,11.3,1,11.55,1,13.1,1,11.7,1,12.45,1,13.75,1
+osberger,benjamin,m,FRA,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,final,"Liverpool, England",4.0,5.6,8.633,,13.920916666666665,,0,14.082999999999998,10,13.923999999999998,10,,0,13.1,1,13.644,3
+sitchinava,bidzina,m,GEO,18-21 Aug 2022,2022 Senior European Championships,qual,"Munich, Germany",67.0,5.1,7.733,,11.847052631578947,11.386199999999999,5,11.4464,5,11.7165,2,12.299666666666667,3,12.133,2,13.1665,2
+sun,blake,m,USA,9-12 Mar 2023,World Cup,qual,"Baku, Azerbaijan",29.0,6.0,6.066,,12.016,,0,11.966,1,,0,12.066,1,,0,,0
+suprun,bohdan,m,UKR,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",76.0,5.5,7.5,0.1,12.155333333333333,11.433,2,11.1165,2,11.8665,2,12.616499999999998,2,12.933,2,12.9665,2
+zhang,boheng,m,CHN,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,AAfinal,"Liverpool, England",9.0,5.8,8.233,,14.374520000000002,14.3398,5,14.0165,4,14.35825,4,15.1915,4,13.9165,4,14.433250000000001,4
+kardos,botond,m,HUN,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",25.0,5.7,8.166,,13.427416666666668,12.277666666666667,3,,0,13.699333333333334,3,13.877333333333333,3,,0,13.855333333333334,3
+molnar,botond,m,HUN,11-16 Apr 2023,2023 Senior European Championships,AAfinal,"Antalya, Turkey",16.0,5.6,7.733,,13.437999999999999,13.0165,2,12.4495,2,13.504833333333332,6,13.416,2,12.9495,2,13.820222222222222,9
+zlatanov,bozhidar,m,BUL,11-16 Apr 2023,2023 Senior European Championships,qual,"Antalya, Turkey",87.0,5.0,7.633,,13.3988,11.266,1,11.166,1,12.633,1,13.344999999999999,4,13.177666666666667,3,13.999799999999999,10
+noordzij,bradley,m,NED,25-28 May 2023,2023 Varna World Challenge Cup Results,qual,"Varna, Bulgaria",22.0,4.1,6.4,0.0,11.4,,0,10.5,1,,0,,0,12.3,1,,0
+bevan,brinn,m,GBR,24-27 Mar 2022,2022 British Gymnastics Championships,qual,"Liverpool, England",12.0,5.0,8.35,0.1,13.225000000000001,12.55,2,12.45,2,13.25,1,14.0625,4,12.925,2,13.35,1
+malone,brody,m,USA,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,AAfinal,"Liverpool, England",8.0,5.7,8.433,,13.267263157894737,14.149799999999999,5,13.683,3,13.4495,2,14.166,2,13.822000000000001,3,10.89575,4
+souza,caio,m,BRA,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,AAfinal,"Liverpool, England",14.0,5.6,8.266,0.1,14.00908,14.104000000000001,4,12.994,3,13.666,2,14.15375,4,13.93325,4,14.393625,8
+rooskrantz,caitlin,m,RSA,"29 Jul-2 Aug, 2023",BIRMINGHAM 2022 Commonwealth Games,AAqual,"Birmingham, England",,4.2,8.75,,12.95,,0,,0,,0,,0,,0,12.95,1
+bernard,cameron,m,FRA,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",112.0,4.3,7.566,,13.30965,12.116,2,12.249749999999999,4,,0,14.285285714285715,7,13.153,5,13.6,2
+lister,cameron,m,GBR,24-27 Mar 2022,2022 British Gymnastics Championships,qual,"Liverpool, England",29.0,3.5,7.85,0.0,11.45,,0,,0,,0,,0,11.35,1,11.55,1
+lynn,cameron,m,GBR,24-27 Mar 2022,2022 British Gymnastics Championships,final,"Liverpool, England",8.0,5.5,6.87,0.0,12.395685714285714,12.56875,8,11.459999999999999,5,12.644333333333334,6,12.924999999999999,6,13.016666666666666,3,11.933285714285713,7
+bernard,cameron-lie,m,FRA,17-19 Mar 2023,EnBW DTB Pokal Team Challenge 2023,qual,"Stuttgart, Germany",32.0,6.2,7.25,,10.440000000000001,,0,12.0,1,,0,13.45,1,13.15,1,6.8,2
+kennedy,cara,m,SCO,"29 Jul-2 Aug, 2023",BIRMINGHAM 2022 Commonwealth Games,AAqual,"Birmingham, England",,4.6,8.75,,13.35,,0,,0,,0,,0,,0,13.35,1
+hoerr,carlo,m,GER,27-30 Apr 2023,World Cup,qual,"Cairo, Egypt",28.0,5.3,7.533,0.2,12.594,13.4665,2,9.566,1,12.633,1,13.266,1,13.166,1,,0
+horr,carlo,m,GER,1-5 Aug 2023,2023 FISU World University Games,qual,"Chengdu, China",73.0,5.1,6.6,0.4,12.682666666666668,13.2,1,11.966,1,11.3,1,13.0,1,13.0,1,13.63,1
+hörr,carlo,m,GE2,17-19 Mar 2023,EnBW DTB Pokal Team Challenge 2023,qual,"Stuttgart, Germany",23.0,5.3,8.3,0.1,13.030000000000001,12.3,1,13.25,1,13.5,1,12.8,1,13.3,1,,0
+macchini,carlo,m,ITA,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",15.0,6.1,7.966,,13.716249999999999,14.172999999999998,5,12.955,3,,0,,0,,0,,0
+yulo,carlos,m,PHI,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,AAfinal,"Liverpool, England",1.0,6.4,8.766,,14.384675000000001,12.7165,2,11.833,2,14.223571428571429,7,15.17,9,14.03283333333333,6,14.713999999999999,14
+schmidt,casimir,m,NED,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,AAfinal,"Liverpool, England",10.0,5.8,8.2,,13.517861111111111,13.266333333333334,6,12.947166666666666,6,13.522166666666665,6,13.594999999999999,7,13.876000000000001,7,13.983,4
+yeh,cheng,m,TPE,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",51.0,5.4,7.933,,12.89785,11.73325,4,12.2665,2,13.1245,4,12.955,3,12.6,1,13.754666666666667,6
+tang,chia,m,TPE,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,AAfinal,"Liverpool, England",7.0,5.5,8.633,,13.555166666666667,13.3995,2,13.0165,2,14.1495,2,13.4495,2,13.366,2,13.95,2
+lee,chih,m,TPE,1-5 Aug 2023,2023 FISU World University Games,qual,"Chengdu, China",17.0,5.5,8.2,,13.912388888888888,13.73,2,14.6205,8,13.7,1,12.999799999999999,5,13.0,1,14.3,1
+kaji,chris,m,CAN,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",65.0,5.1,8.0,,13.361500000000001,12.816500000000001,2,,0,12.825,2,13.316500000000001,2,13.933,3,13.9,1
+baumann,christian,m,SUI,25-28 May 2023,2023 Varna World Challenge Cup Results,final,"Varna, Bulgaria",4.0,5.2,8.4,0.0,13.513200000000001,13.6,2,,0,,0,13.25,1,13.558,2,,0
+wong,chun,m,HKG,1-5 Aug 2023,2023 FISU World University Games,qual,"Chengdu, China",78.0,1.6,8.866,,11.582999999999998,,0,,0,,0,,0,,0,11.582999999999998,2
+mason,clay,m,AUS,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",107.0,5.5,6.7,,12.735545454545452,12.870750000000001,4,11.283333333333333,3,12.6832,5,13.366666666666665,3,12.2625,4,14.094333333333333,3
+masonstephens,clay,m,AUS,05-06 May 2023,Oceania Continental Championships 2023,aa,"Carrara, Australia",,5.7,8.266,0.1,12.999666666666664,12.7,1,11.766,1,13.866,1,12.633,1,12.833,1,14.2,1
+bell,clayton,m,GBR,23-26 Mar 2023,2023 British Gymnastics Championships,qual,"Liverpool, England",23.0,5.6,6.8,0.3,12.035714285714286,11.6,1,10.45,1,12.1,1,10.95,1,12.35,1,13.4,2
+walker,colt,m,USA,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",131.0,5.3,5.233,0.1,13.332999999999998,13.2,1,,0,10.433,1,14.866,1,13.566,1,14.6,1
+dudley,colton,m,GBR,24-27 Mar 2022,2022 British Gymnastics Championships,qual,"Liverpool, England",21.0,4.7,8.0,0.0,11.358333333333333,11.75,1,9.05,1,12.7,1,10.3,1,12.8,1,11.55,1
+shi,cong,m,CHN,1-5 Aug 2023,2023 FISH World University Games,AAfinal,"Chengdu, China",6.0,5.4,8.433,,14.340692307692308,14.755333333333333,3,14.066500000000001,2,13.849499999999999,2,14.683,2,14.383,2,14.099499999999999,2
+mcgillivray,conor,m,AUS,8-11 Jun 2023,2023 Osijek Challenge Cup,qual,"Osijek, Croatia.",16.0,5.0,8.25,,13.3125,,0,,0,13.075,2,,0,,0,13.391666666666667,6
+tulloch,courtney,m,GBR,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,final,"Liverpool, England",3.0,6.1,8.633,,14.202437499999998,,0,,0,13.5966,5,13.4665,2,14.642,13,14.101333333333335,12
+phillips,curran,m,USA,9-12 Mar 2023,World Cup,final,"Baku, Azerbaijan",5.0,5.5,7.633,,14.3165,13.633,2,,0,,0,15.0,2,,0,,0
+tommasone,cyril,m,FRA,25-28 May 2023,2023 Varna World Challenge Cup Results,final,"Varna, Bulgaria",6.0,6.0,8.066,0.0,14.18,,0,14.18,2,,0,,0,,0,,0
+olafsson,dagur,m,ISL,11-16 Apr 2023,2023 Senior European Championships,qual,"Antalya, Turkey",116.0,4.4,7.466,0.1,12.751875000000002,12.633,1,13.0415,2,11.766,1,13.15,2,11.833,1,13.4,1
+hashimoto,daiki,m,JPN,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,AAfinal,"Liverpool, England",2.0,6.0,8.666,,14.005703703703706,14.783166666666666,6,13.7196,5,14.312999999999999,5,12.158249999999999,4,14.07475,4,14.786666666666667,3
+bago,daniel,m,CZE,11-16 Apr 2023,2023 Senior European Championships,qual,"Antalya, Turkey",43.0,4.9,8.5,,12.103875,12.233,1,11.766,1,13.4,1,10.6665,2,12.4165,2,13.266,1
+carrion,daniel,m,ESP,11-16 Apr 2023,2023 Senior European Championships,qual,"Antalya, Turkey",21.0,5.2,8.466,,12.499499999999998,11.633,2,12.466,2,12.116,2,12.8995,2,11.833,1,13.310666666666668,3
+fox,daniel,m,IRL,18-21 Aug 2022,2022 Senior European Championships,qual,"Munich, Germany",100.0,3.8,7.866,,12.705166666666669,11.966,1,12.8,1,11.666,1,12.866,1,13.733,1,13.2,1
+lee,daniel,m,JEY,"29 Jul-2 Aug, 2023",BIRMINGHAM 2022 Commonwealth Games,AAfinal,"Birmingham, England",10.0,5.1,7.6,,13.107692307692307,12.65,2,12.175,2,12.774999999999999,2,13.8,2,13.033333333333333,3,14.25,2
+radovesnicky,daniel,m,CZE,11-16 Apr 2023,2023 Senior European Championships,qual,"Antalya, Turkey",118.0,4.4,7.3,,12.022,12.366,1,10.5,1,11.7,1,12.8,1,11.7,1,13.066,1
+smyllie,daniel,m,GBR,23-26 Mar 2023,2023 British Gymnastics Championships,qual,"Liverpool, England",30.0,4.8,5.7,0.1,8.61,10.45,1,0.05,1,10.4,1,,0,9.85,1,12.3,1
+stoddart,daniel,m,NZL,05-06 May 2023,Oceania Continental Championships 2023,aa,"Carrara, Australia",,4.1,8.6,0.0,12.8165,,0,,0,,0,12.7,1,12.933,1,,0
+tuya,daniel,m,ESP,23-26 Feb 2023,FIG Apparatus World Cup 2023,qual,"Cottbus, Germany",23.0,4.6,8.433,,12.633000000000001,,0,,0,,0,,0,13.033,1,12.433,2
+zander,daniel,m,AUT,1-5 Aug 2023,2023 FISU World University Games,qual,"Chengdu, China",35.0,5.3,7.866,,12.4747,11.966,1,11.066,1,13.022,3,12.4,1,12.538666666666666,3,12.633,1
+richards,danyella,m,JAM,"29 Jul-2 Aug, 2023",BIRMINGHAM 2022 Commonwealth Games,AAqual,"Birmingham, England",,3.6,8.7,,12.3,,0,,0,,0,,0,,0,12.3,1
+sissakis,dario,m,GE1,17-19 Mar 2023,EnBW DTB Pokal Team Challenge 2023,qual,"Stuttgart, Germany",34.0,5.6,7.85,0.3,12.965470588235295,9.6,1,,0,12.716666666666669,3,12.4165,2,12.872,3,13.65175,8
+huddleston,david,m,BUL,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",122.0,5.0,6.7,0.1,12.941333333333333,11.6665,2,12.7165,2,11.633,2,14.1495,2,13.2665,2,14.216000000000001,2
+rumbutis,david,m,SWE,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",111.0,4.5,7.566,,13.197842105263158,12.777333333333333,3,12.421666666666667,3,12.6495,2,13.577333333333334,3,12.7495,2,13.938666666666665,6
+tanner,david,m,AUS,17-19 Mar 2023,EnBW DTB Pokal Team Challenge 2023,qual,"Stuttgart, Germany",30.0,5.2,8.1,0.1,11.037727272727274,11.55,1,10.9915,2,11.4165,2,13.358,2,13.116499999999998,2,6.05,2
+vecsernyes,david,m,HUN,11-16 Apr 2023,2023 Senior European Championships,qual,"Antalya, Turkey",10.0,5.8,7.7,,12.988666666666667,13.3332,5,11.266,1,,0,,0,,0,,0
+weir,david,m,GBR,24-27 Mar 2022,2022 British Gymnastics Championships,final,"Liverpool, England",6.0,5.3,8.33,0.0,12.935769230769232,12.483,2,11.05,1,13.144333333333334,3,12.7,1,12.45,1,13.513200000000001,5
+yin,dehang,m,CHN,1-4 Mar 2023,World Cup,final,"Doha, Qatar",8.0,6.3,7.333,,14.0665,,0,14.0665,2,,0,,0,,0,,0
+reinhardt,dietmar,m,ESP,25-28 May 2023,2023 Varna World Challenge Cup Results,qual,"Varna, Bulgaria",20.0,5.0,5.85,0.0,12.6866,12.233333333333334,3,12.705333333333334,3,,0,13.149999999999999,3,12.6,1,,0
+jimenez,dilan,m,COL,24-28 Jun 2023,2023 Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",1.0,5.6,8.25,,13.033909090909088,12.075,2,11.5,2,13.783333333333333,3,13.572625,8,12.433,5,13.75,2
+dimitrov,dimitar,m,BUL,18-21 Aug 2022,2022 Senior European Championships,qual,"Munich, Germany",107.0,5.9,5.566,0.2,13.20375,,0,,0,11.266,1,,0,12.233,1,13.6885,6
+soares,diogo,m,BRA,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,AAfinal,"Liverpool, England",24.0,5.3,7.466,,13.494,13.916,2,13.499500000000001,2,13.116,2,13.2665,2,12.983,2,14.183,2
+escobar,diorges,m,CUB,24-28 Jun 2023,2023 Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",6.0,5.4,7.7,,13.070000000000002,13.583333333333334,3,12.1,3,13.450000000000001,3,13.350000000000001,2,12.05,2,13.925,2
+toishybek,diyas,m,KAZ,1-5 Aug 2023,2023 FISU World University Games,qual,"Chengdu, China",56.0,4.7,7.833,,12.304428571428572,10.8165,2,13.016,2,12.533,1,13.033,1,,0,12.9,1
+mickevics,dmitrijs,m,LAT,18-21 Aug 2022,2022 Senior European Championships,qual,"Munich, Germany",42.0,5.3,7.766,,13.194166666666668,,0,13.194166666666668,6,,0,,0,,0,,0
+patanin,dmitriy,m,KAZ,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",57.0,5.9,7.566,0.2,13.023636363636363,10.9665,2,,0,13.648666666666665,6,12.9495,2,12.8198,5,13.242428571428572,7
+tamsel,dominic,m,SUI,18-21 Aug 2022,2022 Senior European Championships,qual,"Munich, Germany",21.0,5.5,8.566,,13.560416666666667,13.68,2,13.288666666666666,3,,0,13.9665,4,13.210999999999999,3,,0
+cunningham,dominick,m,IRL,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",29.0,5.7,8.1,,13.284777777777778,12.577333333333334,3,11.877333333333333,3,13.2205,8,12.844,3,12.7995,4,13.9596,15
+whittenburg,donnell,m,USA,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",18.0,6.4,7.733,,12.116400000000002,12.55,2,12.833,1,13.433,2,13.666,1,14.232999999999999,3,0.0,1
+djordjevic,dusan,m,,8-11 Jun 2023,2023 Osijek Challenge Cup,qual,"Osijek, Croatia.",15.0,5.8,7.5,,13.550000000000002,,0,,0,13.3,1,,0,,0,13.675,2
+dordevic,dusan,m,SRB,25-28 May 2023,2023 Varna World Challenge Cup Results,final,"Varna, Bulgaria",5.0,5.4,8.133,0.0,13.574333333333334,,0,,0,13.1655,4,,0,,0,13.77875,8
+montgomery,eamon,m,IRL,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",77.0,5.9,7.0,,13.383000000000003,,0,,0,13.383000000000003,11,,0,,0,,0
+penev,eddie,m,BUL,11-16 Apr 2023,2023 Senior European Championships,qual,"Antalya, Turkey",53.0,5.6,7.633,,13.587846153846154,13.191500000000001,2,10.45,1,13.908600000000002,5,,0,,0,14.0532,5
+yusof,eddy,m,SUI,11-16 Apr 2023,2023 Senior European Championships,final,"Antalya, Turkey",6.0,5.9,7.566,,13.528428571428572,,0,12.625,2,,0,14.055333333333332,3,13.6415,2,,0
+de,edoardo,m,ITA,17-19 Mar 2023,EnBW DTB Pokal Team Challenge 2023,qual,"Stuttgart, Germany",38.0,5.3,7.5,,12.151454545454545,11.8,1,14.4,3,12.65,2,13.55,1,13.058,2,6.85,2
+gonzales,edward,m,PER,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",123.0,5.2,6.6,0.2,12.255333333333333,11.033,1,12.566,1,11.6,1,12.8,1,11.833,1,13.7,1
+rolin,edward,m,VEN,24-28 Jun 2023,2023 Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",6.0,5.4,7.7,,12.463333333333335,11.2,2,11.4,2,12.55,2,12.95,2,12.116666666666665,3,13.600000000000001,4
+gorrell,eilidh,m,SCO,"29 Jul-2 Aug, 2023",BIRMINGHAM 2022 Commonwealth Games,AAqual,"Birmingham, England",,3.2,8.5,,11.7,,0,,0,,0,,0,,0,11.7,1
+petrounias,eleftherios,m,GRE,18-21 Aug 2022,2022 Senior European Championships,final,"Munich, Germany",1.0,6.2,8.933,,14.751999999999999,,0,,0,,0,,0,14.751999999999999,7,,0
+wahrmann,elel,m,JAM,24-28 Jun 2023,2023 Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",12.0,4.5,8.3,,12.0625,11.1,2,11.95,2,12.7,2,12.225000000000001,2,11.325,2,13.075,2
+koski,elias,m,FIN,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",80.0,5.0,7.9,0.1,13.226615384615382,13.04975,4,13.213,5,13.2415,4,13.0796,5,13.049499999999998,4,13.7665,4
+ioscovich,eliran,m,ISR,25-28 May 2023,2023 Varna World Challenge Cup Results,final,"Varna, Bulgaria",8.0,5.3,8.066,0.3,12.392222222222223,12.5,1,11.1,1,13.142,5,13.5,2,12.35,1,11.8,8
+cooper,elliott,m,GBR,24-27 Mar 2022,2022 British Gymnastics Championships,qual,"Liverpool, England",27.0,4.8,7.65,0.0,12.266666666666666,12.3,1,12.05,1,12.45,1,12.7,1,11.55,1,12.55,1
+akhmejanov,emil,m,KAZ,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",129.0,5.7,5.4,0.5,12.418695652173911,11.038666666666666,3,9.377666666666668,3,12.1875,4,12.833333333333334,3,11.766,1,13.929444444444444,9
+barber,emil,m,GBR,24-27 Mar 2022,2022 British Gymnastics Championships,final,"Liverpool, England",5.0,5.4,8.27,0.0,13.298363636363634,12.35,1,11.1,1,13.766499999999999,4,12.9,1,,0,13.7165,4
+soravuo,emil,m,FIN,18-21 Aug 2022,2022 Senior European Championships,qual,"Munich, Germany",11.0,5.5,8.633,,14.133,,0,,0,14.133,1,,0,,0,,0
+bremner,emily,m,SCO,"29 Jul-2 Aug, 2023",BIRMINGHAM 2022 Commonwealth Games,AAqual,"Birmingham, England",,4.2,8.65,,12.85,,0,,0,,0,,0,,0,12.85,1
+whitehead,emily,m,AUS,"29 Jul-2 Aug, 2023",BIRMINGHAM 2022 Commonwealth Games,AAqual,"Birmingham, England",,4.6,8.9,0.1,13.4,,0,,0,,0,,0,,0,13.4,1
+spence,emma,m,CAN,"29 Jul-2 Aug, 2023",BIRMINGHAM 2022 Commonwealth Games,AAqual,"Birmingham, England",,4.6,8.8,,13.4,,0,,0,,0,,0,,0,13.4,1
+yap,emma,m,SGP,"29 Jul-2 Aug, 2023",BIRMINGHAM 2022 Commonwealth Games,AAqual,"Birmingham, England",,3.4,7.85,,11.25,,0,,0,,0,,0,,0,11.25,1
+damdindorj,enkhtuvshin,m,MGL,23-26 Feb 2023,FIG Apparatus World Cup 2023,qual,"Cottbus, Germany",14.0,5.5,8.066,,11.737714285714286,12.6165,2,13.633,2,13.416,2,11.1495,2,10.783000000000001,2,10.283,4
+liaskinas,ernestas,m,LTU,18-21 Aug 2022,2022 Senior European Championships,qual,"Munich, Germany",109.0,4.5,6.2,,11.355333333333334,,0,10.733,1,10.7,1,,0,,0,12.633,1
+dick,ethan,m,NZL,"29 Jul-2 Aug, 2023",BIRMINGHAM 2022 Commonwealth Games,AAfinal,"Birmingham, England",16.0,5.1,6.45,0.1,12.866526315789473,12.477666666666666,3,13.61225,4,12.194333333333333,3,12.605333333333334,3,12.683333333333332,3,13.377666666666665,3
+cox,euan,m,GBR,24-27 Mar 2022,2022 British Gymnastics Championships,qual,"Liverpool, England",23.0,5.7,7.05,0.1,9.20625,8.025,2,5.1,1,6.325,2,12.6,1,12.95,1,14.3,1
+mclellan,euan,m,GBR,24-27 Mar 2022,2022 British Gymnastics Championships,qual,"Liverpool, England",26.0,4.8,7.7,0.0,11.91666666666667,11.925,2,9.65,2,11.625,2,13.149999999999999,2,12.35,2,12.8,2
+mc,ewan,m,IRL,18-21 Aug 2022,2022 Senior European Championships,qual,"Munich, Germany",89.0,5.1,7.3,,12.594857142857142,12.2,1,11.733,1,12.4,1,12.166,1,11.933,1,13.866,2
+indig,eyal,m,ISR,25-28 May 2023,2023 Varna World Challenge Cup Results,qual,"Varna, Bulgaria",9.0,6.0,7.45,0.0,13.98325,,0,13.98325,4,,0,,0,,0,,0
+de,fabian,m,MEX,24-28 Jun 2023,2023 Central American and Caribbean Games,final,"San Salvador, El Salvador",6.0,4.9,8.0,0.1,13.001272727272728,,0,,0,12.191500000000001,4,11.677333333333332,3,13.302500000000002,6,13.601666666666667,9
+dolci,felix,m,CAN,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",102.0,5.9,6.633,0.1,13.446379310344827,13.653199999999998,5,10.604,4,13.562249999999999,4,14.1132,5,13.913666666666666,6,14.193200000000001,5
+arican,ferhat,m,TUR,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",64.0,4.4,8.533,,13.744536585365855,12.909799999999999,5,13.790083333333333,12,14.2,1,14.629235294117645,17,,0,11.7665,6
+borosa,filip,m,CRO,25-28 May 2023,2023 Varna World Challenge Cup Results,qual,"Varna, Bulgaria",13.0,4.3,7.95,0.0,12.25,,0,,0,12.25,1,,0,,0,,0
+lidbeck,filip,m,SWE,11-16 Apr 2023,2023 Senior European Championships,qual,"Antalya, Turkey",83.0,5.7,7.3,0.3,13.518857142857144,,0,,0,13.288666666666666,3,,0,,0,13.6915,4
+sasnal,filip,m,POL,11-16 Apr 2023,2023 Senior European Championships,qual,"Antalya, Turkey",50.0,5.6,7.9,0.2,12.088928571428571,9.5995,4,10.524750000000001,4,12.674750000000001,4,12.666250000000002,4,12.108,4,13.524625,8
+ude,filip,m,CRO,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,final,"Liverpool, England",8.0,5.7,6.8,,13.445272727272727,,0,13.445272727272727,11,,0,,0,,0,,0
+almeida,filipe,m,POR,18-21 Aug 2022,2022 Senior European Championships,qual,"Munich, Germany",51.0,5.1,8.333,0.3,11.532833333333334,12.666,1,10.866,1,13.133,1,10.233,1,9.233,1,13.066,1
+morgan,finlay,m,GBR,24-27 Mar 2022,2022 British Gymnastics Championships,qual,"Liverpool, England",19.0,4.7,8.1,0.0,12.045833333333333,11.75,2,11.2,2,12.350000000000001,2,11.25,2,11.975000000000001,2,13.75,2
+langenegger,florian,m,SUI,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",118.0,5.2,6.766,0.1,12.736739130434783,12.860999999999999,3,13.008,4,13.4165,4,13.616333333333335,3,13.0205,4,11.146600000000001,5
+acuna,francisco,m,CRC,24-28 Jun 2023,2023 Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",14.0,4.3,8.2,,12.292307692307693,12.066666666666668,3,11.75,2,12.4,2,12.95,2,11.75,2,12.95,2
+baines,frank,m,SCO,"29 Jul-2 Aug, 2023",BIRMINGHAM 2022 Commonwealth Games,AAfinal,"Birmingham, England",4.0,4.6,8.75,,13.201142857142857,12.799999999999999,3,12.775,2,13.405333333333333,3,13.3,2,13.075,2,13.95,2
+lee,frankie,m,HKG,25-28 May 2023,2023 Varna World Challenge Cup Results,qual,"Varna, Bulgaria",13.0,4.8,8.9,0.0,13.399999999999999,,0,,0,,0,,0,,0,13.399999999999999,2
+griffiths,fraser,m,GBR,24-27 Mar 2022,2022 British Gymnastics Championships,qual,"Liverpool, England",,4.3,5.63,0.0,12.2662,,0,11.566,1,9.933,1,12.7,1,,0,13.565999999999999,2
+lynes,fraser,m,GBR,24-27 Mar 2022,2022 British Gymnastics Championships,qual,"Liverpool, England",,4.4,7.33,0.0,11.733,,0,,0,,0,,0,11.733,1,,0
+richard,frederick,m,USA,17-19 Mar 2023,EnBW DTB Pokal Team Challenge 2023,qual,"Stuttgart, Germany",12.0,6.1,8.05,0.1,13.9198,13.933250000000001,4,13.722,3,13.916333333333334,3,13.94975,4,13.6495,2,14.162499999999998,4
+aas,fredrik,m,NOR,23-26 Feb 2023,FIG Apparatus World Cup 2023,qual,"Cottbus, Germany",39.0,4.6,6.7,,12.224499999999999,12.033000000000001,2,11.933,2,12.566,1,12.466,1,11.866,1,12.966,1
+barbosa,gabriel,m,BRA,17-19 Mar 2023,EnBW DTB Pokal Team Challenge 2023,qual,"Stuttgart, Germany",39.0,5.2,7.8,,13.03325,,0,13.0165,2,,0,13.0,1,13.1,1,,0
+burtanete,gabriel,m,ROU,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,AAfinal,"Liverpool, England",20.0,5.2,8.0,0.1,13.36941860465116,12.353000000000002,5,12.179599999999999,5,13.255166666666666,6,13.099666666666666,6,13.4275,6,14.235199999999999,15
+khachikyan,gagik,m,ARM,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",72.0,4.8,8.2,,13.327137931034484,11.711,3,14.101999999999999,12,13.344333333333333,3,12.655333333333333,3,12.477333333333334,3,13.3398,5
+kumar,gaurav,m,IND,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",81.0,5.2,7.6,,12.461,11.9,1,11.7,1,12.8,1,13.5,1,12.3,1,12.566,1
+honnor,george,m,GBR,24-27 Mar 2022,2022 British Gymnastics Championships,qual,"Liverpool, England",24.0,5.1,7.55,0.1,11.485714285714286,12.25,1,5.85,1,12.55,1,11.25,1,12.15,1,13.175,2
+fenton,georgia,m,ENG,"29 Jul-2 Aug, 2023",BIRMINGHAM 2022 Commonwealth Games,AAqual,"Birmingham, England",,4.6,8.85,0.3,13.15,,0,,0,,0,,0,,0,13.15,1
+godwin,georgia,m,AUS,"29 Jul-2 Aug, 2023",BIRMINGHAM 2022 Commonwealth Games,AAqual,"Birmingham, England",,4.8,8.95,,13.75,,0,,0,,0,,0,,0,13.75,1
+angonas,georgios,m,CYP,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",120.0,4.8,7.266,0.4,12.683394736842107,13.005333333333333,6,11.708,6,12.069,6,12.910833333333334,6,12.430166666666667,6,13.653625000000002,8
+kelesidis,georgios,m,GRE,18-21 Aug 2022,2022 Senior European Championships,qual,"Munich, Germany",91.0,4.4,7.6,,11.98325,12.0,1,11.8,2,,0,12.333,1,,0,,0
+regini,giarnni,m,GBR,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,final,"Liverpool, England",1.0,6.2,8.333,,13.79659375,10.85825,4,13.238666666666667,3,14.110777777777777,9,14.510777777777776,9,,0,14.392571428571427,7
+cuyle,glen,m,BEL,18-21 Aug 2022,2022 Senior European Championships,qual,"Munich, Germany",95.0,5.4,6.7,,13.556299999999998,,0,,0,12.2,2,13.6995,2,13.906199999999998,5,14.233,1
+trebing,glenn,m,GER,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",79.0,5.4,7.433,,13.287199999999999,12.95825,4,13.403,5,13.316500000000001,2,13.2864,5,13.1495,2,13.766,2
+lin,guan,m,TPE,1-5 Aug 2023,2023 FISU World University Games,qual,"Chengdu, China",31.0,5.2,8.0,,12.893722222222221,11.066333333333333,3,12.75,2,11.783,2,12.116,2,13.961428571428572,7,13.93,2
+campos,guilherme,m,POR,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",70.0,5.4,7.633,,12.32004347826087,11.953,5,9.288666666666666,3,13.110999999999999,6,12.366333333333332,3,12.610999999999999,3,14.043999999999999,3
+chasazyrovas,gytis,m,LTU,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",119.0,5.6,6.533,0.4,12.049769230769233,11.966666666666667,3,12.256857142857143,7,10.833166666666665,6,12.822000000000001,3,11.933,4,13.466333333333333,3
+trinh,hai,m,VIE,9-12 Mar 2023,World Cup,qual,"Baku, Azerbaijan",23.0,5.4,7.633,,13.608727272727272,,0,,0,12.877333333333333,3,,0,,0,13.883,8
+carter,hamish,m,GBR,23-26 Mar 2023,2023 British Gymnastics Championships,qual,"Liverpool, England",12.0,5.4,7.35,0.0,12.589363636363636,12.577666666666667,3,11.675,2,12.275,2,13.075,2,12.9,1,13.8,1
+kumarasinghege,hansha,m,SRI,29 Jul-2 Aug 2022,BIRMINGHAM 2022 Commonwealth Games,qual,"Birmingham, England",37.0,2.9,6.15,,6.6000000000000005,,0,9.05,1,,0,,0,4.15,1,,0
+kim,hansol,m,KOR,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",12.0,6.0,8.266,,14.008,,0,,0,14.266,1,,0,,0,13.922000000000002,3
+you,hao,m,CHN,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",42.0,5.3,7.933,,13.759800000000002,13.233,1,13.633,1,,0,12.7,1,14.616499999999998,2,,0
+wibye,harald,m,NOR,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",46.0,5.5,7.966,,13.047777777777778,12.677333333333335,3,12.066333333333333,3,12.921666666666667,3,14.143999999999998,3,12.655333333333333,3,13.822000000000001,3
+hepworth,harry,m,GBR,24-27 Mar 2022,2022 British Gymnastics Championships,qual,"Liverpool, England",25.0,5.9,6.65,0.0,13.988750000000001,,0,,0,13.497875,8,12.075,2,13.561714285714288,7,14.554210526315789,19
+merdinyan,harutyun,m,ARM,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,final,"Liverpool, England",3.0,6.1,8.633,,14.314444444444442,,0,14.314444444444442,9,,0,,0,,0,,0
+bulut,hasan,m,TUR,11-16 Apr 2023,2023 Senior European Championships,qual,"Antalya, Turkey",80.0,4.5,7.833,,12.19988888888889,11.777666666666667,3,11.788666666666666,3,,0,13.033333333333331,3,,0,,0
+skinner,hayden,m,GBR,24-27 Mar 2022,2022 British Gymnastics Championships,qual,"Liverpool, England",18.0,6.2,7.35,0.7,13.475461538461541,,0,12.5,1,13.3032,5,,0,,0,13.737857142857141,7
+thorpe,heath,m,AUS,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",87.0,5.2,7.6,0.1,11.86461111111111,12.816333333333333,3,10.088666666666667,3,13.511000000000001,3,12.6,2,12.788666666666666,3,10.187249999999999,4
+brooker,henry,m,GBR,24-27 Mar 2022,2022 British Gymnastics Championships,qual,"Liverpool, England",32.0,5.2,6.15,0.0,11.700000000000001,11.2,1,10.7,1,11.35,1,12.2,1,11.0,1,12.725000000000001,2
+lewis,henry,m,GBR,23-26 Mar 2023,2023 British Gymnastics Championships,qual,"Liverpool, England",15.0,5.1,7.65,0.1,12.007142857142856,10.65,1,11.25,1,12.65,1,12.3,1,12.2,1,12.5,2
+metidji,hillal,m,ALG,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",87.0,5.1,8.033,,11.816333333333333,,0,11.199666666666666,3,,0,12.433,3,,0,,0
+hamadouche,houssem,m,ALG,27-30 Apr 2023,World Cup,qual,"Cairo, Egypt",32.0,5.1,7.233,,12.39125,,0,11.633,1,12.333,1,,0,,0,12.7995,2
+marinov,hristos,m,BUL,25-28 May 2023,2023 Varna World Challenge Cup Results,qual,"Varna, Bulgaria",9.0,5.7,7.2,0.0,12.9,,0,,0,,0,,0,12.9,1,,0
+kan,hyunbae,m,KOR,1-5 Aug 2023,2023 FISU World University Games,qual,"Chengdu, China",12.0,5.9,7.933,,12.99975,13.3,1,,0,13.833,1,,0,12.1,1,12.766,1
+raubal,ian,m,SUI,1-5 Aug 2023,2023 FISH World University Games,AAfinal,"Chengdu, China",9.0,5.2,8.166,,13.379666666666667,13.299499999999998,2,12.3665,2,13.315999999999999,2,13.983,2,13.583,2,13.73,2
+skirkey,ian,m,USA,27-30 Apr 2023,World Cup,final,"Cairo, Egypt",5.0,6.1,8.166,,14.166333333333334,,0,14.166333333333334,3,,0,,0,,0,,0
+colak,ibrahim,m,TUR,17-19 Mar 2023,EnBW DTB Pokal Team Challenge 2023,qual,"Stuttgart, Germany",27.0,5.0,8.25,,13.933250000000001,12.5,1,,0,13.25,1,13.75,1,14.393199999999998,5,,0
+magalhaes,igor,m,CAY,"29 Jul-2 Aug, 2023",BIRMINGHAM 2022 Commonwealth Games,AAfinal,"Birmingham, England",17.0,3.6,7.05,0.3,10.270833333333334,10.8,2,8.6,2,10.274999999999999,2,11.625,2,7.475,2,12.850000000000001,2
+radivilov,igor,m,UKR,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",18.0,6.0,7.866,,14.405478260869568,,0,,0,12.966,1,,0,14.252142857142859,7,14.572999999999999,15
+liubimov,ilia,m,ISR,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",116.0,5.5,7.0,,12.428620689655173,12.488,7,13.106125,8,12.655333333333331,3,13.100000000000001,4,12.183,3,10.3125,4
+georgiou,ilias,m,CYP,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,final,"Liverpool, England",6.0,5.9,8.4,,13.346210526315788,13.602500000000001,6,12.482999999999999,3,13.133,1,13.410833333333334,6,13.408,2,14.1,1
+kovtun,illia,m,UKR,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,AAfinal,"Liverpool, England",11.0,6.1,8.0,0.1,13.974252747252747,13.676399999999997,15,14.089666666666668,15,13.559285714285716,14,15.04370588235294,17,13.075454545454544,11,13.987526315789472,19
+azizov,ilyas,m,KAZ,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",50.0,5.8,7.866,0.3,12.997333333333334,12.2396,5,13.580571428571428,7,12.9328,5,12.80457142857143,7,12.544333333333334,3,13.909666666666666,3
+jimsheleishvili,ioane,m,GEO,18-21 Aug 2022,2022 Senior European Championships,qual,"Munich, Germany",26.0,5.6,8.1,,11.87938888888889,10.5464,5,9.666,1,11.77475,4,11.9165,2,12.933,1,13.513200000000001,5
+nunez,isaac,m,MEX,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",137.0,3.9,6.166,,12.807782608695652,11.5198,5,12.779,4,12.588666666666668,3,13.724666666666666,6,12.3,2,13.716666666666667,3
+dejanovic,ivan,m,SRB,18-21 Aug 2022,2022 Senior European Championships,qual,"Munich, Germany",83.0,5.0,7.233,,12.583124999999999,12.583124999999999,8,,0,,0,,0,,0,,0
+tikhonov,ivan,m,AZE,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",126.0,5.5,5.666,,13.137755102040817,12.6398,10,12.733111111111109,9,12.921833333333334,6,13.433,8,13.4464,5,13.684272727272726,11
+scrivens,iwan,m,GBR,23-26 Mar 2023,2023 British Gymnastics Championships,qual,"Liverpool, England",31.0,4.1,6.3,0.1,11.566666666666668,11.65,1,12.5,1,10.3,1,11.8,1,10.2,1,12.95,1
+polanco,jabiel,m,DOM,24-28 Jun 2023,2023 Central American and Caribbean Games,final,"San Salvador, El Salvador",6.0,4.5,8.25,,12.949909090909092,,0,,0,,0,,0,11.825000000000001,4,13.592714285714285,7
+gagamov,jack,m,CZE,11-16 Apr 2023,2023 Senior European Championships,qual,"Antalya, Turkey",73.0,4.4,7.966,,11.908,12.366,1,11.233,1,,0,12.133,1,11.9,1,,0
+stanley,jack,m,GBR,23-26 Mar 2023,2023 British Gymnastics Championships,final,"Liverpool, England",3.0,4.5,8.4,0.0,12.9,,0,12.9,2,,0,,0,,0,,0
+buus,jacob,m,DEN,11-16 Apr 2023,2023 Senior European Championships,qual,"Antalya, Turkey",31.0,4.6,8.433,,13.033,13.033,1,,0,,0,,0,,0,,0
+edwards,jacob,m,WAL,"29 Jul-2 Aug, 2023",BIRMINGHAM 2022 Commonwealth Games,AAfinal,"Birmingham, England",5.0,5.5,7.85,,12.812999999999999,12.322000000000001,3,12.366666666666667,3,13.338666666666667,3,12.644333333333334,3,12.505333333333333,3,13.479,4
+karlsen,jacob,m,NOR,18-21 Aug 2022,2022 Senior European Championships,qual,"Munich, Germany",40.0,4.5,8.8,,12.580249999999998,12.4665,2,10.9665,2,13.1665,2,11.216000000000001,2,13.633,2,14.033,2
+kim,jaeho,m,KOR,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",47.0,5.3,8.2,0.1,13.371230769230767,13.3995,2,11.283000000000001,2,13.600000000000001,2,13.849499999999999,2,11.766,1,14.449,4
+jarman,jake,m,GBR,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,AAfinal,"Liverpool, England",3.0,6.7,7.733,,13.95040740740741,13.210916666666668,12,13.239090909090908,11,14.203357142857143,14,13.991416666666668,12,13.064666666666666,9,14.847652173913042,23
+johnson,jake,m,GBR,23-26 Mar 2023,2023 British Gymnastics Championships,qual,"Liverpool, England",29.0,4.8,6.2,0.3,12.14375,12.55,1,12.675,2,10.7,1,11.575,2,12.4,1,13.0,1
+vlahek,jakov,m,CRO,1-5 Aug 2023,2023 FISU World University Games,qual,"Chengdu, China",32.0,5.6,7.1,,12.727666666666666,,0,12.727666666666666,3,,0,,0,,0,,0
+bacueti,james,m,AUS,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",69.0,5.3,8.033,0.3,12.868625000000002,,0,11.108,2,12.5665,2,,0,,0,13.9,4
+hall,james,m,GBR,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",16.0,5.8,8.366,,13.670285714285715,13.604,8,13.528875,8,13.604,4,13.833166666666665,6,13.530333333333333,6,14.266666666666667,3
+hardy,james,m,AUS,17-19 Mar 2023,EnBW DTB Pokal Team Challenge 2023,qual,"Stuttgart, Germany",28.0,5.5,7.75,,12.648538461538458,10.933,2,12.208,2,13.475,2,12.925,2,12.683,2,13.327666666666666,3
+leaver,james,m,GBR,24-27 Mar 2022,2022 British Gymnastics Championships,qual,"Liverpool, England",28.0,4.6,7.85,0.1,11.458333333333334,11.9,1,5.35,1,12.35,1,13.0,1,12.6,1,13.55,1
+lewis,jamie,m,GBR,23-26 Mar 2023,2023 British Gymnastics Championships,final,"Liverpool, England",7.0,5.4,8.05,0.7,13.388071428571427,11.525,2,14.283249999999999,4,12.875,2,13.05,2,13.666666666666666,3,14.4,1
+carreres,jan,m,ESP,23-26 Feb 2023,FIG Apparatus World Cup 2023,qual,"Cottbus, Germany",38.0,4.7,7.533,,10.666545454545455,12.258,2,9.15,1,12.3415,2,12.85,1,11.6,1,8.63325,4
+rojo,javier,m,MEX,27-30 Apr 2023,World Cup,qual,"Cairo, Egypt",31.0,5.3,7.133,,12.227333333333334,12.366,1,11.066,1,12.433,1,,0,12.2,1,12.6495,2
+sandoval,javier,m,COL,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",49.0,5.1,8.033,,12.932999999999998,13.133,1,13.2,1,,0,12.466,1,,0,,0
+attygalle,jaydon,m,GBR,23-26 Mar 2023,2023 British Gymnastics Championships,qual,"Liverpool, England",14.0,4.9,7.75,0.0,11.258333333333333,7.45,1,12.05,1,12.65,1,12.15,1,9.65,1,13.6,1
+rampersad,jayson,m,CAN,29 Jul-2 Aug 2022,BIRMINGHAM 2022 Commonwealth Games,qual,"Birmingham, England",35.0,4.7,6.05,0.3,12.566666666666668,,0,13.625,2,10.45,1,,0,,0,,0
+maracha,jea,m,WAL,"29 Jul-2 Aug, 2023",BIRMINGHAM 2022 Commonwealth Games,AAqual,"Birmingham, England",,4.2,8.75,,12.95,,0,,0,,0,,0,,0,12.95,1
+lalonde,jenna,m,CAN,"29 Jul-2 Aug, 2023",BIRMINGHAM 2022 Commonwealth Games,AAqual,"Birmingham, England",,4.2,8.85,,13.05,,0,,0,,0,,0,,0,13.05,1
+ramirez,jeordy,m,DOM,24-28 Jun 2023,2023 Central American and Caribbean Games,qual,"San Salvador, El Salvador",17.0,4.7,7.8,,11.850000000000001,11.35,1,10.35,1,12.5,1,12.875,2,11.15,1,,0
+gruenberg,jermain,m,NED,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",75.0,5.2,7.8,0.1,12.800090909090905,12.953,5,11.899666666666667,3,12.055333333333332,3,13.294999999999998,5,12.799333333333331,3,13.366333333333335,3
+grünberg,jermain,m,,8-11 Jun 2023,2023 Osijek Challenge Cup,qual,"Osijek, Croatia.",14.0,5.0,7.45,,13.388666666666666,12.45,1,,0,,0,13.858,2,,0,,0
+moore,jesse,m,AUS,"29 Jul-2 Aug, 2023",BIRMINGHAM 2022 Commonwealth Games,AAfinal,"Birmingham, England",14.0,5.1,6.7,,13.0766,14.15,1,13.505333333333333,3,12.325,2,13.9,1,12.0,2,13.55,1
+corrales,jhossua,m,CRC,24-28 Jun 2023,2023 Central American and Caribbean Games,qual,"San Salvador, El Salvador",13.0,4.5,8.2,,9.883333333333331,11.1,1,,0,12.7,1,10.8,1,11.05,1,6.825,2
+yang,jiaxing,m,CHN,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",52.0,6.1,7.2,,13.524500000000002,13.666,1,12.666,1,13.3,1,,0,,0,14.466,1
+zona,jim,m,FRA,11-16 Apr 2023,2023 Senior European Championships,qual,"Antalya, Turkey",39.0,5.3,8.233,0.1,12.004454545454546,13.2165,2,12.7915,2,13.6165,2,,0,13.225,2,8.783333333333333,3
+zou,jingyuan,m,CHN,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,final,"Liverpool, England",1.0,6.9,9.266,,15.141299999999998,,0,13.948,2,,0,15.948,4,14.93125,4,,0
+lenberg,joakim,m,SWE,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",98.0,4.9,7.6,,12.195882352941178,11.688666666666668,3,11.299499999999998,2,12.866333333333335,3,11.966666666666669,3,11.922000000000002,3,13.133333333333333,3
+amblie,joar,m,NOR,18-21 Aug 2022,2022 Senior European Championships,qual,"Munich, Germany",82.0,3.7,8.8,,12.683,,0,,0,,0,12.5,1,12.866,1,,0
+cemlyn,joe,m,GBR,24-27 Mar 2022,2022 British Gymnastics Championships,qual,"Liverpool, England",11.0,5.5,7.95,0.0,12.998111111111111,13.1415,4,12.325,2,13.049999999999999,3,13.116666666666667,3,12.825,4,13.475000000000001,2
+fraser,joe,m,GBR,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,AAfinal,"Liverpool, England",12.0,5.7,8.166,,14.055333333333335,13.68525,8,14.023888888888889,9,13.624749999999999,4,14.628,10,14.04985714285714,7,13.874749999999999,4
+alvarez,joel,m,CHI,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",94.0,5.1,7.466,,12.382833333333332,12.366,1,10.366,1,12.566,1,12.933,1,12.366,1,13.7,1
+catarino,joel,m,POR,18-21 Aug 2022,2022 Senior European Championships,qual,"Munich, Germany",58.0,4.3,8.366,,11.955333333333334,12.666,1,,0,,0,11.2,1,12.0,1,,0
+plata,joel,m,ESP,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,AAfinal,"Liverpool, England",4.0,6.0,8.333,,13.600827586206897,13.394166666666665,6,12.54975,4,13.9198,5,13.788333333333334,3,13.283000000000001,4,14.251999999999999,7
+gunnarsson,jon,m,ISL,18-21 Aug 2022,2022 Senior European Championships,qual,"Munich, Germany",93.0,4.7,7.533,,12.3995,,0,,0,,0,,0,12.3995,2,,0
+thorisson,jonas,m,ISL,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",91.0,5.0,7.633,,12.323625,11.9495,2,10.755333333333333,3,13.0205,4,12.4995,2,11.55,2,13.610666666666667,3
+oconnell,jorden,m,NZL,29 Jul-2 Aug 2022,BIRMINGHAM 2022 Commonwealth Games,qual,"Birmingham, England",29.0,4.4,8.15,,12.116666666666667,10.6,1,13.2,1,,0,12.55,1,,0,,0
+hagenaar,jordi,m,NED,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",36.0,5.4,8.233,,12.963272727272727,13.133,2,11.2995,2,13.332999999999998,2,13.633,1,12.833,2,13.883,2
+vega,jorge,m,CCS,24-28 Jun 2023,2023 Central American and Caribbean Games,qual,"San Salvador, El Salvador",3.0,5.5,8.3,,13.516666666666667,,0,,0,13.8,1,,0,,0,13.375,2
+escandon,jose,m,CUB,24-28 Jun 2023,2023 Central American and Caribbean Games,qual,"San Salvador, El Salvador",19.0,4.5,7.0,,11.983333333333334,11.5,1,,0,,0,12.3,1,12.15,1,,0
+lopez,jose,m,PUR,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",130.0,5.4,5.666,0.5,12.449090909090911,12.14575,4,11.372,3,12.155333333333333,3,12.727666666666666,3,12.629000000000001,4,13.2032,5
+martinez,jose,m,COL,24-28 Jun 2023,2023 Central American and Caribbean Games,qual,"San Salvador, El Salvador",26.0,4.4,6.9,,12.15,11.8,1,12.65,2,11.3,1,12.95,1,11.75,1,11.95,1
+mendes,jose,m,POR,1-5 Aug 2023,2023 FISU World University Games,qual,"Chengdu, China",26.0,5.6,7.833,0.1,13.015333333333333,12.833,1,12.466,1,13.333,1,12.9,1,12.9,1,13.66,1
+nogueira,jose,m,POR,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",82.0,5.5,7.4,0.1,12.639045454545455,12.524750000000001,4,12.191,4,12.949750000000002,4,12.266250000000001,4,12.421999999999999,3,13.688666666666668,3
+cemlyn,joseph,m,WAL,29 Jul-2 Aug 2022,BIRMINGHAM 2022 Commonwealth Games,final,"Birmingham, England",8.0,5.1,6.566,0.3,12.75825,11.35,1,12.75,1,12.383,2,13.3,1,13.1,1,13.4,2
+hatoguan,joseph,m,INA,1-4 Mar 2023,World Cup,qual,"Doha, Qatar",26.0,5.2,8.866,,11.4662,,0,11.333,1,10.833,1,,0,8.166,1,13.499500000000001,2
+cook,joshua,m,WAL,"29 Jul-2 Aug, 2023",BIRMINGHAM 2022 Commonwealth Games,AAfinal,"Birmingham, England",7.0,5.5,7.6,,12.649999999999999,12.55,2,12.05,2,12.85,2,12.2,2,12.55,2,13.7,2
+karnes,joshua,m,USA,1-5 Aug 2023,2023 FISH World University Games,AAfinal,"Chengdu, China",5.0,5.3,8.566,,13.621583333333334,13.483,2,13.316500000000001,2,13.683,2,13.9995,2,12.916,2,14.3315,2
+nathan,joshua,m,GBR,24-27 Mar 2022,2022 British Gymnastics Championships,qual,"Liverpool, England",9.0,5.6,8.05,0.0,13.31561111111111,13.118625,8,13.158125000000002,8,13.4915,4,13.316624999999998,8,13.02475,4,14.137500000000001,4
+williams,joshua,m,ESP,1-5 Aug 2023,2023 FISU World University Games,qual,"Chengdu, China",30.0,5.1,8.166,,12.999500000000003,13.466,1,12.3,1,13.266,1,12.966,1,12.733,1,13.266,1
+calvo,jossimar,m,COL,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",74.0,5.6,7.333,,13.552000000000001,13.4,1,13.3,1,12.933,1,15.065999999999999,2,12.066,1,13.033,1
+juarez,josue,m,MEX,24-28 Jun 2023,2023 Central American and Caribbean Games,qual,"San Salvador, El Salvador",15.0,4.2,7.65,,12.25,11.85,1,11.45,1,,0,13.45,1,,0,,0
+besana,juancho,m,PHI,1-4 Mar 2023,World Cup,qual,"Doha, Qatar",29.0,4.8,7.466,0.3,13.103333333333333,12.1665,2,,0,12.733,1,,0,,0,13.477333333333334,6
+jato,julian,m,ARG,1-5 Aug 2023,2023 FISU World University Games,qual,"Chengdu, China",55.0,4.9,7.666,,11.8885,11.2,1,9.533,1,12.566,1,12.266,1,12.566,1,13.2,1
+saleur,julien,m,FRA,18-21 Aug 2022,2022 Senior European Championships,qual,"Munich, Germany",56.0,5.1,8.0,,13.385285714285715,12.916,2,13.483,2,13.1,1,13.733,1,,0,14.066,1
+liew,jun,m,SGP,1-5 Aug 2023,2023 FISU World University Games,qual,"Chengdu, China",64.0,4.6,7.5,,10.960833333333333,10.2,1,11.566,1,12.1,1,10.833,1,11.233,1,9.833,1
+lee,junghyo,m,KOR,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",66.0,5.3,7.566,,13.00375,12.766,2,13.0665,2,,0,13.166,2,13.0165,2,,0
+seo,jungwon,m,KOR,1-5 Aug 2023,2023 FISU World University Games,final,"Chengdu, China",8.0,5.3,7.0,,13.420833333333334,,0,13.233,1,13.100000000000001,2,13.166,1,13.766,1,14.16,1
+lee,junho,m,KOR,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",85.0,5.3,7.433,,13.4205,12.233,1,12.633,1,12.733,1,13.266,1,13.433,1,14.355333333333334,3
+ng,ka,m,HKG,1-5 Aug 2023,2023 FISU World University Games,qual,"Chengdu, China",57.0,5.6,7.8,,13.75825,,0,,0,,0,,0,,0,13.75825,4
+garnczarek,kacper,m,POL,11-16 Apr 2023,2023 Senior European Championships,qual,"Antalya, Turkey",106.0,4.9,7.4,0.1,12.777499999999998,12.866,1,12.9,1,12.2,1,13.033,1,12.2,1,13.466,1
+sugimoto,kaito,m,JPN,1-5 Aug 2023,2023 FISU World University Games,final,"Chengdu, China",3.0,5.5,8.733,,14.088166666666666,14.165,2,12.333,1,,0,14.883,2,14.1,1,,0
+tanigawa,kakeru,m,JPN,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",9.0,5.8,8.5,,12.951076923076922,13.6,1,14.444,3,14.275,2,13.8915,2,13.3415,2,9.472,3
+nelson,kameron,m,USA,27-30 Apr 2023,World Cup,final,"Cairo, Egypt",8.0,6.0,5.8,,13.655333333333333,,0,,0,12.600000000000001,2,,0,,0,14.182999999999998,4
+idesjoe,karl,m,SWE,18-21 Aug 2022,2022 Senior European Championships,qual,"Munich, Germany",80.0,5.0,7.7,0.1,12.270176470588236,12.0995,4,7.866,2,12.649999999999999,2,13.433,3,13.20775,4,13.0165,2
+adapa,karthik,m,CAY,29 Jul-2 Aug 2022,BIRMINGHAM 2022 Commonwealth Games,qual,"Birmingham, England",34.0,4.0,6.6,,10.433333333333334,10.15,1,9.1,1,10.6,1,11.15,1,10.0,1,11.6,1
+matsumi,kazuki,m,JPN,9-12 Mar 2023,World Cup,qual,"Baku, Azerbaijan",13.0,6.1,7.466,0.1,13.961428571428572,14.133,2,12.866,1,13.466,1,14.6995,2,13.733,1,,0
+minami,kazuki,m,JPN,1-5 Aug 2023,2023 FISU World University Games,final,"Chengdu, China",4.0,6.4,7.333,0.1,14.414222222222223,,0,,0,14.13225,4,,0,,0,14.6398,5
+kaya,kazuma,m,JPN,1-5 Aug 2023,2023 FISH World University Games,AAfinal,"Chengdu, China",16.0,5.7,7.2,,14.235347826086956,14.074750000000002,4,14.459,5,13.7924,5,14.6524,5,13.9995,2,14.298,2
+cham,kelvin,m,GBR,24-27 Mar 2022,2022 British Gymnastics Championships,qual,"Liverpool, England",15.0,5.2,7.9,0.0,12.450000000000001,12.35,1,10.6,1,13.1,1,11.9,1,13.0,1,13.100000000000001,2
+tamane,kenji,m,CAN,"29 Jul-2 Aug, 2023",BIRMINGHAM 2022 Commonwealth Games,AAfinal,"Birmingham, England",6.0,5.0,8.1,,12.262944444444445,9.833333333333334,3,11.783249999999999,4,12.966666666666667,3,13.283333333333333,3,13.0,3,13.175,2
+sener,kerem,m,TUR,18-21 Aug 2022,2022 Senior European Championships,qual,"Munich, Germany",110.0,5.2,4.866,0.3,12.361516129032257,12.833,7,10.877666666666668,3,12.087000000000002,4,13.133000000000001,6,13.4662,5,11.044333333333334,6
+buckley,kevin,m,SLO,11-16 Apr 2023,2023 Senior European Championships,qual,"Antalya, Turkey",109.0,4.4,7.6,,12.008000000000001,11.810666666666668,3,13.055000000000001,3,12.0,1,10.383,2,12.0,2,12.733,1
+crovetto,kevin,m,MON,11-16 Apr 2023,2023 Senior European Championships,qual,"Antalya, Turkey",107.0,4.4,7.666,,11.038499999999999,12.166,1,6.4,1,12.066,1,10.266,1,12.233,1,13.1,1
+espinosa,kevin,m,PAN,24-28 Jun 2023,2023 Central American and Caribbean Games,qual,"San Salvador, El Salvador",31.0,3.8,6.55,,10.35,,0,,0,10.35,1,10.35,1,,0,,0
+penev,kevin,m,BUL,11-16 Apr 2023,2023 Senior European Championships,qual,"Antalya, Turkey",29.0,5.6,7.966,,12.746818181818183,12.233,1,12.433333333333335,3,13.004,4,11.866,1,12.9,1,13.9,1
+ergashev,khabibullo,m,UZB,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",86.0,4.9,7.8,,12.916461538461537,12.099666666666664,3,13.7165,2,12.7,1,13.155333333333331,3,12.772,3,13.7,1
+vanstroem,kim,m,SWE,18-21 Aug 2022,2022 Senior European Championships,qual,"Munich, Germany",92.0,5.3,7.033,,12.42475,12.333,1,,0,12.333,1,12.633,1,12.4,1,,0
+vanstrom,kim,m,SWE,1-4 Mar 2023,World Cup,final,"Doha, Qatar",7.0,5.8,7.566,,13.032666666666666,12.066,1,,0,13.516,2,,0,,0,,0
+smith,kiplin,m,AUS,1-5 Aug 2023,2023 FISU World University Games,qual,"Chengdu, China",77.0,4.3,6.866,0.3,12.036181818181818,11.822000000000001,3,11.83325,4,10.866,1,,0,,0,12.911,3
+maeda,koki,m,JPN,1-4 Mar 2023,World Cup,final,"Doha, Qatar",4.0,5.9,8.8,,14.0915,,0,13.933,1,,0,14.45,2,13.533,1,,0
+konstantinidis,konstantinos,m,GRE,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",59.0,6.0,7.033,,13.493200000000002,,0,,0,,0,,0,13.493200000000002,5,,0
+fellows,korben,m,GBR,24-27 Mar 2022,2022 British Gymnastics Championships,qual,"Liverpool, England",12.0,5.2,7.5,0.0,12.65,12.7,1,12.575,2,,0,,0,12.75,1,,0
+danishevski,kristian,m,FIN,1-5 Aug 2023,2023 FISU World University Games,qual,"Chengdu, China",49.0,5.0,7.8,,13.166333333333334,,0,,0,12.8,1,,0,,0,13.349499999999999,2
+bohorquez,kristopher,m,COL,24-28 Jun 2023,2023 Central American and Caribbean Games,final,"San Salvador, El Salvador",1.0,5.6,8.3,,13.5,,0,,0,,0,,0,13.5,2,,0
+balazs,krisztian,m,HUN,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,AAfinal,"Liverpool, England",22.0,5.3,7.633,0.1,13.284214285714285,13.644166666666665,6,12.7132,5,12.882750000000001,4,13.993,5,12.9665,4,13.29125,4
+meszaros,krisztofer,m,HUN,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,AAfinal,"Liverpool, England",15.0,5.8,7.9,,13.612016666666666,12.9248,10,13.481399999999999,10,14.12409090909091,11,14.143,10,12.959285714285715,7,13.762416666666667,12
+rutter,kurtis,m,GBR,23-26 Mar 2023,2023 British Gymnastics Championships,qual,"Liverpool, England",27.0,4.6,6.2,0.0,10.828571428571427,8.5,1,7.45,1,10.8,1,11.0,1,12.15,1,12.95,2
+davis,lachlan,m,AUS,1-5 Aug 2023,2023 FISU World University Games,qual,"Chengdu, China",61.0,4.9,7.6,0.3,12.7265,,0,12.633,1,12.2,1,12.633,1,11.9,1,13.496500000000001,2
+smith,lachlan,m,AUS,1-5 Aug 2023,2023 FISU World University Games,qual,"Chengdu, China",52.0,4.7,7.7,,12.208,12.4,1,11.933,1,,0,12.233,1,12.266,1,,0
+najjar,lais,m,SYR,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",54.0,5.3,7.966,,12.683,11.466,1,12.533,1,13.266,1,13.333,1,12.0,1,13.5,1
+blixt,landen,m,USA,1-5 Aug 2023,2023 FISU World University Games,qual,"Chengdu, China",59.0,5.4,7.533,0.6,13.172000000000002,13.3,1,12.633,1,12.333,1,13.566,1,12.5,1,14.7,1
+denommee,laurie,m,CAN,"29 Jul-2 Aug, 2023",BIRMINGHAM 2022 Commonwealth Games,AAqual,"Birmingham, England",,4.6,9.05,,13.65,,0,,0,,0,,0,,0,13.65,1
+giannini,lay,m,ITA,1-5 Aug 2023,2023 FISH World University Games,AAfinal,"Chengdu, China",12.0,5.4,8.0,0.1,12.640052631578948,13.4,3,12.716666666666669,3,13.4,3,13.373999999999999,4,13.1495,2,10.454,4
+sauve,leandre,m,CAN,17-19 Mar 2023,EnBW DTB Pokal Team Challenge 2023,qual,"Stuttgart, Germany",29.0,5.6,7.65,,13.300000000000002,,0,,0,13.25,1,,0,,0,13.325,2
+pena,leandro,m,DOM,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",104.0,5.1,7.166,,12.141952380952379,12.162500000000001,4,9.777666666666667,3,12.238666666666667,3,12.588666666666668,3,12.033333333333333,3,13.283199999999999,5
+saladino,leo,m,FRA,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",68.0,5.5,7.866,0.3,13.40869696969697,12.4262,5,12.579600000000001,5,13.5928,5,13.9862,5,13.366399999999999,5,14.091375,8
+prügel,leonard,m,GE2,17-19 Mar 2023,EnBW DTB Pokal Team Challenge 2023,qual,"Stuttgart, Germany",51.0,5.3,6.25,,10.24,11.55,1,12.8,1,,0,13.75,1,,0,6.55,2
+skhiladze,levan,m,GEO,18-21 Aug 2022,2022 Senior European Championships,qual,"Munich, Germany",72.0,4.2,8.233,,12.245181818181818,11.7165,2,12.511000000000001,3,,0,11.777333333333333,3,12.799666666666667,3,,0
+rabic,liam,m,CRO,1-5 Aug 2023,2023 FISU World University Games,qual,"Chengdu, China",62.0,5.3,6.166,,11.466,,0,11.466,1,,0,,0,,0,,0
+smet,liam,m,BEL,8-11 Jun 2023,2023 Osijek Challenge Cup,final,"Osijek, Croatia.",7.0,5.6,7.6,,13.399999999999999,,0,,0,,0,,0,13.399999999999999,2,,0
+de,loran,m,NED,18-21 Aug 2022,2022 Senior European Championships,qual,"Munich, Germany",31.0,5.6,8.2,,13.980166666666667,,0,14.360666666666665,6,,0,13.841249999999999,4,13.116499999999998,2,,0
+munck,loran,m,NED,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",50.0,5.6,8.166,,13.649666666666667,,0,13.905333333333333,3,,0,13.508,2,13.166,1,,0
+bonicelli,lorenzo,m,ITA,1-5 Aug 2023,2023 FISH World University Games,AAfinal,"Chengdu, China",9.0,5.5,7.866,,13.50453846153846,13.6665,2,13.3995,2,13.676333333333332,3,13.783,2,12.9665,2,13.4495,2
+carrozzo,lorenzo,m,GBR,24-27 Mar 2022,2022 British Gymnastics Championships,qual,"Liverpool, England",31.0,4.7,6.65,0.0,11.225,12.55,1,6.2,1,11.35,1,12.1,1,12.4,1,12.75,1
+casali,lorenzo,m,ITA,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,AAfinal,"Liverpool, England",21.0,5.3,7.666,,13.563411764705885,12.899600000000001,5,12.7064,5,13.821999999999997,6,13.955166666666665,6,13.399666666666667,6,14.344166666666666,6
+giubellini,luca,m,SUI,11-16 Apr 2023,2023 Senior European Championships,qual,"Antalya, Turkey",63.0,5.8,7.566,0.3,13.913,,0,13.866,1,13.066,1,,0,,0,14.210999999999999,3
+desanges,lucas,m,FRA,11-16 Apr 2023,2023 Senior European Championships,final,"Antalya, Turkey",7.0,5.7,7.766,0.1,12.325461538461537,13.2915,2,13.071999999999997,3,13.655333333333333,3,12.733,2,,0,9.333333333333334,3
+kochan,lucas,m,GER,18-21 Aug 2022,2022 Senior European Championships,qual,"Munich, Germany",48.0,5.4,7.833,,12.5457,13.033199999999999,5,11.616499999999998,2,13.453999999999999,4,13.377666666666668,3,13.05,1,11.1032,5
+souza,lucas,m,BRA,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",18.0,5.4,8.433,,12.558,13.833,1,11.9,1,,0,11.733,1,12.766,1,,0
+il,luis,m,SWE,11-16 Apr 2023,2023 Senior European Championships,qual,"Antalya, Turkey",73.0,4.6,8.266,,11.387545454545453,11.866,1,9.7165,2,12.866,1,10.344333333333333,3,12.344,3,13.033,1
+bojanc,luka,m,SLO,18-21 Aug 2022,2022 Senior European Championships,qual,"Munich, Germany",63.0,5.1,7.8,,12.1598,,0,,0,,0,,0,12.1598,5,,0
+keybus,luka,m,BEL,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,AAfinal,"Liverpool, England",18.0,5.3,8.033,,13.171916666666668,13.0495,2,11.1495,2,13.5165,2,14.1995,2,12.8,2,14.3165,2
+van,luka,m,BEL,18-21 Aug 2022,2022 Senior European Championships,qual,"Munich, Germany",84.0,5.6,6.9,,12.966416666666666,12.97475,4,11.82475,4,13.3332,5,13.0996,5,12.722,3,13.888666666666666,3
+dauser,lukas,m,GER,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,AAfinal,"Liverpool, England",16.0,5.3,8.366,,13.726280000000001,12.95825,4,12.866333333333335,3,13.766,4,14.999666666666668,6,13.108,4,13.80775,4
+whitehouse,luke,m,GBR,24-27 Mar 2022,2022 British Gymnastics Championships,final,"Liverpool, England",3.0,6.0,7.87,0.1,13.281923076923077,12.14575,4,11.8398,5,14.022,9,12.1966,5,13.4165,4,14.113833333333334,12
+zulfa,luqman,m,MAS,23-26 Feb 2023,FIG Apparatus World Cup 2023,qual,"Cottbus, Germany",40.0,5.4,6.5,,11.577666666666667,12.133,1,,0,11.9,1,10.7,1,,0,,0
+huernink,luuk,m,NED,11-16 Apr 2023,2023 Senior European Championships,qual,"Antalya, Turkey",76.0,5.3,7.566,,12.84975,12.6,1,,0,12.866,1,12.133,1,,0,13.8,1
+saladino,léo,m,FRA,17-19 Mar 2023,EnBW DTB Pokal Team Challenge 2023,qual,"Stuttgart, Germany",22.0,5.5,8.05,,11.235714285714286,12.55,1,11.2,1,13.55,1,14.05,1,13.55,1,6.875,2
+ahmad,mahdi,m,IRI,1-5 Aug 2023,2023 FISU World University Games,final,"Chengdu, China",8.0,6.0,7.766,,14.507249999999999,,0,,0,,0,,0,14.507249999999999,8,,0
+olfati,mahdi,m,IRI,23-26 Feb 2023,FIG Apparatus World Cup 2023,final,"Cottbus, Germany",2.0,5.6,9.466,,14.427333333333332,,0,,0,,0,,0,,0,14.427333333333332,12
+jim,man,m,HKG,25-28 May 2023,2023 Varna World Challenge Cup Results,qual,"Varna, Bulgaria",15.0,4.0,9.15,0.0,11.100000000000001,,0,,0,,0,,0,,0,11.100000000000001,6
+lee,man,m,HKG,1-5 Aug 2023,2023 FISU World University Games,qual,"Chengdu, China",72.0,4.8,6.666,,12.723555555555556,,0,,0,11.488666666666665,3,,0,,0,13.341000000000001,6
+safarov,mansum,m,AZE,18-21 Aug 2022,2022 Senior European Championships,qual,"Munich, Germany",70.0,5.0,7.8,,11.516333333333334,11.366,1,8.866,1,12.8,1,11.7,1,11.9,1,12.466,1
+arnold,manuel,m,AUT,18-21 Aug 2022,2022 Senior European Championships,qual,"Munich, Germany",65.0,4.5,8.333,,12.775999999999998,11.633,1,13.083,2,12.833,1,12.7,1,13.0,1,13.1,1
+martinez,manuel,m,COL,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",78.0,4.5,8.333,,12.4385,12.433,1,12.1,1,12.833,1,12.966,1,11.566,1,12.733,1
+marques,marcelo,m,POR,18-21 Aug 2022,2022 Senior European Championships,qual,"Munich, Germany",30.0,5.4,8.2,,13.087125,,0,12.988333333333335,3,13.183,4,,0,,0,13.0,1
+lodadio,marco,m,ITA,11-16 Apr 2023,2023 Senior European Championships,qual,"Antalya, Turkey",52.0,5.4,7.9,,12.648,,0,,0,13.475000000000001,2,,0,14.59975,4,9.494333333333334,3
+pfyl,marco,m,SUI,18-21 Aug 2022,2022 Senior European Championships,qual,"Munich, Germany",53.0,5.2,7.933,,12.875428571428571,12.144,3,12.5,1,12.4165,2,13.455333333333334,3,12.933,3,13.663,2
+sarrugerio,marco,m,ITA,1-5 Aug 2023,2023 FISU World University Games,final,"Chengdu, China",4.0,5.8,8.566,,13.4325,12.8,1,11.491499999999998,2,,0,14.044,4,14.122,3,,0
+stenberg,marcus,m,SWE,11-16 Apr 2023,2023 Senior European Championships,qual,"Antalya, Turkey",91.0,4.1,8.433,,12.638666666666667,12.433,1,11.966,1,12.533,1,12.9,1,12.8,1,13.2,1
+macchiati,mario,m,ITA,11-16 Apr 2023,2023 Senior European Championships,qual,"Antalya, Turkey",46.0,5.5,8.166,0.3,12.85470588235294,13.058,2,13.727666666666666,3,13.166333333333332,3,14.206399999999999,5,13.45,1,9.083333333333334,3
+georgiou,marios,m,CYP,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",14.0,6.0,8.1,,13.12669565217391,13.945142857142857,7,13.237250000000001,4,13.094333333333333,3,14.4915,4,8.766666666666666,3,13.9,2
+jovicic,marko,m,CRO,1-5 Aug 2023,2023 FISU World University Games,qual,"Chengdu, China",70.0,4.9,6.7,,11.435428571428572,,0,,0,11.435428571428572,7,,0,,0,,0
+sambolec,marko,m,CRO,25-28 May 2023,2023 Varna World Challenge Cup Results,final,"Varna, Bulgaria",7.0,5.6,8.166,0.0,13.3684,,0,13.3684,5,,0,,0,,0,,0
+de,martijn,m,NED,18-21 Aug 2022,2022 Senior European Championships,qual,"Munich, Germany",28.0,5.2,8.433,,13.214444444444446,13.544000000000002,3,11.033,1,13.549499999999998,2,13.3,1,12.766,1,14.1,1
+veer,martijn,m,NED,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",49.0,5.2,8.166,,13.14975,12.333,1,,0,13.366,1,13.3,1,,0,13.6,1
+gudmundsson,martin,m,ISL,18-21 Aug 2022,2022 Senior European Championships,qual,"Munich, Germany",45.0,4.6,8.633,,12.018666666666665,11.649999999999999,3,10.9495,2,13.183,2,9.933,2,12.0495,2,13.275,4
+miggitsch,martin,m,AUT,1-5 Aug 2023,2023 FISU World University Games,qual,"Chengdu, China",36.0,5.2,7.966,0.1,12.383000000000001,11.9,1,11.7,1,13.066,1,12.166,1,12.033,1,13.433,1
+pospisil,martin,m,CZE,11-16 Apr 2023,2023 Senior European Championships,qual,"Antalya, Turkey",85.0,4.3,8.366,,12.233,11.333,1,,0,12.666,1,12.333,1,11.9,1,12.933,1
+nemcovic,matej,m,SVK,18-21 Aug 2022,2022 Senior European Championships,qual,"Munich, Germany",106.0,5.0,6.466,,12.167533333333333,10.9665,2,11.777666666666667,3,12.072000000000001,3,12.233,2,12.888666666666666,3,12.9495,2
+zugec,mateo,m,CRO,18-21 Aug 2022,2022 Senior European Championships,qual,"Munich, Germany",12.0,5.5,8.333,,13.059800000000001,,0,13.059800000000001,5,,0,,0,,0,,0
+philippe,mathias,m,FRA,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",105.0,5.2,7.033,,13.34688888888889,13.182999999999998,6,,0,13.183000000000002,3,13.549750000000001,4,13.479600000000001,5,,0
+jalbert,mathys,m,CAN,29 Jul-2 Aug 2022,BIRMINGHAM 2022 Commonwealth Games,qual,"Birmingham, England",26.0,5.1,7.6,,12.100000000000001,12.45,1,12.05,1,,0,12.7,1,11.2,1,,0
+levantesi,matteo,m,ITA,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",58.0,5.1,8.133,,13.58721875,12.838666666666667,6,12.944,3,13.49975,4,14.440444444444445,9,13.108,4,13.755333333333333,6
+mcclymont,matthew,m,GBR,24-27 Mar 2022,2022 British Gymnastics Championships,qual,"Liverpool, England",30.0,3.5,8.6,0.0,11.583333333333334,12.05,1,10.65,1,12.1,1,11.35,1,10.35,1,13.0,1
+petrov,matvei,m,ALB,18-21 Aug 2022,2022 Senior European Championships,qual,"Munich, Germany",80.0,5.8,6.1,,14.116545454545456,,0,14.116545454545456,11,,0,,0,,0,,0
+whitlock,max,m,GBR,23-26 Mar 2023,2023 British Gymnastics Championships,qual,"Liverpool, England",5.0,5.1,8.45,0.0,13.275,13.55,1,12.774999999999999,2,,0,14.0,1,,0,,0
+gentges,maxime,m,BEL,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",67.0,5.0,8.066,,13.216277777777778,12.960666666666667,6,13.799600000000002,5,13.033000000000001,2,13.733,2,12.4165,2,12.766,1
+galicia,maximiliano,m,MEX,24-28 Jun 2023,2023 Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",5.0,5.1,8.0,,12.610000000000001,12.15,2,11.700000000000001,3,12.825,2,13.116666666666665,3,12.466666666666669,3,13.675,2
+ateer,mc,m,IRL,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",50.0,5.2,8.766,,13.720500000000001,,0,,0,,0,,0,,0,13.720500000000001,4
+clenaghan,mc,m,IRL,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,final,"Liverpool, England",1.0,6.4,8.9,,14.754,,0,14.754,4,,0,,0,,0,,0
+kosak,mehmet,m,TUR,25-28 May 2023,2023 Varna World Challenge Cup Results,final,"Varna, Bulgaria",2.0,6.0,8.133,0.0,12.852714285714285,12.077333333333334,3,11.774666666666668,6,12.991499999999998,8,12.466333333333333,3,14.117333333333335,12,12.2195,10
+kilicer,mert,m,TUR,1-5 Aug 2023,2023 FISU World University Games,qual,"Chengdu, China",16.0,4.9,8.666,,12.98018181818182,12.903200000000002,5,12.977666666666666,3,12.6,1,13.3665,2,,0,,0
+evans,mia,m,WAL,"29 Jul-2 Aug, 2023",BIRMINGHAM 2022 Commonwealth Games,AAqual,"Birmingham, England",,4.2,8.9,,13.1,,0,,0,,0,,0,,0,13.1,1
+reid,michael,m,JAM,29 Jul-2 Aug 2022,BIRMINGHAM 2022 Commonwealth Games,qual,"Birmingham, England",21.0,5.5,7.85,,12.2,,0,11.05,1,,0,13.35,1,,0,,0
+chari,michalis,m,CYP,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",83.0,5.6,7.2,,12.317730769230767,11.87475,4,10.949750000000002,4,12.721285714285715,7,12.749799999999999,5,12.055333333333332,3,13.333,3
+isaias,michalis,m,CYP,1-5 Aug 2023,2023 FISU World University Games,qual,"Chengdu, China",74.0,4.3,6.933,,11.227333333333334,11.533,1,9.166,1,11.233,1,11.166,1,11.933,1,12.333,1
+aquino,miguel,m,PUR,24-28 Jun 2023,2023 Central American and Caribbean Games,qual,"San Salvador, El Salvador",14.0,4.7,8.0,,12.040000000000001,11.9,1,,0,12.7,1,12.0,1,10.85,1,12.75,1
+saefken,mika,m,GER,1-5 Aug 2023,2023 FISU World University Games,qual,"Chengdu, China",41.0,4.6,8.2,,12.332999999999998,12.8,1,11.133,1,,0,13.066,1,,0,,0
+haziq,mikhail,m,SGP,29 Jul-2 Aug 2022,BIRMINGHAM 2022 Commonwealth Games,qual,"Birmingham, England",26.0,3.8,7.95,,11.75,,0,11.75,1,,0,,0,,0,,0
+koudinov,mikhail,m,NZL,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",38.0,5.6,7.7,,13.150833333333335,12.73,5,11.875,2,13.0415,2,13.8898,5,13.025,2,13.8665,2
+karimi,milad,m,KAZ,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,final,"Liverpool, England",8.0,6.0,6.1,,13.672394736842106,13.518222222222223,9,12.954999999999998,3,13.8525,12,13.694857142857144,7,13.1495,2,14.125800000000002,5
+hosseini,milan,m,GER,11-16 Apr 2023,2023 Senior European Championships,final,"Antalya, Turkey",3.0,5.9,8.3,,12.579307692307692,12.6,1,13.0,1,14.032999999999998,5,13.1,1,13.0415,2,9.527666666666667,3
+durak,miroslav,m,CZE,9-12 Mar 2023,World Cup,qual,"Baku, Azerbaijan",30.0,4.0,8.233,,11.124500000000001,12.233,1,10.466,1,,0,10.166,1,11.633,1,,0
+morgans,mitchell,m,AUS,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",9.0,6.2,8.133,,13.034565217391307,13.166545454545455,11,,0,,0,13.244699999999998,10,11.258,2,,0
+afify,mohamed,m,EGY,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",65.0,5.1,8.0,,13.266333333333334,12.049499999999998,2,12.766666666666666,3,13.1,1,14.010666666666665,6,12.883,2,13.666,1
+hamidi,mohammadreza,m,IRI,9-12 Mar 2023,World Cup,qual,"Baku, Azerbaijan",14.0,5.1,8.2,,13.3,13.3,1,,0,,0,,0,,0,,0
+kratter,moreno,m,SUI,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",28.0,5.9,7.933,,12.762200000000002,13.1996,5,,0,13.672999999999998,5,13.833,1,12.833333333333334,3,11.424666666666667,6
+muller,moritz,m,GER,1-5 Aug 2023,2023 FISU World University Games,qual,"Chengdu, China",58.0,5.2,7.733,0.5,12.932,,0,,0,12.433,1,,0,12.633,1,13.73,1
+afzal,muhammad,m,PAK,29 Jul-2 Aug 2022,BIRMINGHAM 2022 Commonwealth Games,qual,"Birmingham, England",39.0,2.9,5.5,,7.616666666666667,,0,,0,8.4,1,,0,4.25,1,10.2,1
+aimy,muhammad,m,MAS,29 Jul-2 Aug 2022,BIRMINGHAM 2022 Commonwealth Games,qual,"Birmingham, England",33.0,5.3,5.6,,12.952285714285713,,0,12.4165,2,10.9,1,,0,,0,13.73325,4
+mia,muhammad,m,RSA,"29 Jul-2 Aug, 2023",BIRMINGHAM 2022 Commonwealth Games,AAfinal,"Birmingham, England",13.0,5.1,7.1,,12.329166666666667,12.55,2,11.024999999999999,2,12.3,2,13.1,2,11.975,2,13.025,2
+pontedura,murilo,m,BRA,17-19 Mar 2023,EnBW DTB Pokal Team Challenge 2023,qual,"Stuttgart, Germany",53.0,5.0,6.0,,10.641666666666667,12.85,1,13.3,1,11.0,1,13.0,1,,0,6.85,2
+melnykov,mykyta,m,UKR,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",128.0,4.6,6.166,0.1,12.228,10.624500000000001,4,12.633,4,11.757750000000001,4,12.8245,4,12.066,1,13.34075,4
+nathan,nadine,m,SGP,"29 Jul-2 Aug, 2023",BIRMINGHAM 2022 Commonwealth Games,AAqual,"Birmingham, England",,4.2,8.5,,12.7,,0,,0,,0,,0,,0,12.7,1
+kurbanov,nariman,m,KAZ,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,final,"Liverpool, England",4.0,6.3,8.233,,14.871416666666667,,0,14.871416666666667,12,,0,,0,,0,,0
+daries,naveen,m,RSA,"29 Jul-2 Aug, 2023",BIRMINGHAM 2022 Commonwealth Games,AAqual,"Birmingham, England",,4.2,8.75,,12.95,,0,,0,,0,,0,,0,12.95,1
+chepurnyi,nazar,m,UKR,1-5 Aug 2023,2023 FISU World University Games,qual,"Chengdu, China",47.0,5.3,7.6,,13.748,12.966,1,10.833,1,12.9,1,12.616,2,13.266,1,14.78957142857143,7
+guilbe,nelson,m,PUR,24-28 Jun 2023,2023 Central American and Caribbean Games,qual,"San Salvador, El Salvador",25.0,4.6,5.4,,10.0,,0,10.0,1,,0,,0,,0,,0
+kyriakou,neofytos,m,CYP,1-5 Aug 2023,2023 FISU World University Games,qual,"Chengdu, China",25.0,5.2,8.133,,13.02804761904762,12.341249999999999,4,11.8165,2,13.483,4,12.616,2,10.566,1,13.857624999999999,8
+abad,nestor,m,ESP,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,AAfinal,"Liverpool, England",13.0,5.5,8.3,,13.356179487179489,13.56088888888889,9,12.1275,6,12.9532,5,14.116500000000002,6,13.5725,8,13.6066,5
+dang,ngoc,m,VIE,9-12 Mar 2023,World Cup,qual,"Baku, Azerbaijan",19.0,5.2,7.9,,12.210999999999999,,0,12.210999999999999,3,,0,,0,,0,,0
+hooton,niall,m,IRL,11-16 Apr 2023,2023 Senior European Championships,qual,"Antalya, Turkey",86.0,4.7,7.966,,11.755333333333333,11.533,1,10.3,1,12.666,1,10.8,1,11.533,1,13.7,1
+vannucchi,niccolo,m,ITA,1-5 Aug 2023,2023 FISU World University Games,final,"Chengdu, China",7.0,6.1,6.7,0.1,13.689857142857141,13.533,1,,0,13.483,2,,0,12.6,1,14.243333333333332,3
+tarca,nicholas,m,ROU,11-16 Apr 2023,2023 Senior European Championships,qual,"Antalya, Turkey",108.0,5.2,6.933,0.1,12.7596,12.766,2,13.1165,2,12.033,1,,0,,0,,0
+klessing,nick,m,GER,11-16 Apr 2023,2023 Senior European Championships,qual,"Antalya, Turkey",104.0,5.5,6.866,0.1,13.4495,,0,,0,12.266,1,,0,13.266,1,14.133,2
+van,nico,m,NED,11-16 Apr 2023,2023 Senior European Championships,qual,"Antalya, Turkey",31.0,5.6,7.866,,11.738666666666667,,0,11.1,1,,0,,0,12.058,2,,0
+bartolini,nicola,m,ITA,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,final,"Liverpool, England",5.0,5.9,8.333,,13.847115384615384,12.966000000000001,2,13.0495,4,14.194999999999999,7,13.821999999999997,3,12.833,2,14.42475,8
+cuyle,nicola,m,BEL,18-21 Aug 2022,2022 Senior European Championships,qual,"Munich, Germany",71.0,5.5,7.333,0.1,12.842571428571429,12.233,1,12.5165,2,12.733,1,13.1665,2,13.566,1,,0
+garfias,nicolas,m,PER,23-26 Feb 2023,FIG Apparatus World Cup 2023,qual,"Cottbus, Germany",63.0,2.7,5.3,4.0,10.31490909090909,11.210666666666667,3,8.024750000000001,4,12.133,1,11.5,1,11.5,1,12.6,1
+mir,nicolau,m,ESP,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",89.0,5.9,7.0,0.2,13.354950000000002,13.206400000000002,5,11.833,5,13.67388888888889,9,13.76011111111111,9,12.488666666666667,3,13.847666666666667,9
+mozzato,nicolo,m,ITA,27-30 Apr 2023,World Cup,qual,"Cairo, Egypt",30.0,4.6,6.6,,12.866499999999998,11.2,1,12.333,1,,0,13.9665,2,,0,,0
+sinivuori,niila,m,FIN,25-28 May 2023,2023 Varna World Challenge Cup Results,qual,"Varna, Bulgaria",20.0,5.4,5.15,0.1,10.45,,0,,0,10.45,1,,0,,0,,0
+simonov,nikita,m,AZE,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",13.0,6.3,7.666,,14.334812499999998,12.833,1,,0,,0,11.666,1,14.632714285714288,14,,0
+syverhuset,niklas,m,NOR,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",40.0,5.4,8.233,0.1,13.533,,0,,0,13.533,1,,0,,0,,0
+bozic,nikolaj,m,SLO,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",114.0,5.3,6.7,,11.933,,0,,0,11.933,4,,0,,0,,0
+iliopoulos,nikolaos,m,GRE,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",70.0,5.0,7.733,,12.783,12.874750000000002,4,12.333,1,12.266,1,12.483,4,13.4,1,13.966,1
+kranitis,nikolaos,m,GRE,18-21 Aug 2022,2022 Senior European Championships,qual,"Munich, Germany",97.0,4.8,7.1,0.1,12.0665,12.233,1,10.8,1,11.8,1,10.866,1,12.8,1,13.9,1
+dunkel,nils,m,GER,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",62.0,5.1,8.166,0.1,13.512695652173914,12.2165,2,14.01385714285714,7,13.083,2,13.866285714285713,7,13.0064,5,,0
+kuavita,noah,m,BEL,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",64.0,5.3,8.1,0.3,13.268437500000001,13.2196,5,12.099499999999999,2,13.1,1,13.888666666666666,3,11.999500000000001,2,14.411000000000001,3
+seifert,noe,m,SUI,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",99.0,5.7,6.8,,13.207625000000002,13.607,7,13.027333333333333,6,13.616428571428571,7,13.895,7,13.166333333333332,6,11.902,7
+stene,nore,m,NOR,11-16 Apr 2023,2023 Senior European Championships,qual,"Antalya, Turkey",71.0,5.6,7.333,,11.875714285714285,9.666,1,10.933,1,12.349499999999999,2,11.333,1,,0,13.249500000000001,2
+kasala,oliver,m,SVK,11-16 Apr 2023,2023 Senior European Championships,qual,"Antalya, Turkey",100.0,4.5,7.8,,12.507111111111112,12.0915,2,11.266,1,12.3,1,13.558,2,12.383,2,12.933,1
+sons,oliver,m,BOL,23-26 Feb 2023,FIG Apparatus World Cup 2023,qual,"Cottbus, Germany",39.0,4.5,7.5,,10.893,10.166,1,8.933,1,12.0,1,11.633,1,11.733,1,,0
+mohamed,omar,m,EGY,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",32.0,5.5,8.233,,12.831583333333333,11.8,2,12.866,1,12.926400000000001,5,13.366,2,13.783,2,12.713500000000002,12
+achampong,ondine,m,ENG,"29 Jul-2 Aug, 2023",BIRMINGHAM 2022 Commonwealth Games,AAqual,"Birmingham, England",,5.0,9.15,,14.15,,0,,0,,0,,0,,0,14.15,1
+kalny,ondrej,m,CZE,11-16 Apr 2023,2023 Senior European Championships,qual,"Antalya, Turkey",72.0,5.4,7.6,0.1,13.559055555555554,,0,11.7,1,12.5066,5,,0,,0,14.152499999999998,12
+rifa,oriol,m,ESP,23-26 Feb 2023,FIG Apparatus World Cup 2023,qual,"Cottbus, Germany",47.0,4.4,5.166,,11.140444444444446,12.5,1,9.583,2,12.666,1,10.2995,2,11.4665,2,12.4,1
+kirmes,oskar,m,FIN,18-21 Aug 2022,2022 Senior European Championships,qual,"Munich, Germany",105.0,4.7,6.966,0.1,12.904318181818182,12.7995,4,12.933250000000001,4,12.59975,4,13.183250000000001,4,13.044333333333332,3,12.899666666666667,3
+print,owen,m,GBR,24-27 Mar 2022,2022 British Gymnastics Championships,qual,"Liverpool, England",20.0,5.1,7.8,0.1,12.667555555555555,11.85,2,8.75,2,12.375,2,12.0,2,12.9,2,14.03325,8
+perez,pablo,m,PUR,24-28 Jun 2023,2023 Central American and Caribbean Games,qual,"San Salvador, El Salvador",12.0,5.5,7.25,,12.700000000000001,,0,,0,12.75,1,,0,11.8,1,13.55,1
+pozo,pablo,m,CUB,24-28 Jun 2023,2023 Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",3.0,5.1,8.1,,12.639285714285714,12.616666666666667,3,11.15,2,12.7,2,13.85,3,11.95,2,12.975,2
+ruiz,pablo,m,ESP,17-19 Mar 2023,EnBW DTB Pokal Team Challenge 2023,qual,"Stuttgart, Germany",54.0,4.5,6.45,,9.257142857142856,12.3,1,12.3,1,10.95,1,11.0,1,4.9,1,6.675,2
+velasquez,pablo,m,ESA,24-28 Jun 2023,2023 Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",16.0,4.5,6.55,,11.299999999999999,10.25,2,10.7,2,11.375,2,11.4,2,10.75,2,13.325,2
+kolodii,pantely,m,UKR,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",98.0,4.5,7.666,,12.775599999999999,12.186200000000001,5,12.899799999999999,5,12.677333333333332,3,12.4994,5,13.3864,5,13.249500000000001,2
+brendel,pascal,m,GER,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",88.0,5.1,7.6,,12.745758620689655,12.835999999999999,6,13.376199999999997,5,12.939999999999998,5,13.4164,5,12.955333333333334,3,11.016399999999999,5
+correa,patrick,m,BRA,17-19 Mar 2023,EnBW DTB Pokal Team Challenge 2023,qual,"Stuttgart, Germany",49.0,5.6,6.65,,10.616666666666667,11.95,1,12.4,1,12.25,1,,0,12.6,1,7.25,2
+palmroth,patrick,m,FIN,1-5 Aug 2023,2023 FISU World University Games,qual,"Chengdu, China",43.0,5.0,8.0,,12.532714285714286,12.4,1,11.433,1,13.0,1,12.333,1,12.0,1,13.2815,2
+jimenez,pau,m,ESP,11-16 Apr 2023,2023 Senior European Championships,qual,"Antalya, Turkey",12.0,5.6,8.233,,13.1256875,10.05,2,11.383,2,13.630500000000003,6,13.079,4,12.7898,5,13.777538461538462,13
+degouy,paul,m,FRA,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",97.0,5.3,7.233,,13.546705882352942,13.474499999999999,4,12.166,1,13.533,3,13.844,3,13.088666666666667,3,14.277666666666667,3
+gulidov,pavel,m,ISR,18-21 Aug 2022,2022 Senior European Championships,qual,"Munich, Germany",85.0,5.2,7.466,0.2,12.663565217391305,,0,12.633,1,11.827333333333334,3,12.956400000000002,5,13.4198,5,12.362888888888888,9
+karnejenko,pavel,m,GBR,24-27 Mar 2022,2022 British Gymnastics Championships,qual,"Liverpool, England",14.0,5.1,8.0,0.0,12.978978723404252,12.929555555555556,9,11.620000000000001,5,12.966571428571427,7,13.644333333333334,9,13.90736363636364,11,11.500000000000002,6
+titov,pavel,m,FIN,11-16 Apr 2023,2023 Senior European Championships,qual,"Antalya, Turkey",102.0,4.6,7.0,,11.866499999999998,,0,11.866499999999998,4,,0,,0,,0,,0
+skogvang,peder,m,NOR,18-21 Aug 2022,2022 Senior European Championships,qual,"Munich, Germany",43.0,5.4,7.966,0.1,12.921750000000001,12.677333333333335,3,11.866,1,13.321666666666667,3,,0,12.233,2,13.577333333333334,3
+vefic,petar,m,SRB,18-21 Aug 2022,2022 Senior European Championships,qual,"Munich, Germany",103.0,5.1,6.533,,12.678900000000002,12.136599999999998,5,11.99125,4,12.579833333333333,6,13.023666666666665,6,12.7698,5,13.562249999999999,4
+velickovic,petar,m,SRB,25-28 May 2023,2023 Varna World Challenge Cup Results,qual,"Varna, Bulgaria",17.0,4.9,7.3,0.0,11.524999999999999,,0,11.524999999999999,2,,0,,0,,0,,0
+vidricko,peter,m,SVK,11-16 Apr 2023,2023 Senior European Championships,qual,"Antalya, Turkey",122.0,4.5,6.266,,10.0435,8.3915,2,4.966,1,10.983,2,12.033,1,11.6,1,13.0,1
+pakhniuk,petro,m,UKR,18-21 Aug 2022,2022 Senior European Championships,qual,"Munich, Germany",81.0,5.4,7.2,,12.9775,13.333,1,11.733,1,12.6,1,13.0,1,12.733,1,14.466,1
+stickler,poppy,m,WAL,"29 Jul-2 Aug, 2023",BIRMINGHAM 2022 Commonwealth Games,AAqual,"Birmingham, England",,4.2,8.8,,13.0,,0,,0,,0,,0,,0,13.0,1
+nayak,pranati,m,IND,"29 Jul-2 Aug, 2023",BIRMINGHAM 2022 Commonwealth Games,AAqual,"Birmingham, England",,5.2,8.5,0.1,13.6,,0,,0,,0,,0,,0,13.6,1
+brandenburger,quentin,m,LUX,11-16 Apr 2023,2023 Senior European Championships,qual,"Antalya, Turkey",120.0,5.0,6.3,0.3,11.903444444444444,12.3,1,9.9,1,11.233,2,12.1495,2,12.2665,2,13.633,1
+sliz,radomir,m,CZE,18-21 Aug 2022,2022 Senior European Championships,qual,"Munich, Germany",49.0,5.2,7.7,,13.618714285714288,,0,13.618714285714288,7,,0,,0,,0,,0
+stelmakh,radomyr,m,UKR,11-16 Apr 2023,2023 Senior European Championships,qual,"Antalya, Turkey",97.0,5.5,6.966,,12.972,11.8915,2,13.355333333333334,3,13.316333333333333,3,12.9,2,13.0,1,13.066,1
+baptiste,raekwon,m,GBR,24-27 Mar 2022,2022 British Gymnastics Championships,qual,"Liverpool, England",33.0,5.1,5.0,0.3,12.861,12.175,2,12.620750000000001,4,11.15,2,12.975000000000001,2,13.105333333333334,3,13.8198,5
+dalsgard,rani,m,DEN,18-21 Aug 2022,2022 Senior European Championships,qual,"Munich, Germany",73.0,5.3,7.7,0.3,12.7,,0,,0,12.7,1,,0,,0,,0
+abdurakhimov,rasuljon,m,UZB,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",39.0,4.6,8.666,,13.544400000000001,12.862250000000001,4,,0,,0,14.299000000000001,5,12.5,1,,0
+kamiljanov,ravshan,m,UZB,1-5 Aug 2023,2023 FISU World University Games,qual,"Chengdu, China",63.0,4.9,7.233,,12.852785714285716,12.366,1,13.5015,6,12.416250000000002,4,11.833,1,11.733,1,13.333,1
+radkov,rayan,m,BUL,18-21 Aug 2022,2022 Senior European Championships,qual,"Munich, Germany",79.0,4.2,8.066,,12.433000000000002,12.266,1,13.3,1,,0,11.733,1,,0,,0
+zapata,rayderley,m,ESP,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",22.0,6.2,7.833,0.1,13.816428571428572,,0,,0,13.64975,4,,0,13.758,4,13.966500000000002,6
+marc,razvan,m,ROU,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",42.0,5.6,7.9,,12.834714285714286,12.44975,4,11.84125,4,12.944333333333333,3,13.466666666666667,3,13.241499999999998,4,13.388666666666666,3
+robinson,remell,m,GBR,23-26 Mar 2023,2023 British Gymnastics Championships,qual,"Liverpool, England",32.0,4.6,5.3,0.0,12.693750000000001,12.6,1,11.45,1,9.9,1,,0,12.7,1,13.725000000000001,4
+mc,rhys,m,IRL,18-21 Aug 2022,2022 Senior European Championships,qual,"Munich, Germany",9.0,5.9,8.3,,14.662666666666667,,0,14.662666666666667,9,,0,,0,,0,,0
+rudy,ricardo,m,AUT,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",101.0,5.1,7.333,,12.675083333333333,10.933,2,12.53057142857143,7,12.8396,5,12.56625,4,12.6165,2,13.7315,4
+plate,ricards,m,LAT,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",96.0,5.0,7.533,,12.227191489361703,11.885428571428571,7,11.262125000000001,8,12.537714285714285,7,12.535833333333334,6,11.980875000000001,8,12.959727272727271,11
+atencio,richard,m,PAN,24-28 Jun 2023,2023 Central American and Caribbean Games,qual,"San Salvador, El Salvador",33.0,5.1,5.15,0.6,10.864285714285714,10.5,1,11.6,2,9.65,1,9.35,1,10.75,1,12.6,1
+loos,riley,m,USA,9-12 Mar 2023,World Cup,final,"Baku, Azerbaijan",3.0,5.6,8.133,,13.560833333333333,12.366,1,13.4,1,13.749500000000001,2,,0,14.05,2,,0
+burtanete,robert,m,ROU,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",112.0,5.3,7.033,0.3,12.738499999999998,12.333,2,11.957749999999999,4,12.5165,4,13.1495,4,12.7,1,13.810666666666668,3
+kirmes,robert,m,FIN,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",53.0,5.4,7.966,0.1,12.393269230769231,11.852999999999998,5,11.649750000000001,4,12.7462,5,12.4596,5,12.408,4,13.566666666666668,3
+seligman,robert,m,CRO,18-21 Aug 2022,2022 Senior European Championships,qual,"Munich, Germany",13.0,5.5,8.266,,13.766,,0,13.766,1,,0,,0,,0,,0
+tvorogal,robert,m,LTU,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",11.0,5.7,8.6,,13.15959259259259,13.505333333333333,12,11.522,3,12.966,1,13.194111111111111,9,13.133,1,13.833,1
+gomez,rodrigo,m,MEX,24-28 Jun 2023,2023 Central American and Caribbean Games,final,"San Salvador, El Salvador",7.0,5.4,7.1,,12.535714285714286,12.05,1,12.5,1,12.95,2,11.8,1,11.7,1,13.8,1
+mamenov,roman,m,KAZ,25-28 May 2023,2023 Varna World Challenge Cup Results,qual,"Varna, Bulgaria",21.0,5.3,5.4,0.6,11.707142857142857,10.05,2,,0,10.1,1,13.350000000000001,2,12.525,2,,0
+pyatov,ron,m,ISR,18-21 Aug 2022,2022 Senior European Championships,qual,"Munich, Germany",103.0,4.6,6.4,,11.588666666666668,11.0,1,,0,,0,10.966,1,12.8,1,,0
+lange,ruan,m,RSA,1-5 Aug 2023,2023 FISU World University Games,qual,"Chengdu, China",76.0,5.4,5.8,0.3,11.426499999999999,9.866,1,10.933,1,10.9,1,11.9,1,11.0,1,13.96,1
+chitters,ruben,m,AUS,1-5 Aug 2023,2023 FISU World University Games,qual,"Chengdu, China",52.0,4.7,8.066,0.1,12.493,12.766,1,,0,12.666,1,11.7,1,12.0,1,13.333,1
+fernando,ruchira,m,SRI,"29 Jul-2 Aug, 2023",BIRMINGHAM 2022 Commonwealth Games,AAfinal,"Birmingham, England",18.0,3.2,6.8,,11.133333333333333,10.2,2,12.2,2,10.6,2,11.55,2,10.35,2,11.9,2
+moriano,rudi,m,GBR,23-26 Mar 2023,2023 British Gymnastics Championships,qual,"Liverpool, England",20.0,4.8,7.5,0.1,10.711111111111112,12.55,1,9.2,1,12.2,1,12.0,1,10.5,1,9.9875,4
+xiao,ruoteng,m,CHN,1-4 Mar 2023,World Cup,qual,"Doha, Qatar",22.0,6.0,6.766,,12.466000000000001,12.166,1,,0,12.766,1,,0,,0,,0
+nematov,rustambek,m,UZB,1-5 Aug 2023,2023 FISU World University Games,qual,"Chengdu, China",75.0,4.7,6.4,,12.155857142857142,12.166,1,11.166,1,11.1,1,12.433,1,11.9,1,13.163,2
+nataraj,ruthuja,m,IND,"29 Jul-2 Aug, 2023",BIRMINGHAM 2022 Commonwealth Games,AAqual,"Birmingham, England",,4.6,7.8,0.1,12.3,,0,,0,,0,,0,,0,12.3,1
+cirino,ryan,m,GBR,23-26 Mar 2023,2023 British Gymnastics Championships,qual,"Liverpool, England",17.0,4.9,7.6,0.0,12.116666666666667,10.25,1,11.55,1,12.5,1,12.4,1,12.8,1,13.2,1
+owen,ryan,m,GBR,23-26 Mar 2023,2023 British Gymnastics Championships,qual,"Liverpool, England",16.0,5.0,7.65,0.1,12.122222222222224,12.25,1,6.65,1,12.55,1,11.95,1,11.6,1,13.524999999999999,4
+doi,ryosuke,m,JPN,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,final,"Liverpool, England",3.0,6.2,8.166,0.1,12.94264285714286,14.175,2,12.899666666666667,3,14.607999999999999,4,14.15,1,12.6,1,9.655333333333333,3
+abesadze,saba,m,GEO,18-21 Aug 2022,2022 Senior European Championships,qual,"Munich, Germany",104.0,5.3,6.3,,12.4374,11.066,1,12.255333333333333,3,12.283000000000001,4,12.7396,5,13.033,1,12.866,1
+tamboli,saif,m,IND,29 Jul-2 Aug 2022,BIRMINGHAM 2022 Commonwealth Games,qual,"Birmingham, England",9.0,5.8,8.25,,14.05,,0,,0,,0,14.05,1,,0,,0
+maresca,salvatore,m,ITA,27-30 Apr 2023,World Cup,final,"Cairo, Egypt",2.0,6.2,8.5,,14.7,,0,,0,,0,,0,14.7,2,,0
+mostowfi,sam,m,GBR,24-27 Mar 2022,2022 British Gymnastics Championships,final,"Liverpool, England",7.0,5.7,7.7,0.0,12.875625,12.1732,5,11.625,2,13.445142857142859,7,12.727666666666666,3,12.6,3,13.700000000000001,4
+zakutney,sam,m,CAN,17-19 Mar 2023,EnBW DTB Pokal Team Challenge 2023,qual,"Stuttgart, Germany",26.0,5.2,8.2,0.1,11.299999999999999,14.2,1,11.55,1,13.3,1,13.0,1,13.25,1,6.9,2
+serhani,samir,m,SUI,1-5 Aug 2023,2023 FISH World University Games,AAfinal,"Chengdu, China",13.0,4.7,8.566,,13.2278125,13.055333333333335,3,12.249666666666664,3,13.1495,2,13.383,2,13.833000000000002,4,13.6665,2
+dick,samual,m,NZL,05-06 May 2023,Oceania Continental Championships 2023,aa,"Carrara, Australia",,5.0,8.366,0.0,12.105166666666667,12.4,1,7.333,1,13.366,1,13.333,1,13.333,1,12.866,1
+dick,samuel,m,NZL,29 Jul-2 Aug 2022,BIRMINGHAM 2022 Commonwealth Games,qual,"Birmingham, England",19.0,5.0,7.6,0.1,12.921692307692307,12.15,1,,0,12.5,1,12.45,1,12.649999999999999,4,13.380333333333333,6
+ghinn,samuel,m,GBR,23-26 Mar 2023,2023 British Gymnastics Championships,qual,"Liverpool, England",21.0,5.5,6.7,0.0,12.06875,12.05,2,10.825,2,12.2,1,12.9,1,12.5,1,13.2,1
+morgan,samuel,m,GBR,23-26 Mar 2023,2023 British Gymnastics Championships,qual,"Liverpool, England",26.0,3.9,7.15,0.0,11.225,7.95,1,12.45,1,11.05,1,12.25,1,11.15,1,12.5,1
+zakutney,samuel,m,CAN,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",26.0,5.6,8.033,,13.29975,13.633,1,12.4,1,,0,14.4,1,12.766,1,,0
+hardiman,sandy,m,AUS,17-19 Mar 2023,EnBW DTB Pokal Team Challenge 2023,qual,"Stuttgart, Germany",53.0,4.7,6.6,,8.925,,0,11.35,1,,0,11.3,1,,0,6.525,2
+mayol,santiago,m,ARG,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",59.0,5.4,7.833,,12.7665,12.5,1,12.733,1,13.233,1,13.3,1,11.1,1,13.733,1
+mondal,satyajit,m,IND,29 Jul-2 Aug 2022,BIRMINGHAM 2022 Commonwealth Games,qual,"Birmingham, England",40.0,5.2,2.95,0.3,10.7,,0,,0,7.85,1,,0,,0,13.55,1
+gawronski,sebastian,m,POL,18-21 Aug 2022,2022 Senior European Championships,qual,"Munich, Germany",44.0,5.5,7.766,,12.574717948717947,11.710666666666667,6,10.472,6,13.099571428571428,7,12.8775,6,12.8066,5,13.813666666666668,9
+sponevik,sebastian,m,NOR,11-16 Apr 2023,2023 Senior European Championships,qual,"Antalya, Turkey",75.0,4.7,8.066,,13.1904375,,0,12.208,2,12.1,1,12.171999999999999,3,12.2915,2,14.179,8
+sue,sebastian,m,PAN,24-28 Jun 2023,2023 Central American and Caribbean Games,qual,"San Salvador, El Salvador",18.0,4.7,7.7,,11.216666666666669,,0,10.7,1,12.4,1,10.55,1,,0,,0
+spyckerelle,senne,m,BEL,8-11 Jun 2023,2023 Osijek Challenge Cup,qual,"Osijek, Croatia.",18.0,4.7,7.25,,11.016666666666666,11.95,1,11.85,1,,0,9.25,1,,0,,0
+moreno,sergio,m,ESP,25-28 May 2023,2023 Varna World Challenge Cup Results,qual,"Varna, Bulgaria",24.0,4.2,6.2,0.0,10.4,,0,10.4,1,,0,,0,,0,,0
+vargas,sergio,m,COL,24-28 Jun 2023,2023 Central American and Caribbean Games,qual,"San Salvador, El Salvador",28.0,4.5,6.65,,12.016666666666666,12.15,1,11.25,1,11.15,1,12.5,2,,0,12.55,1
+kranzlmueller,severin,m,AUT,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",115.0,5.1,6.866,,12.327333333333334,12.7165,2,10.716000000000001,2,12.266,2,12.1995,2,12.783000000000001,2,13.283,2
+wiskus,shane,m,USA,17-19 Mar 2023,EnBW DTB Pokal Team Challenge 2023,qual,"Stuttgart, Germany",4.0,5.6,8.7,,14.2,13.75,1,,0,14.3,1,14.75,1,14.0,1,,0
+archer,shannon,m,SCO,"29 Jul-2 Aug, 2023",BIRMINGHAM 2022 Commonwealth Games,AAqual,"Birmingham, England",,5.0,8.9,,13.9,,0,,0,,0,,0,,0,13.9,1
+ahmed,shishir,m,BAN,29 Jul-2 Aug 2022,BIRMINGHAM 2022 Commonwealth Games,qual,"Birmingham, England",38.0,3.5,5.9,0.3,6.935714285714286,2.95,1,2.1,1,9.1,1,6.5,1,4.6,1,11.649999999999999,2
+kawakami,shohei,m,JPN,1-5 Aug 2023,2023 FISU World University Games,qual,"Chengdu, China",16.0,5.8,7.966,,13.776076923076923,14.1665,4,13.2665,2,13.766,1,14.366,1,13.349499999999999,2,13.686333333333332,3
+heggemsnes,sofus,m,NOR,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,AAfinal,"Liverpool, England",23.0,4.7,8.066,,13.172264705882354,13.110125,8,12.1398,5,13.163499999999999,6,13.373,5,13.086400000000001,5,14.1998,5
+pilakouris,sokratis,m,CYP,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",9.0,5.9,8.233,,13.584384615384614,,0,,0,11.95,2,11.2,1,14.284888888888888,9,12.933,1
+gkinis,stavros,m,GRE,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",105.0,5.8,6.266,,11.982875,12.5,1,6.966,1,12.666,1,13.066,1,12.610666666666667,3,12.833,1
+patron,stefano,m,ITA,1-5 Aug 2023,2023 FISU World University Games,qual,"Chengdu, China",34.0,5.2,7.966,,13.112199999999998,13.466,1,11.366,1,13.166,1,13.733,1,,0,13.83,1
+tsolakidis,stefanos,m,GRE,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",61.0,6.1,7.466,,12.0228,9.533,1,11.349499999999999,2,12.266,1,12.882750000000001,4,11.466,1,12.733,1
+nedoroscik,stephen,m,USA,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,final,"Liverpool, England",5.0,6.2,8.2,,14.816500000000001,,0,14.816500000000001,2,,0,,0,,0,,0
+ryu,sunghyun,m,KOR,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,final,"Liverpool, England",6.0,5.9,8.3,,13.777333333333331,13.511000000000001,3,12.688666666666668,3,14.192999999999998,5,14.02375,4,13.566333333333333,3,14.322000000000001,3
+batori,szabolcs,m,HUN,11-16 Apr 2023,2023 Senior European Championships,qual,"Antalya, Turkey",117.0,5.1,6.666,,11.945142857142857,,0,12.35,1,11.755333333333335,3,,0,11.2,2,13.6,1
+serhani,taha,m,SUI,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",23.0,5.9,7.8,,12.67135294117647,13.608,4,11.960999999999999,3,13.616333333333332,3,14.204,4,,0,9.144333333333334,3
+sugino,takaaki,m,JPN,1-4 Mar 2023,World Cup,final,"Doha, Qatar",5.0,5.9,7.933,,13.692999999999998,11.633,1,14.7165,2,13.6995,2,,0,,0,,0
+kitazono,takeru,m,JPN,9-12 Mar 2023,World Cup,qual,"Baku, Azerbaijan",28.0,5.5,7.333,0.2,12.371833333333335,13.499500000000001,2,12.8,1,12.633,1,10.033,1,11.766,1,,0
+onoshima,takumi,m,BEL,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",39.0,5.6,7.966,,12.937555555555555,12.849499999999999,2,11.324750000000002,4,13.6455,4,13.533,2,12.954999999999998,3,13.788333333333334,3
+donnelly,tara,m,IOM,"29 Jul-2 Aug, 2023",BIRMINGHAM 2022 Commonwealth Games,AAqual,"Birmingham, England",,3.0,7.95,,10.95,,0,,0,,0,,0,,0,10.95,1
+kanerva,tarmo,m,FIN,18-21 Aug 2022,2022 Senior European Championships,qual,"Munich, Germany",81.0,4.3,7.933,,12.635266666666666,12.0165,2,12.310666666666668,3,13.05,2,12.333,2,12.688666666666668,3,13.244,3
+bachurina,tatiana,m,CYP,"29 Jul-2 Aug, 2023",BIRMINGHAM 2022 Commonwealth Games,AAqual,"Birmingham, England",,3.2,8.35,,11.55,,0,,0,,0,,0,,0,11.55,1
+christopulos,taylor,m,USA,1-5 Aug 2023,2023 FISU World University Games,qual,"Chengdu, China",48.0,5.8,7.1,,13.114166666666668,13.096499999999999,2,,0,12.9,1,11.766,1,13.366,1,14.46,1
+trifonov,teodor,m,BUL,18-21 Aug 2022,2022 Senior European Championships,qual,"Munich, Germany",55.0,5.5,7.633,,12.223100000000002,11.95,2,11.983,2,13.133,1,12.0165,2,11.9665,2,13.266,1
+miwa,teppei,m,JPN,23-26 Feb 2023,FIG Apparatus World Cup 2023,qual,"Cottbus, Germany",48.0,4.9,6.566,0.4,11.988666666666665,,0,,0,11.066,1,11.7,1,13.2,1,,0
+ochana,theo,m,GBR,24-27 Mar 2022,2022 British Gymnastics Championships,qual,"Liverpool, England",21.0,4.7,8.0,0.0,12.0375,11.15,2,11.625,2,12.75,2,11.024999999999999,2,12.475000000000001,2,13.2,2
+diallo,thierno,m,ESP,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",88.0,4.9,7.5,,13.406939393939394,12.838833333333334,6,13.4665,8,13.255333333333333,3,14.068333333333335,9,12.7766,5,13.7,2
+jones,thomas,m,GBR,24-27 Mar 2022,2022 British Gymnastics Championships,qual,"Liverpool, England",29.0,5.2,7.1,0.0,12.379999999999999,11.925,2,9.175,2,12.350000000000001,2,12.0,2,12.25,2,14.059999999999999,5
+roberts,thomas,m,GBR,23-26 Mar 2023,2023 British Gymnastics Championships,qual,"Liverpool, England",11.0,3.6,8.95,0.0,11.419999999999998,12.55,1,7.6,1,,0,12.25,1,12.2,1,12.5,1
+surintornta,tikumporn,m,THA,1-4 Mar 2023,World Cup,qual,"Doha, Qatar",39.0,5.9,5.333,0.3,12.59975,,0,,0,10.933,1,,0,12.133,1,13.6665,2
+randegger,tim,m,SUI,1-5 Aug 2023,2023 FISU World University Games,qual,"Chengdu, China",18.0,5.5,8.166,,13.542000000000002,,0,12.8,1,13.666,1,,0,,0,14.16,1
+srbic,tin,m,CRO,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",46.0,5.7,7.5,,13.786,13.786,11,,0,,0,,0,,0,,0
+kuzmickas,titas,m,LTU,18-21 Aug 2022,2022 Senior European Championships,qual,"Munich, Germany",88.0,4.0,8.4,,10.233,11.133,1,4.2,1,12.4,1,12.466,1,11.366,1,9.833,1
+schultze,tom,m,GE2,17-19 Mar 2023,EnBW DTB Pokal Team Challenge 2023,qual,"Stuttgart, Germany",25.0,5.5,7.85,,13.411714285714288,,0,,0,11.85,2,,0,13.529,4,13.743500000000001,8
+modoianu,toma,m,ROU,11-16 Apr 2023,2023 Senior European Championships,qual,"Antalya, Turkey",94.0,4.8,7.266,,12.313583333333332,12.383000000000001,4,11.024750000000001,4,,0,,0,13.533,4,,0
+florencio,tomas,m,BRA,17-19 Mar 2023,EnBW DTB Pokal Team Challenge 2023,qual,"Stuttgart, Germany",32.0,5.5,7.8,0.1,11.221428571428572,13.45,1,11.9,1,13.2,1,12.8,1,13.25,1,6.975,2
+kuzmickas,tomas,m,LTU,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",95.0,5.2,7.633,0.3,12.757416666666666,12.799666666666667,6,11.811,3,12.954,4,13.0398,5,12.455333333333334,3,13.188666666666668,3
+ramdhany,trisna,m,INA,1-4 Mar 2023,World Cup,qual,"Doha, Qatar",32.0,5.0,6.766,,10.81625,,0,,0,11.766,1,9.266,1,10.4,1,11.833,1
+hasegawa,tsuyoshi,m,JPN,17-19 Mar 2023,EnBW DTB Pokal Team Challenge 2023,qual,"Stuttgart, Germany",9.0,5.6,8.45,,12.14375,13.85,1,13.55,1,14.05,1,14.350000000000001,2,13.1,1,6.95,2
+bull,tyson,m,AUS,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,final,"Liverpool, England",8.0,5.9,7.866,,13.440555555555555,13.8955,4,12.5,2,,0,13.460999999999999,3,,0,,0
+zeidel,uri,m,ISR,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",124.0,5.0,6.6,,12.25914705882353,11.937249999999999,4,12.187249999999999,4,12.642714285714286,7,12.633142857142857,7,12.843200000000001,5,11.309428571428572,7
+erkhembayar,usukhbayar,m,MGL,23-26 Feb 2023,FIG Apparatus World Cup 2023,qual,"Cottbus, Germany",26.0,5.4,7.833,0.1,12.447357142857141,11.3995,2,12.5165,2,12.866499999999998,2,11.7495,2,11.5165,2,13.541500000000001,4
+juraev,utkirbek,m,UZB,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",71.0,4.0,9.0,,12.887636363636362,12.832999999999998,2,13.421999999999999,3,12.544333333333332,3,12.732999999999999,3,,0,,0
+davtyan,vahagn,m,ARM,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,final,"Liverpool, England",6.0,6.0,8.533,,14.613,,0,,0,,0,,0,14.613,10,,0
+reinhardsson,valgard,m,ISL,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",125.0,5.0,6.3,0.1,12.4422,11.94125,4,11.588333333333333,3,12.533,3,12.52075,4,12.388666666666666,3,13.822000000000001,3
+duduchava,valiko,m,GEO,18-21 Aug 2022,2022 Senior European Championships,qual,"Munich, Germany",96.0,4.7,7.133,,12.710666666666667,,0,,0,11.833,1,,0,,0,13.1495,2
+nguyen,van,m,VIE,27-30 Apr 2023,World Cup,qual,"Cairo, Egypt",10.0,6.0,7.966,,14.182749999999999,,0,,0,,0,,0,14.182749999999999,4,,0
+sawant,vedant,m,AUS,23-26 Feb 2023,FIG Apparatus World Cup 2023,qual,"Cottbus, Germany",40.0,5.3,7.233,,13.6464,,0,13.6464,5,,0,,0,,0,,0
+betancourt,victor,m,VEN,24-28 Jun 2023,2023 Central American and Caribbean Games,qual,"San Salvador, El Salvador",27.0,4.2,7.1,0.1,11.883333333333333,11.7,1,11.8,1,11.2,1,12.15,1,12.05,1,12.4,1
+martinez,victor,m,BEL,11-16 Apr 2023,2023 Senior European Championships,AAfinal,"Antalya, Turkey",12.0,5.5,8.166,,13.074066666666665,12.072000000000001,3,12.9495,2,13.144,3,13.332999999999998,3,12.883,2,14.3995,2
+hock,vinzenz,m,AUT,1-5 Aug 2023,2023 FISU World University Games,final,"Chengdu, China",6.0,6.1,8.433,,14.498,,0,,0,,0,,0,14.498,2,,0
+hoeck,vinzenz,m,AUT,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",89.0,4.6,7.766,,14.039090909090909,12.833,2,,0,,0,,0,14.307111111111112,9,,0
+höck,vinzenz,m,AUT,1-4 Jun 2023,2023 Tel Aviv Challenge Cup,final,"Tel Aviv, Israel",1.0,6.1,8.5,,14.524999999999999,,0,,0,,0,,0,14.524999999999999,2,,0
+otreshko,volodymyr,m,SVK,1-5 Aug 2023,2023 FISU World University Games,qual,"Chengdu, China",68.0,4.2,7.766,,12.253214285714284,10.916,2,12.411000000000001,3,11.433,2,12.716333333333333,3,12.2665,2,13.466,2
+shek,wai,m,HKG,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",49.0,5.6,8.7,0.3,14.442499999999997,,0,,0,,0,,0,,0,14.442499999999997,14
+tanigawa,wataru,m,JPN,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,AAfinal,"Liverpool, England",5.0,5.7,8.566,,14.163928571428572,13.583,2,13.749500000000001,2,14.216000000000001,2,14.815999999999999,2,13.9165,2,14.43325,4
+sun,wei,m,CHN,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",108.0,5.7,6.6,0.1,13.566400000000002,14.633,2,12.966,1,12.2,1,,0,,0,13.4,1
+tay,wei,m,SGP,29 Jul-2 Aug 2022,BIRMINGHAM 2022 Commonwealth Games,qual,"Birmingham, England",13.0,5.5,7.7,0.4,12.875,,0,,0,12.8,1,,0,,0,12.95,1
+tseng,wei,m,TPE,1-5 Aug 2023,2023 FISU World University Games,qual,"Chengdu, China",46.0,5.0,8.1,0.2,13.729368421052632,,0,,0,12.9,1,,0,9.333,1,14.036764705882353,17
+su,weide,m,CHN,1-5 Aug 2023,2023 FISU World University Games,qual,"Chengdu, China",32.0,5.7,7.5,,13.888666666666666,13.866,1,,0,13.2,1,,0,,0,14.6,1
+contreras,wilfry,m,DOM,24-28 Jun 2023,2023 Central American and Caribbean Games,qual,"San Salvador, El Salvador",32.0,4.1,5.85,0.1,11.036714285714286,11.605333333333334,3,9.177666666666667,3,10.649666666666667,3,11.322000000000001,3,,0,13.125,2
+binder,willi,m,GER,1-5 Aug 2023,2023 FISU World University Games,qual,"Chengdu, China",66.0,5.2,6.966,0.1,12.605000000000002,12.866,1,12.966,1,12.066,1,12.466,1,12.1,1,13.166,1
+emard,william,m,CAN,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",20.0,5.7,8.4,,12.186272727272728,12.45,1,12.2165,2,13.972,3,13.15,1,13.15,1,9.65,3
+fu,william,m,NZL,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",121.0,5.1,6.533,,11.383125,,0,9.05,2,11.991499999999998,2,11.066,1,12.35,1,12.783000000000001,2
+fuallen,william,m,NZL,05-06 May 2023,Oceania Continental Championships 2023,aa,"Carrara, Australia",,5.0,8.533,0.0,12.624749999999999,,0,12.133,1,13.533,1,11.2,1,,0,13.633,1
+sundell,william,m,SWE,18-21 Aug 2022,2022 Senior European Championships,qual,"Munich, Germany",25.0,5.2,8.2,,12.4198,,0,12.308250000000001,4,,0,,0,,0,12.866,1
+hur,woong,m,KOR,23-26 Feb 2023,FIG Apparatus World Cup 2023,qual,"Cottbus, Germany",40.0,4.2,7.233,,12.933,,0,14.433,1,,0,11.433,1,,0,,0
+teillers,wout,m,NED,25-28 May 2023,2023 Varna World Challenge Cup Results,qual,"Varna, Bulgaria",19.0,5.1,6.45,0.0,11.970749999999999,12.125,2,,0,,0,11.8165,2,,0,,0
+dyrmishi,xheni,m,AUT,23-26 Feb 2023,FIG Apparatus World Cup 2023,qual,"Cottbus, Germany",37.0,4.7,8.166,,12.716499999999998,,0,12.716499999999998,6,,0,,0,,0,,0
+lan,xingyu,m,CHN,1-5 Aug 2023,2023 FISU World University Games,qual,"Chengdu, China",23.0,5.5,7.966,,14.211,13.366,1,13.683,2,13.466,1,14.4,1,15.33,2,14.43,1
+liu,yang,m,CHN,1-4 Mar 2023,World Cup,final,"Doha, Qatar",1.0,6.4,8.966,,15.349499999999999,,0,,0,,0,,0,15.349499999999999,2,,0
+ramsahai,yazz,m,NED,18-21 Aug 2022,2022 Senior European Championships,qual,"Munich, Germany",58.0,5.6,7.9,0.4,12.005416666666669,9.549666666666667,3,11.3,2,13.055333333333332,3,,0,12.475,2,14.350000000000001,2
+anton,yefferson,m,VEN,24-28 Jun 2023,2023 Central American and Caribbean Games,qual,"San Salvador, El Salvador",11.0,5.1,7.7,,11.575000000000001,10.8,1,10.65,1,12.8,1,12.2,1,11.1,1,11.9,1
+singh,yogeshwar,m,IND,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",106.0,5.3,6.933,,12.512105263157894,12.688666666666668,3,12.155333333333331,3,11.677666666666667,3,13.022,3,12.110999999999999,3,13.1915,4
+villaverde,yohendry,m,CUB,24-28 Jun 2023,2023 Central American and Caribbean Games,final,"San Salvador, El Salvador",8.0,3.3,5.5,4.0,12.166666666666666,,0,11.95,1,9.1,2,,0,,0,14.283333333333333,3
+aleksandrov,yordan,m,BUL,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",93.0,4.9,7.666,,12.94092,13.283,6,10.622,3,12.421666666666667,3,13.613714285714284,7,12.888333333333334,3,13.577666666666667,3
+shiao,yu,m,TPE,1-5 Aug 2023,2023 FISU World University Games,qual,"Chengdu, China",39.0,4.3,8.533,,13.657666666666666,12.833,1,14.253375000000002,8,,0,12.1995,2,12.633,1,,0
+hung,yuan,m,TPE,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",34.0,4.9,8.533,,13.04975,13.433,1,11.433,1,,0,14.3,1,13.033,1,,0
+moldauer,yul,m,USA,17-19 Mar 2023,EnBW DTB Pokal Team Challenge 2023,final,"Stuttgart, Germany",2.0,5.7,8.533,,12.076142857142857,,0,12.95,1,14.3665,2,14.3,1,13.8,1,7.375,2
+abbadini,yumin,m,ITA,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,AAfinal,"Liverpool, England",17.0,5.1,8.466,,13.42437142857143,12.885428571428571,7,13.745375,8,13.721666666666666,6,13.259800000000002,5,13.2596,5,13.69125,4
+gundogdu,yunus,m,TUR,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",117.0,5.0,6.866,,13.290125,,0,,0,12.416,2,13.265333333333333,3,13.39575,4,13.490142857142857,7
+guimaraes,yuri,m,BRA,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",21.0,5.9,8.166,,13.84975,,0,,0,14.066,1,,0,12.9,1,14.2165,2
+guimarães,yuri,m,BRA,17-19 Mar 2023,EnBW DTB Pokal Team Challenge 2023,final,"Stuttgart, Germany",6.0,5.8,7.566,0.3,13.650882352941178,13.25,1,11.7,1,13.454,4,12.825,2,13.0,1,14.331125,8
+kamoto,yuya,m,JPN,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,final,"Liverpool, England",7.0,6.0,8.166,,14.383100000000002,14.24975,4,,0,,0,14.577666666666666,3,14.366333333333335,3,,0
+clay,zachary,m,CAN,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",132.0,4.0,6.733,,12.899750000000001,10.733,1,14.2,1,,0,13.866,1,12.8,1,,0
+perillo,zachary,m,AUS,8-11 Jun 2023,2023 Osijek Challenge Cup,final,"Osijek, Croatia.",5.0,5.7,7.833,,13.470749999999999,,0,,0,,0,,0,13.470749999999999,4,,0
+khater,zaid,m,EGY,27-30 Apr 2023,World Cup,qual,"Cairo, Egypt",19.0,4.7,8.133,,12.999500000000001,12.833,1,,0,,0,,0,13.166,1,,0
+chen,zhilong,m,CHN,1-4 Mar 2023,World Cup,final,"Doha, Qatar",8.0,6.1,6.766,0.3,13.3495,,0,,0,13.016,2,,0,,0,13.683,2

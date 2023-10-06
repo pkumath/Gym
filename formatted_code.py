@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 import os
 from fuzzywuzzy import fuzz
+import pickle
 
 class Data:
     # Constructor
@@ -10,13 +11,60 @@ class Data:
                  data_dir: str = None,
                  data_name: str = "default_data", 
                  data: pd.DataFrame = None,
+                 load_dir: str = None,
                  ):
+        self.data = {}
+        if load_dir is not None:
+            self.load_all_data(load_dir)
+            return
         if data_dir is not None:
             # Load the data
             data = self._data_loader(data_dir)
         # Construct a new dictionary to store the data, where the key is the data_name, and the value is the data
-        self.data = {}
         self._add_or_replace_data(data, data_name)
+
+    def save_all_data(self, 
+                      data_dir: str,
+                      ):
+        '''
+        Save all the data in the class to the directory.
+
+        Input:
+            data_dir: str, the directory to save the data.
+
+        Output:
+            None
+        '''
+        # Check if the data directory (without the file name) exists
+        if not os.path.exists(os.path.dirname(data_dir)):
+            # Create the directory
+            os.makedirs(os.path.dirname(data_dir))
+        # Save the data
+        for key, value in self.data.items():
+            value.to_csv(data_dir + key + ".csv", index=False)
+
+    def load_all_data(self,
+                        data_dir: str,
+                        ):
+        '''
+        Load all the data from the directory.
+        
+        Input:
+            data_dir: str, the directory to load the data.
+
+        Output:
+            None
+        ''' 
+        # Check if the data directory exists
+        if not os.path.exists(data_dir):
+            raise ValueError("Directory does not exist")
+        # Load the data
+        for file in os.listdir(data_dir):
+            if file.endswith(".csv"):
+                data_name = file.split(".")[0]
+                self._add_or_replace_data(data_dir + file, data_name)
+        
+                
 
     def _check_data_name(self, data_name: str):
         '''
@@ -305,14 +353,33 @@ class Gymnastic_Data_Analyst(Data):
     def __init__(self, 
                  data_dir: str = None,
                  data_name: str = "default_data", 
+                 data: pd.DataFrame = None,
+                 load_dir: str = None,
                  ):
-        super().__init__(data_dir, data_name)
+        super().__init__(data_dir=data_dir, data_name=data_name, load_dir=load_dir, data=data)
 
+        if load_dir is not None:
+            return
         # Clean the data
         self._cleaner(data_name)
         # Summary each athlete's performance on each apparatus
         self._prepare_data(data_name)
 
+    def save_all_data(self, data_dir: str):
+        super().save_all_data(data_dir)
+        # save the apparatus list
+        with open(data_dir + 'men_apparatus_ls.pkl', 'wb') as f:
+            pickle.dump(self.men_apparatus_ls, f)
+        with open(data_dir + 'women_apparatus_ls.pkl', 'wb') as f:
+            pickle.dump(self.women_apparatus_ls, f)
+        
+    def load_all_data(self, data_dir: str):
+        super().load_all_data(data_dir)
+        # load the apparatus list
+        with open(data_dir + 'men_apparatus_ls.pkl', 'rb') as f:
+            self.men_apparatus_ls = pickle.load(f)
+        with open(data_dir + 'women_apparatus_ls.pkl', 'rb') as f:
+            self.women_apparatus_ls = pickle.load(f)
 
 
     def _prepare_data(self,
@@ -337,7 +404,7 @@ class Gymnastic_Data_Analyst(Data):
                 self._add_or_replace_data(value, "men_"+data_name)
             else:
                 self._add_or_replace_data(value, "women_"+data_name)
-        
+
         # Get the apparatus list
         self.men_apparatus_ls = self._get_apparatus_ls(data_name="men_"+data_name)
         self.women_apparatus_ls = self._get_apparatus_ls(data_name="women_"+data_name)
@@ -635,8 +702,13 @@ class Gymnastic_Data_Analyst(Data):
 
 
 if __name__ == "__main__":
-    data = Gymnastic_Data_Analyst(data_dir="data/data_2022_2023.csv", data_name="gymnasts")
+    Load_data =  True
+    if Load_data:
+        data = Gymnastic_Data_Analyst(load_dir="data/formatted_data/")
+    else:
+        data = Gymnastic_Data_Analyst(data_dir="data/data_2022_2023.csv", data_name="gymnasts")
+        data.save_all_data("data/formatted_data/")
     summary_data = data.summary_for_each_country_by_gender(data_name="summary_men_gymnasts", country_name="COL", k_top_for_apparatus=4, k_top_for_score=2)
     # Store the summary_data into a text file
-    with open("data//summary_data.txt", "w") as f:
+    with open("data/summary_data.txt", "w") as f:
         f.write(str(summary_data))
