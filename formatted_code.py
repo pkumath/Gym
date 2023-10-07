@@ -691,10 +691,16 @@ class Gymnastic_Data_Analyst(Data):
         for apparatus_name in apparatus:
             # Find the gymnast with the top k-highest score on this apparatus
             data["apparatus_name"+"_score"] = pd.to_numeric(data[apparatus_name+"_score"])
-            summary_for_country[country_name][apparatus_name] = data.nlargest(k_top_for_apparatus, "apparatus_name"+"_score")
+            if k_top_for_apparatus is not None:
+                summary_for_country[country_name][apparatus_name] = data.nlargest(k_top_for_apparatus, "apparatus_name"+"_score")
+            else:
+                summary_for_country[country_name][apparatus_name] = data
         # Find the gymnast with the top k-highest score
         data["Score"] = pd.to_numeric(data["Score"])
-        summary_for_country[country_name]["Score"] = data.nlargest(k_top_for_score, "Score")
+        if k_top_for_score is not None:
+            summary_for_country[country_name]["Score"] = data.nlargest(k_top_for_score, "Score")
+        else:
+            summary_for_country[country_name]["Score"] = data
         return summary_for_country
 
 
