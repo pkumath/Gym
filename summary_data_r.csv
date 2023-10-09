@@ -11,8 +11,8 @@
 "NASSER","Abderrazak","m","MAR","29 Oct 2022 - 6 Nov 2022","2022 51st FIG Artistic Gymnastics World Championships","qual","Liverpool, England",100,4.8,7.666,NA,12.466,"Abderrazak_NASSER",11.5165,11.633,12.466,11.7665,12.033,13.7,NA,NA
 "MIRVALIEV","Abdulaziz","m","UZB","23-26 Feb 2023","FIG Apparatus World Cup 2023","qual","Cottbus, Germany",11,5.4,8.233,NA,13.633,"Abdulaziz_MIRVALIEV",NA,NA,13.1773333333333,NA,13.0883333333333,13.8663333333333,NA,NA
 "AZIMOV","Abdulla","m","UZB","29 Oct 2022 - 6 Nov 2022","2022 51st FIG Artistic Gymnastics World Championships","qual","Liverpool, England",61,4.9,8.266,NA,13.166,"Abdulla_AZIMOV",12.433,14.3443333333333,12.983,13.533,11.966,13.9,NA,NA
-"O DRISCOLL","Aberdeen","w","BEL","11-16 Apr 2023","2023 Senior European Championships","qual","Antalya, Turkey",15,5,7.833,NA,12.833,"Aberdeen_O DRISCOLL",NA,NA,12.833,NA,NA,13.133,NA,NA
 "O'DRISCOL","Aberdeen","w","BEL","17-19 Mar 2023","EnBW DTB Pokal Team Challenge 2023","qual","Stuttgart, Germany",40,4,6.1,NA,10.1,"Aberdeen_O'DRISCOL",NA,NA,12.85,NA,NA,6.475,10.1,NA
+"O DRISCOLL","Aberdeen","w","BEL","11-16 Apr 2023","2023 Senior European Championships","qual","Antalya, Turkey",15,5,7.833,NA,12.833,"Aberdeen_O DRISCOLL",NA,NA,12.833,NA,NA,13.133,NA,NA
 "ROPER","Abigail","w","GBR","24-27 Mar 2022","2022 British Gymnastics Championships","qual","Liverpool, England",22,4.7,6.65,0,11.35,"Abigail_ROPER",NA,NA,11.575,NA,NA,12.6666666666667,11.525,10.725
 "RAFI","Abu Saeed","m","BAN","29 Jul-2 Aug 2022","BIRMINGHAM 2022 Commonwealth Games","qual","Birmingham, England",37,3.7,6.35,NA,10.05,"Abu Saeed_RAFI",NA,7,10.05,5.9,3,12.45,NA,NA
 "QUISTAS","Achraf","m","MAR","23-26 Feb 2023","FIG Apparatus World Cup 2023","qual","Cottbus, Germany",44,4.9,7.333,0.6,11.633,"Achraf_QUISTAS",NA,9.066,11.633,9.866,NA,13.383,NA,NA
@@ -107,12 +107,12 @@
 "PONCE","Angelissa","w","CUB","24-28 Jun 2023","2023 Central American and Caribbean Games","qual","San Salvador, El Salvador",29,4.3,5.65,NA,9.95,"Angelissa_PONCE",NA,NA,11.9,NA,NA,11.75,9.95,NA
 "GOBADZE","Ani","w","GEO","11-14 Aug 2022","2022 Senior European Championships","qual","Munich, Germany",99,4.3,5.833,0.1,10.033,"Ani_GOBADZE",NA,NA,10.2883333333333,NA,NA,11.766,9.76633333333333,9.4495
 "WILDI","Anina","w","SUI","29 Oct 2022 - 6 Nov 2022","2022 51st FIG Artistic Gymnastics World Championships","qual","Liverpool, England",112,4.9,5.8,NA,10.7,"Anina_WILDI",NA,NA,12.3995,NA,NA,12.4776666666667,9.9,12.0665
+"KÖNIG","Anna-Lena","w","GER","17-19 Mar 2023","EnBW DTB Pokal Team Challenge 2023","qual","Stuttgart, Germany",39,4,7,0.1,10.9,"Anna-Lena_KÖNIG",NA,NA,12.35,NA,NA,6.575,10.9,10.4
 "KOENIG","Anna Lena","w","GER","29 Oct 2022 - 6 Nov 2022","2022 51st FIG Artistic Gymnastics World Championships","qual","Liverpool, England",55,4.6,7.333,NA,11.933,"Anna Lena_KOENIG",NA,NA,12.87475,NA,NA,13.083,11.8165,12.066
 "BRIDGE","Anna","w","GBR","24-27 Mar 2022","2022 British Gymnastics Championships","qual","Liverpool, England",66,4,2.75,0,6.75,"Anna_BRIDGE",NA,NA,10.15,NA,NA,11.85,6.75,9.8
 "GEMZA","Anna","w","POL","11-16 Apr 2023","2023 Senior European Championships","qual","Antalya, Turkey",89,4.1,5.9,NA,10,"Anna_GEMZA",NA,NA,9.7,NA,NA,NA,10,11.466
 "LASHCHEVSKA","Anna","w","UKR","11-16 Apr 2023","2023 Senior European Championships","qual","Antalya, Turkey",53,5.7,5.633,0.1,11.233,"Anna_LASHCHEVSKA",NA,NA,11.666,NA,NA,12.733,12.5377142857143,12.672
 "LOCMELE","Anna","w","LAT","11-14 Aug 2022","2022 Senior European Championships","qual","Munich, Germany",114,4.4,4.6,NA,9,"Anna_LOCMELE",NA,NA,9.466,NA,NA,11.833,9,6
-"KÖNIG","Anna-Lena","w","GER","17-19 Mar 2023","EnBW DTB Pokal Team Challenge 2023","qual","Stuttgart, Germany",39,4,7,0.1,10.9,"Anna-Lena_KÖNIG",NA,NA,12.35,NA,NA,6.575,10.9,10.4
 "Burrows","Annabelle","w","AUS","8-11 Jun 2023","2023 Osijek Challenge Cup","qual","Osijek, Croatia.",17,4.6,6.833,NA,11.433,"Annabelle_Burrows",NA,NA,12.5165,NA,NA,12.79975,11.433,11.966
 "KAMANGA","Annais Ornella","w","GBR","23-26 Mar 2023","2023 British Gymnastics Championships","qual","Liverpool, England",40,4.4,5.4,0,9.8,"Annais Ornella_KAMANGA",NA,NA,11.4,NA,NA,12.5125,9.8,9.9
 "NEWMAN ACHEE","Annalise Becca","w","TTO","29 Oct 2022 - 6 Nov 2022","2022 51st FIG Artistic Gymnastics World Championships","qual","Liverpool, England",123,4.2,6.133,NA,10.333,"Annalise Becca_NEWMAN ACHEE",NA,NA,11.7,NA,NA,13,10.333,8.566
@@ -197,11 +197,11 @@
 "LOCHHEAD","Caitlin","w","GBR","24-27 Mar 2022","2022 British Gymnastics Championships","qual","Liverpool, England",33,4.4,6.4,0,10.8,"Caitlin_LOCHHEAD",NA,NA,11.65,NA,NA,12.1,10.8,8.85
 "ROOSKRANTZ","Caitlin","w","RSA","29 Oct 2022 - 6 Nov 2022","2022 51st FIG Artistic Gymnastics World Championships","qual","Liverpool, England",86,4.9,6.4,NA,11.3,"Caitlin_ROOSKRANTZ",NA,NA,12.4,NA,NA,12.8,11.0833333333333,13.00825
 "Anders","Caleigh","w","RSA","1-4 Jun 2023","2023 Tel Aviv Challenge Cup","final","Tel Aviv, Israel",5,4.7,7.1,NA,11.8,"Caleigh_Anders",NA,NA,NA,NA,NA,NA,NA,11.8335
+"BERNARD","Cameron-Lie","m","FRA","17-19 Mar 2023","EnBW DTB Pokal Team Challenge 2023","qual","Stuttgart, Germany",32,6.2,7.25,NA,13.45,"Cameron-Lie_BERNARD",NA,12,NA,13.45,13.15,6.8,NA,NA
 "BERNARD","Cameron Lie","m","FRA","29 Oct 2022 - 6 Nov 2022","2022 51st FIG Artistic Gymnastics World Championships","qual","Liverpool, England",112,4.3,7.566,NA,11.866,"Cameron Lie_BERNARD",12.116,12.24975,NA,14.2852857142857,13.153,13.6,NA,NA
 "LISTER","Cameron","m","GBR","24-27 Mar 2022","2022 British Gymnastics Championships","qual","Liverpool, England",29,3.5,7.85,0,11.35,"Cameron_LISTER",NA,NA,NA,NA,11.35,11.55,NA,NA
 "Lynn","Cameron","m","GBR","1-4 Jun 2023","2023 Tel Aviv Challenge Cup","qual","Tel Aviv, Israel",14,5.4,6.45,0.1,11.75,"Cameron_Lynn",12.1,10.15,11.75,13.05,NA,NA,NA,NA
 "LYNN","Cameron","m","GBR","24-27 Mar 2022","2022 British Gymnastics Championships","final","Liverpool, England",8,5.5,6.87,0,12.366,"Cameron_LYNN",12.725,11.7875,12.8232,12.9,13.0166666666667,11.9332857142857,NA,NA
-"BERNARD","Cameron-Lie","m","FRA","17-19 Mar 2023","EnBW DTB Pokal Team Challenge 2023","qual","Stuttgart, Germany",32,6.2,7.25,NA,13.45,"Cameron-Lie_BERNARD",NA,12,NA,13.45,13.15,6.8,NA,NA
 "NORMANN","Camille","w","DEN","11-14 Aug 2022","2022 Senior European Championships","qual","Munich, Germany",97,3.9,6.366,0.1,10.166,"Camille_NORMANN",NA,NA,9.133,NA,NA,NA,10.166,10.266
 "RASMUSSEN","Camille","w","DEN","29 Oct 2022 - 6 Nov 2022","2022 51st FIG Artistic Gymnastics World Championships","qual","Liverpool, England",79,4.5,7,NA,11.5,"Camille_RASMUSSEN",NA,NA,12.3443333333333,NA,NA,13.1746875,11.5662,11.855
 "KENNEDY","Cara","w","GBR","24-27 Mar 2022","2022 British Gymnastics Championships","qual","Liverpool, England",37,4.2,6.25,0,10.45,"Cara_KENNEDY",NA,NA,12.3333333333333,NA,NA,12.65625,11,11.05
