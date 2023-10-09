@@ -2,6 +2,12 @@
 \usepackage[margin=1in]{geometry}
 \usepackage{xcolor}
 \usepackage{cite}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{hyperref}
+\usepackage{float}
+\usepackage{tikz}
+\usetikzlibrary{shapes, arrows, positioning}
 \usepackage[numbers]{natbib}
 \title{Statistical Case Study}
 \author{Garrett Wen}
@@ -62,9 +68,105 @@ To thoroughly assess the gymnasts, we will generate a vector with high dimension
     Here, \( w_1 \) through \( w_6 \) are the weights assigned to each metric according to possible preferences. The gymnast with the highest Composite Score is deemed to be the most promising for future competitions. We can also use more complex models for the final metric, possibly a non-linear method by machine learning.
     \subsection{Final Remarks}
     \textcolor{red}{Finally, it should be noted that we should certainly give more weights to the data for recent times (that means, we should try to weight those scores according to time). Additionally, we should also strive to find more useful data and conduct similar analyses.}
-    \section{Sep 13, 2023 at 14:07:37}
-    \subsection{Produce Composite Scores and Predictions}
-    
+    \section{Oct 8, 2023 at 20:27:01}
+    \textcolor{red}{Python codes written by Ruixiao Wang and Siyu Chen. Documents, R codes and plans written by Gang Wen. We use ChatGPT for the draft of the translation of python codes to R codes, and polish the English of this documents.}
+\subsection{Introduction}
+The provided code is designed to analyze and predict the performance of gymnasts in different events. It simulates rankings for gymnasts across various apparatuses, both for individual and team events, and summarizes medal counts by country.
+
+\subsection{Prediction Method}
+
+\subsubsection{Load and Data Preparation}
+Initially, the raw gymnastic data is loaded and subjected to preprocessing. This includes removing any missing values, outliers, and normalization (if required).
+
+\subsubsection{Team Selection}
+For each country, a team is formed by selecting the top-performing gymnasts based on their scores in previous competitions. The team size and the number of substitutes can vary based on the event's requirements.
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[node distance=2cm]
+\tikzstyle{startstop} = [rectangle, rounded corners, minimum width=3cm, minimum height=1cm, text centered, draw=black]
+\tikzstyle{process} = [rectangle, minimum width=3cm, minimum height=1cm, text centered, draw=black]
+\tikzstyle{arrow} = [thick,->,>=stealth]
+
+\node (start) [startstop] {Start};
+\node (load) [process, right of=start, xshift=2cm] {Load Gymnast Scores};
+\node (select) [process, right of=load, xshift=2cm] {Select Top Performers};
+\node (team) [process, right of=select, xshift=2cm] {Form Team};
+\node (subs) [process, below of=team] {Select Substitutes};
+\node (end) [startstop, left of=subs, xshift=-2cm] {End};
+
+\draw [arrow] (start) -- (load);
+\draw [arrow] (load) -- (select);
+\draw [arrow] (select) -- (team);
+\draw [arrow] (team) -- (subs);
+\draw [arrow] (subs) -- (end);
+
+\end{tikzpicture}
+\caption{Flowchart for the team selection process}
+\end{figure}
+
+\subsubsection{Prediction using Noise}
+To simulate the variability and unpredictability in real-world performances, random noise is added to the gymnasts' previous scores. This noise is generated using a Gaussian distribution with a mean of zero and a standard deviation that represents the typical variability in gymnast scores. The exact standard deviation value can be adjusted based on the event and the historical performance data.
+
+\subsubsection{Simulation and Ranking}
+Once the noise is added, the gymnasts' scores are used to simulate their performance in the event. Gymnasts are then ranked based on these simulated scores. 
+
+\subsection{Interpreting the Prediction Results}
+The results are summarized in a CSV file, which has the following columns:
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|l|l|}
+    \hline
+    \textbf{Column} & \textbf{Description} \\
+    \hline
+    Country Names & Names of the participating countries. \\
+    \hline
+    simulationX & Total number of medals won by the country in the X\textsuperscript{th} simulation. \\
+    \hline
+    \end{tabular}
+    \caption{Description of columns in the result CSV file}
+\end{table}
+
+To interpret the results:
+\begin{itemize}
+    \item Look up the `Country Names` column to identify a specific country.
+    \item Check the `simulationX` columns to see the number of medals the country won in each simulation.
+    \item The average across all simulation columns provides an estimate of the expected medal count for that country.
+\end{itemize}
+
+\subsection{Data Analysis Flowchart}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[node distance=2cm]
+\tikzstyle{startstop} = [rectangle, rounded corners, minimum width=3cm, minimum height=1cm, text centered, draw=black]
+\tikzstyle{process} = [rectangle, minimum width=3cm, minimum height=1cm, text centered, draw=black]
+\tikzstyle{arrow} = [thick,->,>=stealth]
+
+\node (start) [startstop] {Start};
+\node (load) [process, below of=start] {Load Data};
+\node (prep) [process, below of=load] {Data Preparation};
+\node (teamselect) [process, below of=prep] {Team Selection};
+\node (predict) [process, below of=teamselect] {Add Noise \& Predict};
+\node (rank) [process, below of=predict] {Rank Gymnasts};
+\node (medalcount) [process, below of=rank] {Summarize Medal Counts};
+\node (stop) [startstop, below of=medalcount] {End};
+
+\draw [arrow] (start) -- (load);
+\draw [arrow] (load) -- (prep);
+\draw [arrow] (prep) -- (teamselect);
+\draw [arrow] (teamselect) -- (predict);
+\draw [arrow] (predict) -- (rank);
+\draw [arrow] (rank) -- (medalcount);
+\draw [arrow] (medalcount) -- (stop);
+
+\end{tikzpicture}
+\caption{Flowchart for the detailed data analysis process}
+\end{figure}
+
+\subsection{Conclusion}
+The code provides a comprehensive method for analyzing gymnastic data, predicting performance, and summarizing results. It's important to note that the predictions are based on past performance data and include random noise, so they should be interpreted as estimates rather than definitive outcomes.
 \end{document}
 \bibliographystyle{unsrtnat}
 \bibliography{StatisticalCaseStudy.bib}

@@ -1,19 +1,51 @@
-library(dplyr)
-library(readr)
+# Equivalent R libraries for the Python imports
+library(dplyr)       # Equivalent to pandas for data manipulation
+library(tidyr)       # For reshaping data
+library(data.table)  # Advanced data manipulation similar to pandas
+library(stringdist)  # For string matching, equivalent to fuzzywuzzy
+library(R.utils)     # For reading and writing binary files, a potential equivalent to pickle
+library(fs)          # Filesystem operations, for some os functionalities
 library(R6)
 
 Data <- R6::R6Class("Data",
+                    private = list(
+                      .load_dir = NULL,
+                      
+                      .data_loader = function(data_dir) {
+                        if (file.exists(data_dir)) {
+                          data <- read.csv(data_dir)
+                          return(data)
+                        } else {
+                          stop("Directory does not exist")
+                        }
+                      },
+                      
+                      .check_data_name = function(data_name) {
+                        if (!(data_name %in% names(self$data))) {
+                          stop("Data name does not exist")
+                        }
+                      }
+                    ),
+                    
                     public = list(
                       data = list(),
                       
-                      initialize = function(data_dir = NULL, data_name = "default_data", data = NULL) {
+                    initialize = function(data_dir = NULL, data_name = "default_data", data = NULL, load_dir = NULL) {
+                        if (!is.null(load_dir)) {
+                          self$load_all_data(load_dir)
+                          return(invisible(NULL))
+                        }
                         if (!is.null(data_dir)) {
-                          data <- self$data_loader(data_dir)
+                          data <- private$.data_loader(data_dir)
                         }
                         self$data[[data_name]] <- data
                       },
+                      
+                      set_load_dir = function(dir) {
+                        private$.load_dir <- dir
+                      },
 
-                                            load_all_data = function(data_dir) {
+                      load_all_data = function(data_dir) {
                         if (!dir.exists(data_dir)) {
                           stop("Directory does not exist")
                         }
@@ -24,19 +56,21 @@ Data <- R6::R6Class("Data",
                         }
                       },
                       
+                      get_load_dir = function() {
+                        return(private$.load_dir)
+                      },
+                      
                       check_data_name = function(data_name) {
                         if (!(data_name %in% names(self$data))) {
                           stop("Data name does not exist")
                         }
                       },
                       
-                      data_loader = function(data_dir) {
-                        if (file.exists(data_dir)) {
-                          data <- read.csv(data_dir)
-                          return(data)
-                        } else {
-                          stop("Directory does not exist")
+                      data_loader = function(data_dir = private$.load_dir) {
+                        if (is.null(data_dir)) {
+                          stop("Please set the load_dir first.")
                         }
+                        return(private$.data_loader(data_dir))
                       },
                       
                       add_or_replace_data = function(data_or_data_dir, data_name) {
@@ -141,16 +175,12 @@ Data <- R6::R6Class("Data",
                       split_by_attribute = function(data_name, attribute) {
                         self$check_data_name(data_name)
                         
-                        if (!(attribute %in% colnames(self$data[[data_name]]))) {
+                        if (!(attribute %in% names(self$data[[data_name]]))) {
                           stop("Attribute does not exist")
                         }
                         
-                        splitted_data <- self$data[[data_name]] %>% group_by(!!sym(attribute))
-                        ls <- list()
-                        for (key in unique(self$data[[data_name]][[attribute]])) {
-                          ls[[key]] <- filter(splitted_data, !!sym(attribute) == key)
-                        }
-                        return(ls)
+                        splitted_data <- split(self$data[[data_name]], self$data[[data_name]][[attribute]])
+                        return(splitted_data)
                       }
                     )
 )
@@ -159,8 +189,9 @@ Gymnastic_Data_Analyst <- R6Class("Gymnastic_Data_Analyst",
                                   inherit = Data,
                                   
                                   public = list(
-                                    initialize = function(data_dir = NULL, data_name = "default_data") {
-                                      super$initialize(data_dir, data_name)
+                                    initialize = function(data_dir = NULL, data_name = "default_data", data = NULL, load_dir = NULL) {
+                                      # 使用super$initialize()确保所有参数都被传递到父类的初始化方法中
+                                      super$initialize(data_dir = data_dir, data_name = data_name, data = data, load_dir = load_dir)
                                       private$cleaner(data_name)
                                     },
                                     
@@ -191,6 +222,8 @@ Gymnastic_Data_Analyst <- R6Class("Gymnastic_Data_Analyst",
                                           individual_summary_data[[apparatus]] <- average_score
                                         }
                                         
+                                        individual_summary_data$Total <- sum(as.numeric(individual_summary_data[apparatus_ls]), na.rm = TRUE)
+                                        
                                         # 将individual_summary_data添加到summary_list中
                                         summary_list[[name]] <- individual_summary_data
                                       }
@@ -209,7 +242,6 @@ Gymnastic_Data_Analyst <- R6Class("Gymnastic_Data_Analyst",
                                   private = list(
                                     cleaner = function(data_name = "default_data", merge_VT = TRUE, clean_NaN_in_Score = TRUE) {
                                       super$cleaner(data_name, merge_VT, clean_NaN_in_Score)
-                                      
                                       data <- self$data[[data_name]]
                                       
                                       if("Apparatus" %in% colnames(data)) {
@@ -226,7 +258,7 @@ Gymnastic_Data_Analyst <- R6Class("Gymnastic_Data_Analyst",
                                       
                                       self$data[[data_name]] <- data
                                     },
-                                    
+                                                                        
                                     group = function(col_name, data_or_data_name) {
                                       if(is.character(data_or_data_name)) {
                                         data <- self$data[[data_or_data_name]]
@@ -239,7 +271,6 @@ Gymnastic_Data_Analyst <- R6Class("Gymnastic_Data_Analyst",
                                     }
                                   )
 )
-
 
 main <- function() {
   data <- Gymnastic_Data_Analyst$new(data_dir = "data/data_2022_2023.csv", data_name = "gymnasts")
@@ -258,10 +289,10 @@ main <- function() {
   
   # 将数据写入CSV文件
   summary_data <- data$data_copier_fetcher(data_or_data_name="summary_data")
-  write.csv(summary_data, file = "summary_data_r.csv", row.names = FALSE)
+  write.csv(summary_data, file = "summary_data_rsss.csv", row.names = FALSE)
   
   # 输出已写入文件的消息
   cat("Summary data has been written to summary_data.csv\n")
 }
-
+Gymnastic_Data_Analyst$new(load_dir = "data/formatted_data/")
 main()
