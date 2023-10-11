@@ -503,7 +503,7 @@ def run_simulations(times=1000, display=False, gender="women"):
     # Create a pandas DataFrame
     df = pd.DataFrame(medal_total)
     # Write the DataFrame to a CSV file
-    df.to_csv(gender+'_total_number_of_medals_results.csv', index=False)
+    df.to_csv('_total_number_of_medals_results.csv', index=False)
         
 if __name__ == "__main__":
     run_simulations(1000, gender="men")  
