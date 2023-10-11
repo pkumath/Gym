@@ -1,12 +1,18 @@
 library(shiny)
 library(DT)
-
+d = read_csv('data/summary_data.csv')
 fluidPage(
     titlePanel("Python CSV Data Display in Shiny"),
     sidebarLayout(
         sidebarPanel(
-            numericInput("people", "Number of People:", value = 4, min = 1, max = 4),
-            sliderInput("ageMultiplier", "Age Multiplier:", min = 0.5, max = 2, value = 1, step = 0.1)
+            numericInput("times", "Number of sim:", value = 1000, min = 1, max = 1001),
+            # sliderInput("gender", "Gender:", min = 0.5, max = 2, value = 1, step = 0.1)
+            # select gender 
+            selectInput(inputId='gender', 
+                        label = 'Gender', 
+                        choices = sort(unique(d$'Gender')), 
+                        selected = c('w'), 
+                        multiple = T),
         ),
         mainPanel(
             DTOutput("table")
