@@ -1,6 +1,7 @@
 library(shiny)
 library(DT)
-d = read_csv('data/summary_data.csv')
+
+d = read.csv('data/summary_data.csv')
 fluidPage(
     titlePanel("Python CSV Data Display in Shiny"),
     sidebarLayout(
