@@ -13,3 +13,8 @@ The run_simulations method will automatically run given rounds of simulations up
 
 ### How to run the code?
 With a python environment and R environment, directly run "appwithpython.r"
+
+### Contributors:
+Gang Wen: Designing the architecture of the app.
+Ruixiao Wang: run_simulations method and python code.
+Siyu Chen: Visualization and python-R interface.
