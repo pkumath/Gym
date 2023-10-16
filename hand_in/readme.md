@@ -10,3 +10,6 @@ This code defines the user interface for a Shiny app. The user interface contain
 
 ### Description to prediction.py
 The run_simulations method will automatically run given rounds of simulations upon called by server.r
+
+### How to run the code?
+With a python environment and R environment, directly run "appwithpython.r"
