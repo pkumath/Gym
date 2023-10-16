@@ -16,7 +16,9 @@ fluidPage(
                         multiple = T),
         ),
         mainPanel(
-            DTOutput("table")
+            DTOutput("table"), 
+            plotOutput("hist")
         )
+
     )
 )
