@@ -1,0 +1,58 @@
+\documentclass{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{cite}
+\usepackage{mathbbol}
+\usepackage{xcolor}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{float}
+\usepackage{tikz}
+\usetikzlibrary{positioning, fit, arrows.meta, shapes}
+
+% used to avoid putting the same thing several times...
+% Command \empt{var1}{var2}
+\newcommand{\empt}[2]{$#1^{\langle #2 \rangle}$}
+\usepackage{booktabs} 
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{multirow}
+% Define a new theorem style
+\newtheoremstyle{roman}  % name
+  {}                     % Space above
+  {}                     % Space below
+  {\rmfamily}            % Body font
+  {}                     % Indent amount
+  {\bfseries}            % Theorem head font
+  {.}                    % Punctuation after theorem head
+  {.5em}                 % Space after theorem head
+  {}                     % Theorem head spec (can be left empty, meaning ‘normal’)
+
+% Now we use the newly defined style
+\theoremstyle{roman}
+\newtheorem{proposition}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{definition}{Definition}
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}{Corollary}
+\newtheorem{assumption}{Assumption}
+\usepackage[numbers]{natbib}
+\title{Gymnastic Report}
+\author{Garrett Wen}
+\begin{document}
+\maketitle
+\tableofcontents
+\section{Rules Reminder}
+\section{Data Organization}
+\subsection{Basis Classes and Objects}
+\subsection{Functions Explained}
+\section{Predicting Model}
+\subsection{Countries and Teams}
+\subsection{Gymnasts}
+\section{Result}
+
+\section*{Remark}
+We would like to express that translating Python code to R code is indeed a challenging task. We sincerely apologize for the projects written in Python; however, we would like to mention that we have dedicated several days to translating them. We kindly request future students in this course to refrain from attempting this, as it will ultimately result in a significant waste of time.
+\bibliographystyle{unsrtnat}
+\bibliography{GymReport.bib}
+\end{document}
