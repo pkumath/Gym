@@ -226,10 +226,24 @@ Final & - Qualifying scores for the apparatus are \\
 \subsection{Basis Classes and Objects}
 \subsection{Functions Explained}
 \section{Predicting Model}
-\subsection{Countries and Teams}
-\subsection{Gymnasts}
-\section{Result}
+In this section, we present an overview of the prediction model developed to analyze and forecast gymnastic performances. The model utilizes a combination of data processing and random simulations to predict outcomes in gymnastic events.
 
+\subsection{Simulation of Qualification and Final Rounds}
+The model simulates the qualification and final rounds for individual and team events. It employs random matrices to represent gymnast participation in various apparatuses, where 1 means participation and 0 otherwise, with scores generated based on real-world performance data. These simulations provide insights into possible outcomes in both team and individual events.
+
+\subsection{Predictive Analysis}
+For each apparatus and all-around events, the model predicts performances by analyzing scores given in history data and adding a random Gaussian noise factor to simulate qualification and final round performances. The model ensures a realistic distribution of medals among countries and athletes.
+
+\subsection{Medal Count and Summary}
+Finally, the model aggregates the results from simulations to predict medal counts for each country. This part of the model provides a comprehensive overview of potential medal distributions across different events.
+
+\section{Result}
+\subsection{Medal Count} The simulations reveal the total number of medals won by each country for each of 1000 runs. We can do further analysis on this data to find its distribution based on 1000 runs, which would suggest the potential strength and consistency of various national teams in gymnastics.
+
+\subsection{Top Performing Countries}
+In men's gymnastics, Great Britain (GBR) and Japan (JPN) are among the top performers, consistently achieving high medal counts. In women's gymnastics, Italy (ITA) and Great Britain (GBR) emerge as leading countries, again indicated by their high average medal counts.
+\subsection{Comparative Analysis}
+The simulations indicate that the competition is intense among the top-ranking countries. By printing out the final scoring at each simulation, we can see that small differences in performance scoring can lead to relatively larger changes in medal distribution, show large variations in predicting final medal count outcomes.
 \section*{Remark}
 We would like to express that translating Python code to R code is indeed a challenging task. We sincerely apologize for the projects written in Python; however, we would like to mention that we have dedicated several days to translating them. We kindly request future students in this course to refrain from attempting this, as it will ultimately result in a significant waste of time.
 \bibliographystyle{unsrtnat}
