@@ -17,6 +17,12 @@
 \usepackage{amsthm}
 \usepackage{amssymb}
 \usepackage{multirow}
+
+\usepackage{geometry}
+\usepackage{tabularx}
+\usepackage{booktabs}
+
+\geometry{margin=1in}
 % Define a new theorem style
 \newtheoremstyle{roman}  % name
   {}                     % Space above
@@ -224,6 +230,41 @@ Final & - Qualifying scores for the apparatus are \\
 
 \section{Data Organization}
 \subsection{Basis Classes and Objects}
+\begin{table}[h]
+  \centering
+  \begin{tabularx}{\textwidth}{lX}
+    \toprule
+    \textbf{Method} & \textbf{Description} \\
+    \midrule
+    \multicolumn{2}{c}{\textbf{Data Class}} \\
+    \midrule
+    initialize & Initializes the class with specified parameters. \\
+    set\_load\_dir & Sets the load directory. \\
+    load\_all\_data & Loads all CSV files from a directory. \\
+    get\_load\_dir & Returns the load directory. \\
+    check\_data\_name & Checks if a data name exists. \\
+    data\_loader & Loads data from a directory. \\
+    add\_or\_replace\_data & Adds or replaces data in the instance. \\
+    data\_copier\_fetcher & Fetches data with an option for deep copy. \\
+    group & Groups data by specified column(s). \\
+    append\_items & Appends items to the data. \\
+    drop\_items & Drops items based on specified conditions. \\
+    replace\_items & Replaces items based on specified conditions. \\
+    filter & Filters data based on a user-defined function. \\
+    cleaner & Cleans data by handling specific conditions. \\
+    split\_by\_attribute & Splits data based on a specified attribute. \\
+    \midrule
+    \multicolumn{2}{c}{\textbf{Gymnastic\_Data\_Analyst Class}} \\
+    \midrule
+    initialize & Initializes the class and performs additional data cleaning. \\
+    summary\_for\_each\_athlete & Generates a summary for each athlete. \\
+    cleaner & Overrides the cleaner method for gymnastic data. \\
+    group & Overrides the group method for direct grouping by columns. \\
+    \bottomrule
+  \end{tabularx}
+  \caption{Summary of Methods in Data and Gymnastic\_Data\_Analyst Classes}
+  \label{tab:methods_summary}
+\end{table}
 \subsection{Functions Explained}
 \section{Predicting Model}
 In this section, we present an overview of the prediction model developed to analyze and forecast gymnastic performances. The model utilizes a combination of data processing and random simulations to predict outcomes in gymnastic events.
